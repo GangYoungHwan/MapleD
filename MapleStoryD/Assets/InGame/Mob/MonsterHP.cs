@@ -22,19 +22,25 @@ public class MonsterHP : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    public void TakeDamage(bool cri,int damage,GameObject hud,Vector3 Pos)
+    public void TakeDamage(bool cri,int AttackNum,int damage,GameObject hud,Vector3 Pos)
     {
+        float _Dmg = 0;
         if (isDie == true) return;
-        //데이터 매니저 크리티컬 확률 구현
+        float[] Damage = new float[AttackNum];
+        for(int i=0; i< Damage.Length; i++)
+        {
+            float dmg = damage / Damage.Length;
+            Damage[i] = Random.Range(dmg / 1.4f, dmg);
+            _Dmg += Damage[i];
+        }
         GameObject dmgSkinclone = Instantiate(hud, Pos, Quaternion.identity);
         if(cri)
-            dmgSkinclone.GetComponent<Hud>().DmgCri(damage);//데미지 * 크리티컬데미지 구현
+            dmgSkinclone.GetComponent<Hud>().DmgCri(Damage);
         else
-            dmgSkinclone.GetComponent<Hud>().DmgNoCri(damage);
-
+            dmgSkinclone.GetComponent<Hud>().DmgNoCri(Damage);
         StopCoroutine("HitAnimtion");
         StartCoroutine("HitAnimtion");
-        currentHP -= damage;
+        currentHP -= (int)_Dmg;
         if(currentHP <= 0)
         {
             isDie = true;

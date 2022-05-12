@@ -11,19 +11,36 @@ public class Hud : MonoBehaviour
     {
         Invoke("DestoryEvent", _destoryTime);
     }
-    public void DmgCri(int dmg)
+    public void DmgCri(float[] dmg)
     {
-        Cri.SetActive(true);
-        Cri.GetComponent<DmgHud>().Dmg = dmg;
+        StartCoroutine(Crititcal(dmg));
     }
 
-    public void DmgNoCri(int dmg)
+    public void DmgNoCri(float[] dmg)
     {
-        NoCri.SetActive(true);
-        NoCri.GetComponent<DmgHud>().Dmg = dmg;
+        StartCoroutine(NoCritical(dmg));
     }
     private void DestoryEvent()
     {
         Destroy(gameObject);
+    }
+    private IEnumerator Crititcal(float[] dmg)
+    {
+        for (int i = 0; i < dmg.Length; i++)
+        {
+            GameObject clone = Instantiate(Cri, gameObject.transform);
+            clone.GetComponent<DmgHud>().Dmg = (int)dmg[i];
+            yield return new WaitForSeconds(0.1f);
+        }
+    }
+
+    private IEnumerator NoCritical(float[] dmg)
+    {
+        for (int i = 0; i < dmg.Length; i++)
+        {
+            GameObject clone = Instantiate(NoCri, gameObject.transform);
+            clone.GetComponent<DmgHud>().Dmg = (int)dmg[i];
+            yield return new WaitForSeconds(0.1f);
+        }
     }
 }

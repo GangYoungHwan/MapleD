@@ -14,7 +14,8 @@ public class Skill : MonoBehaviour
     [SerializeField] private Transform spawnPoint;
     [SerializeField] private float attackRate = 0.5f;
     [SerializeField] private float attackRange = 2.0f;
-    public int SkillID;
+    public int SkillID = 0;
+    public int AttackNum = 1;
     private int attackDamage;
     private int skillLV = 1;
     private State state = State.SearchTarget;
@@ -91,6 +92,6 @@ public class Skill : MonoBehaviour
             Instantiate(effectPrefab, spawnPoint.position, Quaternion.identity);
         }
         GameObject clone = Instantiate(projectilePrefab, spawnPoint.position, Quaternion.identity);
-        clone.GetComponent<Projectile>().Setup(attackTarget, attackDamage, skillLV);
+        clone.GetComponent<Projectile>().Setup(attackTarget, attackDamage, AttackNum, skillLV);
     }
 }

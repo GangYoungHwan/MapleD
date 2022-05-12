@@ -6,18 +6,19 @@ public class Projectile : MonoBehaviour
 {
     [SerializeField] private GameObject hitEff;
     [SerializeField] private GameObject dmgHud;
-
+    private int attackNum;
     private int damage;
     private int skillLV;
     private Movement movement;
     private Transform target;
 
 
-    public void Setup(Transform target,int damage,int skillLV)
+    public void Setup(Transform target,int damage,int attackNum, int skillLV)
     {
         movement = GetComponent<Movement>();
         this.target = target;
         this.damage = damage;
+        this.attackNum = attackNum;
         this.skillLV = skillLV;
     }
     void Update()
@@ -52,10 +53,9 @@ public class Projectile : MonoBehaviour
             Critical = true;
             dmg += CriDmg;
         }
-        float Damage = Random.Range(dmg / 1.4f, dmg);
         GameObject hitEffclone = Instantiate(hitEff, collision.transform.position, Quaternion.identity);
         Vector3 DmgskinPos = collision.GetComponent<Monster>().dmgPos.transform.position;
-        collision.GetComponent<MonsterHP>().TakeDamage(Critical, (int)Damage, dmgHud, DmgskinPos);
+        collision.GetComponent<MonsterHP>().TakeDamage(Critical, attackNum, (int)dmg, dmgHud, DmgskinPos);
         Destroy(gameObject);
     }
 }
