@@ -19,6 +19,8 @@ public class Movement : MonoBehaviour
     }
     public void MoveTo(Vector3 dir)
     {
+        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         moveDirection = dir;
     }
 }

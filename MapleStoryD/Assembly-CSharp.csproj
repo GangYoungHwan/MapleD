@@ -1,19 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>8.0</LangVersion>
+    <LangVersion>7.1</LangVersion>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{ED5B2EC2-5F72-36C0-1A9A-C729BBB7119A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
-    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
   </PropertyGroup>
@@ -52,9 +54,6 @@
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2020.3.7f1</UnityVersion>
   </PropertyGroup>
-  <ItemGroup>
-    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
-  </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Main\CloudMove.cs" />
     <Compile Include="Assets\Main\UI\SoundSetting.cs" />
@@ -110,11 +109,13 @@
     <Compile Include="Assets\Main\Iventory\AvataSlot.cs" />
     <Compile Include="Assets\Main\Shop\ShopTabButton.cs" />
     <Compile Include="Assets\Main\Shop\confirn.cs" />
+    <Compile Include="Assets\GameManager.cs" />
     <Compile Include="Assets\Main\Iventory\SkillSlotButton.cs" />
     <Compile Include="Assets\Main\Iventory\Inventory.cs" />
     <Compile Include="Assets\Main\NPC.cs" />
     <Compile Include="Assets\Main\Iventory\ItemInfoManager.cs" />
     <Compile Include="Assets\Main\Font\TestHud.cs" />
+    <Compile Include="Assets\InGame\Skill\Skill1.cs" />
     <Compile Include="Assets\CharacterCreate\JobArrow.cs" />
     <Compile Include="Assets\Main\Shop\button\MenuButton.cs" />
     <Compile Include="Assets\Main\Iventory\Avatapossession.cs" />
@@ -138,8 +139,6 @@
     <Compile Include="Assets\Resources\Sprite\Avata\CharacterAvataSlot.cs" />
     <Compile Include="Assets\Main\Font\DmgHud.cs" />
     <Compile Include="Assets\Main\Iventory\SkillAdd.cs" />
-    <Compile Include="Assets\InGame\Skill\Skill1.cs" />
-    <Compile Include="Assets\GameManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Resources\Skill\달팽이세마리\0001000.level.3.ball.frames\delay.txt" />
@@ -478,12 +477,6 @@
     </Reference>
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.7f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.7f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.7f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.7f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
