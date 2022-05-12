@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5086820148677416407
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5086820148677416409}
+  - component: {fileID: 5086820148677416408}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5086820148677416409
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5086820148677416407}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5086820148677416408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5086820148677416407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb50db3b87899354eb0027174bee88d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bgmPlayer: {fileID: 0}
+  sfxPlayer: {fileID: 0}
+  masterVolumeSFX: 1
+  masterVolumeBGM: 1
+  masterSFX: 0
+  masterBGM: 0
+  TitleBgmAudioClip: {fileID: 8300000, guid: a4e51fb4e7ca0754685bf805f21eb0b8, type: 3}
+  mainBgmAudioClip: {fileID: 8300000, guid: 8e08d8fc5a4e82c42b2a59499434686c, type: 3}
+  adventureBgmAudioClip: {fileID: 0}
+  sfxAudioClips:
+  - {fileID: 8300000, guid: 351f9988570740d4b9c777354a744d60, type: 3}
+  - {fileID: 8300000, guid: ced77d83cb4dd334e80cc248ce3e6864, type: 3}
+  - {fileID: 8300000, guid: 6e75d20e3c44c504c9bfe7f28497f0d7, type: 3}
+  - {fileID: 8300000, guid: b3367e5d7ec46a04aa5b49910310dcfc, type: 3}
+  _Sound:
+    BGMvolum: 0
+    SFXvoium: 0
+    BGM: 0
+    SFX: 0

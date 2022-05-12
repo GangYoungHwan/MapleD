@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Slot_1
+  - Slot_2
+  - Slot_3
+  - Slot_4
+  - WayRight
+  - WayLeft
+  - Mob
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - OneWay
+  - Water
+  - UI
+  - Monster
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: confirn
+    uniqueID: 2334568315
+    locked: 0
+  - name: Menu
+    uniqueID: 2660394149
+    locked: 0

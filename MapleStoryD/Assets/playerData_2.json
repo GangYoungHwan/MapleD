@@ -1,0 +1,187 @@
+{
+    "SlotNumber": 0,
+    "Slot": false,
+    "Name": "",
+    "Job": 0,
+    "Level": 1,
+    "Meso": 0,
+    "Dia": 0,
+    "Exp": 0,
+    "Avata": 0,
+    "Skill": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+    ],
+    "Skill_ID": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ],
+    "Skill_exp": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ],
+    "Skill_Lv": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+    ],
+    "AvataSlot": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+    ],
+    "AvataID": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ],
+    "ItemSlot": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+    ],
+    "ItemID": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ],
+    "ItemNumber": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ],
+    "SkillActiveSlot": [
+        false,
+        false,
+        false,
+        false,
+        false
+    ],
+    "SkillActiveSlotID": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+    ],
+    "SkillPassiveSlot": [
+        false,
+        false,
+        false,
+        false,
+        false
+    ],
+    "SkillPassiveSlotID": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+    ],
+    "NextMap": 0,
+    "MapStar": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ],
+    "MapBestStage": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ],
+    "QuestLv": [
+        1,
+        1,
+        1,
+        1,
+        1
+    ],
+    "QuestKill": [
+        0,
+        0,
+        0,
+        0,
+        0
+    ]
+}
