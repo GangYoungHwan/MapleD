@@ -71,6 +71,9 @@ public class DataManager : MonoBehaviour
         save.Dia = 0;
         save.Exp = 0;
         save.Avata = 0;
+        save.Critical = 0;
+        save.CriticalDmg = 0;
+        save.Dmg = 0;
         save.AvataSlot = new bool[Max];
         save.ItemSlot = new bool[Max];
         save.Skill = new bool[Max];
@@ -161,6 +164,9 @@ public class DataManager : MonoBehaviour
                 save.Dia = 0;
                 save.Exp = 0;
                 save.Avata = 0;
+                save.Critical = 0;
+                save.CriticalDmg = 0;
+                save.Dmg = 0;
                 save.AvataSlot = new bool[Max];
                 save.ItemSlot = new bool[Max];
                 save.Skill = new bool[Max];

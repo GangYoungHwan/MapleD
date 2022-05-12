@@ -122,7 +122,7 @@ public class SkillPresetSlot : MonoBehaviour
                 }
             }
         }
-
+        DataManager.Instance.SavePlayer(DataManager.Instance.SlotNumber);
         Close();
     }
 }

@@ -68,7 +68,7 @@ public class InGameManager : MonoBehaviour
         GameObject clone = Instantiate(skillPrfab[skillList[_random]._skillNum], skillslotPos[_random].position, Quaternion.identity);
         clone.GetComponent<Skill1>().Setup(monsterSpawner);
         */
-        GameObject clone = Instantiate(skillPrfab[0], skillslotPos[0].position, Quaternion.identity);
-        clone.GetComponent<Skill1>().Setup(monsterSpawner);
+        GameObject clone = Instantiate(skillPrfab[1], skillslotPos[0].position, Quaternion.identity);
+        clone.GetComponent<Skill>().Setup(monsterSpawner);
     }
 }

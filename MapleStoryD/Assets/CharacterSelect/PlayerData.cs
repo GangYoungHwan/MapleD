@@ -13,6 +13,9 @@ public class PlayerData
     public int Dia;
     public int Exp;
     public int Avata;//아바타
+    public int Critical;
+    public int CriticalDmg;
+    public int Dmg;
     //스킬
     public bool[] Skill;
     //public string[] Skill_name;

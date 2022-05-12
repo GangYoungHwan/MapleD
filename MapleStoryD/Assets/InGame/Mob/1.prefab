@@ -172,6 +172,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MonsterID: 1
+  isDie: 0
+  isHit: 0
 --- !u!1 &5698003525431845253
 GameObject:
   m_ObjectHideFlags: 0

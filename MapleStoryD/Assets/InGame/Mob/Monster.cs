@@ -47,24 +47,18 @@ public class Monster : MonoBehaviour
         if (collision.gameObject.tag == "WayRight")
         {
             nextMove = -1;
-            Debug.Log("왼쪽으로 이동");
         }
         else if (collision.gameObject.tag == "WayLeft")
         {
             nextMove = 1;
-            Debug.Log("오른쪽으로 이동");
         }
     }
 
     public void OnDie()
     {
+        monsterSpawner.DestroyMonster(this);
         nextMove = 0;
         anim.SetTrigger("isDie");
-        monsterSpawner.DestroyMonster(this);
-    }
-    public void TakeDamage()
-    {
-
     }
     private void OnDestroyEvent()
     {

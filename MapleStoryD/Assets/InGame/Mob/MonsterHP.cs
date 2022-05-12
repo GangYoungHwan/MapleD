@@ -7,9 +7,12 @@ public class MonsterHP : MonoBehaviour
     [SerializeField] private int MonsterID = 0;
     private int maxHP;
     private int currentHP;
-    private bool isDie = false;
+    public bool isDie = false;
+    public bool isHit = false;
     private Monster monster;
     private SpriteRenderer spriteRenderer;
+
+
 
     private void Awake()
     {
@@ -19,33 +22,37 @@ public class MonsterHP : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    public void TakeDamage(int damage,GameObject hud,Vector3 Pos)
+    public void TakeDamage(bool cri,int damage,GameObject hud,Vector3 Pos)
     {
         if (isDie == true) return;
         //데이터 매니저 크리티컬 확률 구현
-        bool critical = false;
         GameObject dmgSkinclone = Instantiate(hud, Pos, Quaternion.identity);
-        if(critical)
+        if(cri)
             dmgSkinclone.GetComponent<Hud>().DmgCri(damage);//데미지 * 크리티컬데미지 구현
         else
             dmgSkinclone.GetComponent<Hud>().DmgNoCri(damage);
 
+        StopCoroutine("HitAnimtion");
+        StartCoroutine("HitAnimtion");
         currentHP -= damage;
-
         if(currentHP <= 0)
         {
             isDie = true;
             monster.OnDie();
         }
     }
-    void Start()
+    
+    private IEnumerator HitAnimtion()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Color color = spriteRenderer.color;
+        color.r = 0.5f;
+        color.g = 0.5f;
+        color.b = 0.5f;
+        spriteRenderer.color = color;
+        yield return new WaitForSeconds(0.3f);
+        color.r = 1f;
+        color.g = 1f;
+        color.b = 1f;
+        spriteRenderer.color = color;
     }
 }

@@ -8,6 +8,9 @@
     "Dia": 0,
     "Exp": 0,
     "Avata": 0,
+    "Critical": 0,
+    "CriticalDmg": 0,
+    "Dmg": 0,
     "Skill": [
         false,
         false,

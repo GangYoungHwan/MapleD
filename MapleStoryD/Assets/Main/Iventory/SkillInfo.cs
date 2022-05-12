@@ -84,7 +84,7 @@ public class SkillInfo : MonoBehaviour
             else
                 _addCritical = "";
             if (int.Parse(SkillInfoManager.Instance.SkillList[SkillID].addCriticalDmg) > 0)
-                _addCriticalDmg = "크리티컬 데미지 " + SkillInfoManager.Instance.SkillList[SkillID].addCriticalDmg + "% 증가\n";
+                _addCriticalDmg = "크리티컬 데미지 " + (int.Parse(SkillInfoManager.Instance.SkillList[SkillID].addCriticalDmg)*DataManager.Instance.playerData.Skill_Lv[SkillID]).ToString() + "% 증가\n";
             else
                 _addCriticalDmg = "";
 

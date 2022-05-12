@@ -4,10 +4,13 @@
     "Name": "강영환",
     "Job": 2,
     "Level": 1,
-    "Meso": 100,
-    "Dia": 100,
+    "Meso": 0,
+    "Dia": 200,
     "Exp": 0,
     "Avata": 1,
+    "Critical": 32,
+    "CriticalDmg": 60,
+    "Dmg": 45,
     "Skill": [
         true,
         true,
@@ -32,17 +35,17 @@
     ],
     "Skill_exp": [
         0,
-        10,
-        20,
-        10,
-        20,
-        10,
-        20,
-        20,
-        20
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
     ],
     "Skill_Lv": [
-        2,
+        1,
         1,
         1,
         1,
@@ -76,7 +79,7 @@
     ],
     "ItemSlot": [
         false,
-        true,
+        false,
         false,
         false,
         false,
@@ -87,7 +90,7 @@
     ],
     "ItemID": [
         0,
-        1,
+        0,
         0,
         0,
         0,
@@ -98,7 +101,7 @@
     ],
     "ItemNumber": [
         0,
-        2,
+        0,
         0,
         0,
         0,
@@ -116,10 +119,10 @@
     ],
     "SkillActiveSlotID": [
         0,
+        4,
         6,
-        8,
         7,
-        4
+        8
     ],
     "SkillPassiveSlot": [
         true,
@@ -129,10 +132,10 @@
         false
     ],
     "SkillPassiveSlotID": [
-        1,
         2,
         3,
         5,
+        1,
         -1
     ],
     "NextMap": 0,

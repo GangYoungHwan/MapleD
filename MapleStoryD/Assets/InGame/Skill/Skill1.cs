@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum State
+public enum State1
 {
     SearchTarget = 0,
     AttackToTarget
@@ -13,10 +13,16 @@ public class Skill1 : MonoBehaviour
     [SerializeField] private Transform spawnPoint;
     [SerializeField] private float attackRate = 0.5f;
     [SerializeField] private float attackRange = 2.0f;
+    public int SkillID;
+    private int attackDamage;
+    private int skillLV = 1;
     private State state = State.SearchTarget;
     private Transform attackTarget = null;
     private MonsterSpawner monsterSpawner;
-    
+    private void Awake()
+    {
+        attackDamage = int.Parse(SkillInfoManager.Instance.SkillList[SkillID].Att);
+    }
     public void Setup(MonsterSpawner monsterSpawner)
     {
         this.monsterSpawner = monsterSpawner;
@@ -58,12 +64,11 @@ public class Skill1 : MonoBehaviour
     {
         while(true)
         {
-            if(attackTarget == null)
+            if (attackTarget == null)
             {
                 ChangeState(State.SearchTarget);
                 break;
             }
-
             float dis = Vector3.Distance(attackTarget.position, transform.position);
             if(dis >attackRange)
             {
@@ -71,15 +76,14 @@ public class Skill1 : MonoBehaviour
                 ChangeState(State.SearchTarget);
                 break;
             }
-            yield return new WaitForSeconds(attackRate);
             SpawnProjectile();
+            yield return new WaitForSeconds(attackRate); 
         }
     }
 
     private void SpawnProjectile()
     {
         GameObject clone = Instantiate(projectilePrefab, spawnPoint.position, Quaternion.identity);
-        clone.GetComponent<Projectile>().Setup(attackTarget);
-        Debug.Log("º¼»ý¼º");
+        clone.GetComponent<Projectile>().Setup(attackTarget, attackDamage, skillLV);
     }
 }
