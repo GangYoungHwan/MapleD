@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.3/release' branch; Version is '2020.3.7f1 (dd97f2c94397) revision 14522354'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19044.1645; Version 2009; 64bit' Language: 'ko' Physical Memory: 16317 MB
+OS: 'Windows 10 Pro; OS build 18362.1256; Version 1903; 64bit' Language: 'ko' Physical Memory: 16264 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -11,1850 +11,1059 @@ C:\Program Files\Unity\Hub\Editor\2020.3.7f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/pc/Documents/GitHub/MapleD/MapleStoryD
+C:/Users/SGA/Documents/GitHub/MapleD/MapleStoryD
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-56825
-Successfully changed project path to: C:/Users/pc/Documents/GitHub/MapleD/MapleStoryD
-C:/Users/pc/Documents/GitHub/MapleD/MapleStoryD
+49872
+Successfully changed project path to: C:/Users/SGA/Documents/GitHub/MapleD/MapleStoryD
+C:/Users/SGA/Documents/GitHub/MapleD/MapleStoryD
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 52.35 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 48.90 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.7f1 (dd97f2c94397)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/pc/Documents/GitHub/MapleD/MapleStoryD/Assets
+[Subsystems] Discovering subsystems at path C:/Users/SGA/Documents/GitHub/MapleD/MapleStoryD/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1660 SUPER (ID=0x21c4)
+    Renderer: Intel(R) HD Graphics 630 (ID=0x5912)
     Vendor:   
-    VRAM:     5991 MB
-    Driver:   27.21.14.5671
+    VRAM:     8132 MB
+    Driver:   26.20.100.7263
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56996
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56852
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002596 seconds.
+Registered in 0.001334 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 55.54 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 142.37 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.228 seconds
+- Completed reload, in  1.915 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004278 seconds.
+Registered in 0.003229 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.142 seconds
+- Completed reload, in  1.136 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 0.54 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1712 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 79.6 MB.
-System memory in use after: 79.7 MB.
+System memory in use before: 79.7 MB.
+System memory in use after: 79.8 MB.
 
 Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2153.
-Total: 2.067000 ms (FindLiveObjects: 0.221500 ms CreateObjectMapping: 0.108000 ms MarkObjects: 1.669100 ms  DeleteObjects: 0.067800 ms)
+Total: 2.062600 ms (FindLiveObjects: 0.168400 ms CreateObjectMapping: 0.112000 ms MarkObjects: 1.677900 ms  DeleteObjects: 0.103000 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/InGame/Skill/콜드 빔/effect
-  artifactKey: Guid(f27e09798b6334b4c9240e6ce3cec70d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect using Guid(f27e09798b6334b4c9240e6ce3cec70d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6304e10f064eba4709d0808151daa66a') in 0.008936 seconds
-  Import took 0.012531 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000408 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect/630.png
-  artifactKey: Guid(27cee1b297308d94ba99cc0f3c1a3f52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect/630.png using Guid(27cee1b297308d94ba99cc0f3c1a3f52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1835b6772272d141a8e72a5db360d19') in 0.165814 seconds
-  Import took 0.169718 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000339 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect/570.png
-  artifactKey: Guid(f2a87584380f62b439ed724bb86c3329) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect/570.png using Guid(f2a87584380f62b439ed724bb86c3329) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08c551826cc356381cdc5e3a27c0ea70') in 0.028797 seconds
-  Import took 0.033458 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000282 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect/330.png
-  artifactKey: Guid(7cdf30a8aac156f4ebdf8b94f57bf61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect/330.png using Guid(7cdf30a8aac156f4ebdf8b94f57bf61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27e89c8759a04d067ac367ada150710c') in 0.027434 seconds
-  Import took 0.031366 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000222 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect/810.png
-  artifactKey: Guid(5c038a2e9fe38344e87d51cecc54a549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect/810.png using Guid(5c038a2e9fe38344e87d51cecc54a549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1f6a386f47981667ecd7076a381b8e3') in 0.025708 seconds
-  Import took 0.029194 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000233 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect/0.png
-  artifactKey: Guid(dcb376e808eac724e92ec3538522236c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect/0.png using Guid(dcb376e808eac724e92ec3538522236c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b00dbafee744748de58b964a288c715d') in 0.021531 seconds
-  Import took 0.024878 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000223 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect/90.png
-  artifactKey: Guid(ea8217fc6d9c6964c8daec5e6fdb99b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect/90.png using Guid(ea8217fc6d9c6964c8daec5e6fdb99b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e2be1b3d2ed80e61d817dca28e4838d') in 0.025288 seconds
-  Import took 0.028438 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000184 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect/390.png
-  artifactKey: Guid(fae3cc9a4d7ea834e8237cf7b7daed14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect/390.png using Guid(fae3cc9a4d7ea834e8237cf7b7daed14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79d1cd40ca74f9f366a7218ba3706e5a') in 0.025338 seconds
-  Import took 0.028283 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000246 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect/450.png
-  artifactKey: Guid(3f1e69b4267e9dc44a4f6d375bd4bb12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect/450.png using Guid(3f1e69b4267e9dc44a4f6d375bd4bb12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e13653b16cf1bedca37b7983789a0bd') in 0.022841 seconds
-  Import took 0.025955 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000224 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect/690.png
-  artifactKey: Guid(ff258d028c21d754fb134d3b71c5943a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect/690.png using Guid(ff258d028c21d754fb134d3b71c5943a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48c931912880bd6f6b1f30ed089a6b00') in 0.019007 seconds
-  Import took 0.023166 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000230 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect/180.png
-  artifactKey: Guid(811a6c601e53256489911c2f7d343a0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect/180.png using Guid(811a6c601e53256489911c2f7d343a0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96c9abc1ccc9de6a7baab5439bb9f9fd') in 0.025260 seconds
-  Import took 0.029587 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000207 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect/510.png
-  artifactKey: Guid(c1e52bcc1806c9042bc9cc3bb9b720dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect/510.png using Guid(c1e52bcc1806c9042bc9cc3bb9b720dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1fe0bb823b1738c380d594e857d0c72') in 0.028786 seconds
-  Import took 0.032004 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000203 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect/750.png
-  artifactKey: Guid(fc7015f9e545ae9489809eec60bfc5bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect/750.png using Guid(fc7015f9e545ae9489809eec60bfc5bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dabc364cf990c4a8d1f96345a221b0f3') in 0.023490 seconds
-  Import took 0.027326 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000225 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect/270.png
-  artifactKey: Guid(4df58ec26f8ace645a529ff1a3b2308e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect/270.png using Guid(4df58ec26f8ace645a529ff1a3b2308e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4c8a5064967d378aea1b0ce34f75b93') in 0.024932 seconds
-  Import took 0.028372 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.661619 seconds.
-  path: Assets/Scenes/GameScene.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/GameScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd4ebaa38f6920b0c90fe5bfac5510e9') in 0.007775 seconds
-  Import took 0.014077 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.706211 seconds.
-  path: Assets/Resources/SkillLevel/Level.1.png
-  artifactKey: Guid(a9b8dabf39b92774495c8d0e96000579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillLevel/Level.1.png using Guid(a9b8dabf39b92774495c8d0e96000579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35502f9e23b29b1919de19da0de9b91a') in 0.015168 seconds
-  Import took 0.018076 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000256 seconds.
-  path: Assets/Resources/SkillLevel/Level.3.png
-  artifactKey: Guid(d1d13cc848d8b114d845bfe0fbc5ed4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillLevel/Level.3.png using Guid(d1d13cc848d8b114d845bfe0fbc5ed4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a9ba1256ec5dde163a146a8e7b77994') in 0.024088 seconds
-  Import took 0.027303 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000330 seconds.
-  path: Assets/Resources/SkillLevel/Level.2.png
-  artifactKey: Guid(cc7693bcec70299459f88cb0ffbcdadb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillLevel/Level.2.png using Guid(cc7693bcec70299459f88cb0ffbcdadb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c06737eace9aba35f0c6ac8dd4ea2ea') in 0.019887 seconds
-  Import took 0.023907 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000204 seconds.
-  path: Assets/Resources/SkillLevel/Level.4.png
-  artifactKey: Guid(59e478d257d6dec41be49be25ef1defa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillLevel/Level.4.png using Guid(59e478d257d6dec41be49be25ef1defa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1c5f228f575fbd035af5c117504eab1') in 0.022704 seconds
-  Import took 0.025512 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000594 seconds.
-  path: Assets/Resources/SkillLevel/Level.4.png
-  artifactKey: Guid(59e478d257d6dec41be49be25ef1defa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/SkillLevel/Level.4.png using Guid(59e478d257d6dec41be49be25ef1defa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1c5f228f575fbd035af5c117504eab1') in 0.011095 seconds
-  Import took 0.016894 seconds .
-
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 3.03 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 9 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 47.7 MB.
-System memory in use after: 47.8 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2163.
-Total: 2.248500 ms (FindLiveObjects: 0.227200 ms CreateObjectMapping: 0.085800 ms MarkObjects: 1.917000 ms  DeleteObjects: 0.017500 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 105.681994 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/0.png
-  artifactKey: Guid(e7289d304815cdc49a401ac9880134c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/0.png using Guid(e7289d304815cdc49a401ac9880134c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '759a05e7ee30d4b8c87d9908bf97c7ca') in 0.018449 seconds
-  Import took 0.023833 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000197 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/150.png
-  artifactKey: Guid(aae1199228e3b0945a676255b64aff2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/150.png using Guid(aae1199228e3b0945a676255b64aff2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06906154873c62b567523b65a86b0f1a') in 0.031693 seconds
-  Import took 0.034648 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000277 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/630.png
-  artifactKey: Guid(6ef1d19f5a6477d4699757f1a6bf7fa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/630.png using Guid(6ef1d19f5a6477d4699757f1a6bf7fa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c67e7cfe2c173e54d3283ccb55510f8e') in 0.033470 seconds
-  Import took 0.041314 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000240 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/330.png
-  artifactKey: Guid(ce4e4b82077b7784fb08d7901ca964fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/330.png using Guid(ce4e4b82077b7784fb08d7901ca964fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd853d08d7df8a31a7760dab17cde3d74') in 0.037235 seconds
-  Import took 0.044641 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000208 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/390.png
-  artifactKey: Guid(e697b139eab2c6946bc322542d7917ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/390.png using Guid(e697b139eab2c6946bc322542d7917ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b9d35532a4ef8136c6ac19d17d47b87') in 0.030722 seconds
-  Import took 0.034587 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000740 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/210.png
-  artifactKey: Guid(be2f13f6d60972a4b9703d92ed3c5405) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/210.png using Guid(be2f13f6d60972a4b9703d92ed3c5405) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69a30a874d398b030c5965970def1e65') in 0.029551 seconds
-  Import took 0.033947 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000219 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/510.png
-  artifactKey: Guid(151094092da5b78408ddbd2f893e708a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/510.png using Guid(151094092da5b78408ddbd2f893e708a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75673ee34ea4cbf2c2ebdb4c0838a8a3') in 0.034716 seconds
-  Import took 0.042389 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000276 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/270.png
-  artifactKey: Guid(f9f636b9016fa2d47bd7ed6677c26386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/270.png using Guid(f9f636b9016fa2d47bd7ed6677c26386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2431dac22997bf76a52755db3f2dc8b1') in 0.020409 seconds
-  Import took 0.025106 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002533 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/450.png
-  artifactKey: Guid(bdc6117fe9dbc5947a0bf8e996df7a88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/450.png using Guid(bdc6117fe9dbc5947a0bf8e996df7a88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16073fca920d201e0f7c7e5359ee9208') in 0.033464 seconds
-  Import took 0.036757 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000183 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/570.png
-  artifactKey: Guid(1c020011859bc714eb23cd3cbb18b00c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/570.png using Guid(1c020011859bc714eb23cd3cbb18b00c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b731cd7c75701d9aac72750d7ef1117e') in 0.033904 seconds
-  Import took 0.038061 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000221 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/90.png
-  artifactKey: Guid(42cc79399c807494cbecba41d6ed9da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/90.png using Guid(42cc79399c807494cbecba41d6ed9da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55d6fc8ba2cb2dadd381d941f0397673') in 0.029519 seconds
-  Import took 0.033698 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.003685 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/90.png
-  artifactKey: Guid(42cc79399c807494cbecba41d6ed9da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/90.png using Guid(42cc79399c807494cbecba41d6ed9da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55d6fc8ba2cb2dadd381d941f0397673') in 0.020777 seconds
-  Import took 0.025395 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 20.346230 seconds.
-  path: Assets/InGame/Skill/콜드 빔/hit/0.png
-  artifactKey: Guid(dbfaafb10254e4440b6a6726d6489479) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/hit/0.png using Guid(dbfaafb10254e4440b6a6726d6489479) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1e26cb27672c0acb4b4c36acd5a1e70') in 0.021213 seconds
-  Import took 0.024436 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000298 seconds.
-  path: Assets/InGame/Skill/콜드 빔/hit/90.png
-  artifactKey: Guid(d4d0c4f5f8ccab344b950d7beeb4a15e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/hit/90.png using Guid(d4d0c4f5f8ccab344b950d7beeb4a15e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '237845183a4153daf96694addb4b26bf') in 0.031721 seconds
-  Import took 0.035535 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000268 seconds.
-  path: Assets/InGame/Skill/콜드 빔/hit/270.png
-  artifactKey: Guid(ce84a5de52d0a1344a3e8d8f501598ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/hit/270.png using Guid(ce84a5de52d0a1344a3e8d8f501598ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7013a702a3e075455d3df1294e86e25') in 0.038108 seconds
-  Import took 0.041126 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000239 seconds.
-  path: Assets/InGame/Skill/콜드 빔/hit/360.png
-  artifactKey: Guid(bc8e1cc88c701b24b93cdb6b19aa24ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/hit/360.png using Guid(bc8e1cc88c701b24b93cdb6b19aa24ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17461c4bf8eedf2cbed7e3b7a2912d1f') in 0.028211 seconds
-  Import took 0.032063 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000254 seconds.
-  path: Assets/InGame/Skill/콜드 빔/hit/180.png
-  artifactKey: Guid(75b4f7d11f2ac86499feb1af70bee8ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/hit/180.png using Guid(75b4f7d11f2ac86499feb1af70bee8ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7adaa6fabe5f0cb22f38b74a8f7c5979') in 0.023774 seconds
-  Import took 0.027843 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.916823 seconds.
-  path: Assets/InGame/Skill/콜드 빔/hit
-  artifactKey: Guid(3ea8c13c00e366648969ac75ce44fd6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/hit using Guid(3ea8c13c00e366648969ac75ce44fd6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '460af796e6deb3da41d79360d8934ce5') in 0.012319 seconds
-  Import took 0.016848 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.881760 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0
-  artifactKey: Guid(f10f8cf92a3b91147908121d2e1bb7bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0 using Guid(f10f8cf92a3b91147908121d2e1bb7bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23d76f0c015e998ffa775f80df247289') in 0.006980 seconds
-  Import took 0.011620 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.658852 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/7_effect.anim
-  artifactKey: Guid(216ef12beaabca14ba813d3b28c414c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/7_effect.anim using Guid(216ef12beaabca14ba813d3b28c414c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a73f5d66a0d6d7ba35d2bf9bf13aac28') in 0.030249 seconds
-  Import took 0.034866 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 166.674726 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/0.png
-  artifactKey: Guid(e7289d304815cdc49a401ac9880134c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/0.png using Guid(e7289d304815cdc49a401ac9880134c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18461b31e48b22a1757d13d756eef795') in 0.018388 seconds
-  Import took 0.022348 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.550521 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/90.png
-  artifactKey: Guid(42cc79399c807494cbecba41d6ed9da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/90.png using Guid(42cc79399c807494cbecba41d6ed9da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cad1ff747cd57b80ffdb1c609725737') in 0.015535 seconds
-  Import took 0.019276 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.457732 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/150.png
-  artifactKey: Guid(aae1199228e3b0945a676255b64aff2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/150.png using Guid(aae1199228e3b0945a676255b64aff2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c7b9e60f6af0328f48c7a0b3cb9333d') in 0.015074 seconds
-  Import took 0.018846 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.027846 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/210.png
-  artifactKey: Guid(be2f13f6d60972a4b9703d92ed3c5405) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/210.png using Guid(be2f13f6d60972a4b9703d92ed3c5405) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '987989491dd0c726e92fdc0d32e1be5e') in 0.012885 seconds
-  Import took 0.016945 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.158003 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/270.png
-  artifactKey: Guid(f9f636b9016fa2d47bd7ed6677c26386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/270.png using Guid(f9f636b9016fa2d47bd7ed6677c26386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23958ad4ef614f027e09bc03a1b4e137') in 0.013793 seconds
-  Import took 0.016933 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.390920 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/330.png
-  artifactKey: Guid(ce4e4b82077b7784fb08d7901ca964fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/330.png using Guid(ce4e4b82077b7784fb08d7901ca964fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1111868483b48c764b2f74c0319b72c2') in 0.013886 seconds
-  Import took 0.018776 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.241671 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/390.png
-  artifactKey: Guid(e697b139eab2c6946bc322542d7917ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/390.png using Guid(e697b139eab2c6946bc322542d7917ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd979fb36752fcd50360b4a495e09994b') in 0.019226 seconds
-  Import took 0.025765 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.447838 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/450.png
-  artifactKey: Guid(bdc6117fe9dbc5947a0bf8e996df7a88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/450.png using Guid(bdc6117fe9dbc5947a0bf8e996df7a88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51d2456a53a52f287940f2be1878f62d') in 0.017283 seconds
-  Import took 0.020828 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.294966 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/510.png
-  artifactKey: Guid(151094092da5b78408ddbd2f893e708a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/510.png using Guid(151094092da5b78408ddbd2f893e708a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bec5fff265233b33e95404cbb1f6b84') in 0.019005 seconds
-  Import took 0.022385 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.934798 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/570.png
-  artifactKey: Guid(1c020011859bc714eb23cd3cbb18b00c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/570.png using Guid(1c020011859bc714eb23cd3cbb18b00c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5cf12c043cc221a37d0c5789dcc2647') in 0.023909 seconds
-  Import took 0.028259 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.061336 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/630.png
-  artifactKey: Guid(6ef1d19f5a6477d4699757f1a6bf7fa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/630.png using Guid(6ef1d19f5a6477d4699757f1a6bf7fa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4e35e57bd4d039aa4d5cc13e7e59b47') in 0.014931 seconds
-  Import took 0.018559 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 162.717560 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/0.png
-  artifactKey: Guid(e7289d304815cdc49a401ac9880134c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/0.png using Guid(e7289d304815cdc49a401ac9880134c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e35fe0a4b928580a6f3fdbe86ccfd628') in 0.015263 seconds
-  Import took 0.022233 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 42.863007 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/0.png
-  artifactKey: Guid(e7289d304815cdc49a401ac9880134c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/0.png using Guid(e7289d304815cdc49a401ac9880134c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f165cf9e61351cafcfa123987050838f') in 0.010307 seconds
-  Import took 0.015335 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 17.735071 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/90.png
-  artifactKey: Guid(42cc79399c807494cbecba41d6ed9da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/90.png using Guid(42cc79399c807494cbecba41d6ed9da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16cc97b8e5350a4b5b99982bea1a1b3e') in 0.025254 seconds
-  Import took 0.029354 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.702199 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/150.png
-  artifactKey: Guid(aae1199228e3b0945a676255b64aff2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/150.png using Guid(aae1199228e3b0945a676255b64aff2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68ada15e423ce54e259d54096321b1ef') in 0.016750 seconds
-  Import took 0.019987 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.184658 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/210.png
-  artifactKey: Guid(be2f13f6d60972a4b9703d92ed3c5405) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/210.png using Guid(be2f13f6d60972a4b9703d92ed3c5405) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c261780b511b7f2413bbc21d3426b44') in 0.018632 seconds
-  Import took 0.022608 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 17.593058 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/270.png
-  artifactKey: Guid(f9f636b9016fa2d47bd7ed6677c26386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/270.png using Guid(f9f636b9016fa2d47bd7ed6677c26386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1361e9c4bf273b6c8e8711d47cbbbbc') in 0.016656 seconds
-  Import took 0.020521 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.287894 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/330.png
-  artifactKey: Guid(ce4e4b82077b7784fb08d7901ca964fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/330.png using Guid(ce4e4b82077b7784fb08d7901ca964fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fe32fcf6a0805e81e2d05abde62524a') in 0.014969 seconds
-  Import took 0.019037 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.165270 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/390.png
-  artifactKey: Guid(e697b139eab2c6946bc322542d7917ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/390.png using Guid(e697b139eab2c6946bc322542d7917ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63b678ca6d0a302faa3da7d465320778') in 0.020042 seconds
-  Import took 0.025236 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.816914 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/450.png
-  artifactKey: Guid(bdc6117fe9dbc5947a0bf8e996df7a88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/450.png using Guid(bdc6117fe9dbc5947a0bf8e996df7a88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d59eddcaf7474298076d08bdd98d4e9') in 0.021967 seconds
-  Import took 0.027110 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.378193 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/510.png
-  artifactKey: Guid(151094092da5b78408ddbd2f893e708a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/510.png using Guid(151094092da5b78408ddbd2f893e708a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bda6274170d19f004ef526bf3a5b8c00') in 0.016397 seconds
-  Import took 0.022004 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.907349 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/570.png
-  artifactKey: Guid(1c020011859bc714eb23cd3cbb18b00c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/570.png using Guid(1c020011859bc714eb23cd3cbb18b00c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4128f0b386540ade57053c00fd006a6f') in 0.019267 seconds
-  Import took 0.024252 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.076700 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/630.png
-  artifactKey: Guid(6ef1d19f5a6477d4699757f1a6bf7fa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/630.png using Guid(6ef1d19f5a6477d4699757f1a6bf7fa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b70f015148a9b0522205755829646a5') in 0.020493 seconds
-  Import took 0.024272 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 17.044098 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/0.png
-  artifactKey: Guid(e7289d304815cdc49a401ac9880134c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/0.png using Guid(e7289d304815cdc49a401ac9880134c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '182a1da0120357de4cc400e49aafcc30') in 0.018145 seconds
-  Import took 0.021365 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 43.546684 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/0.png
-  artifactKey: Guid(e7289d304815cdc49a401ac9880134c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/0.png using Guid(e7289d304815cdc49a401ac9880134c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac5b75706bce0b3019b663f9c23163cb') in 0.012167 seconds
-  Import took 0.016771 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 83.420172 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/90.png
-  artifactKey: Guid(42cc79399c807494cbecba41d6ed9da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/90.png using Guid(42cc79399c807494cbecba41d6ed9da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3f035bbd6d20151ad053aa90aa446b3') in 0.014661 seconds
-  Import took 0.020247 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.212329 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/150.png
-  artifactKey: Guid(aae1199228e3b0945a676255b64aff2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/150.png using Guid(aae1199228e3b0945a676255b64aff2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3170365b76a442a676ba5d89064534b6') in 0.019643 seconds
-  Import took 0.023436 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 37.874425 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/210.png
-  artifactKey: Guid(be2f13f6d60972a4b9703d92ed3c5405) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/210.png using Guid(be2f13f6d60972a4b9703d92ed3c5405) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38f8982b36aaf35359c6955d8935f4fa') in 0.014018 seconds
-  Import took 0.018264 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.887883 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/270.png
-  artifactKey: Guid(f9f636b9016fa2d47bd7ed6677c26386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/270.png using Guid(f9f636b9016fa2d47bd7ed6677c26386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72b546dea61a0327f4f19af8222c48bf') in 0.019638 seconds
-  Import took 0.024940 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.293328 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/330.png
-  artifactKey: Guid(ce4e4b82077b7784fb08d7901ca964fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/330.png using Guid(ce4e4b82077b7784fb08d7901ca964fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aab9c497da84eef924b8187d31927936') in 0.015967 seconds
-  Import took 0.020210 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.237100 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/390.png
-  artifactKey: Guid(e697b139eab2c6946bc322542d7917ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/390.png using Guid(e697b139eab2c6946bc322542d7917ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0fbeccde274f99acb31e656166c8177') in 0.014098 seconds
-  Import took 0.019853 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.418878 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/450.png
-  artifactKey: Guid(bdc6117fe9dbc5947a0bf8e996df7a88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/450.png using Guid(bdc6117fe9dbc5947a0bf8e996df7a88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a2cabd342507a18bb0f4d925287e6f8') in 0.016654 seconds
-  Import took 0.019923 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.544968 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/510.png
-  artifactKey: Guid(151094092da5b78408ddbd2f893e708a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/510.png using Guid(151094092da5b78408ddbd2f893e708a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92ca0b59360c4040a8d23dbb87edc42e') in 0.017769 seconds
-  Import took 0.021514 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.705680 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/570.png
-  artifactKey: Guid(1c020011859bc714eb23cd3cbb18b00c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/570.png using Guid(1c020011859bc714eb23cd3cbb18b00c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '491033086b450f11bd71249c5104c29e') in 0.016891 seconds
-  Import took 0.020143 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.100365 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/630.png
-  artifactKey: Guid(6ef1d19f5a6477d4699757f1a6bf7fa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/630.png using Guid(6ef1d19f5a6477d4699757f1a6bf7fa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '233bf50deb5353328739cc251aecddc7') in 0.016499 seconds
-  Import took 0.022970 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.784890 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/delay.txt
-  artifactKey: Guid(7119748c65b8d9646a5634518663ce2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/delay.txt using Guid(7119748c65b8d9646a5634518663ce2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6612f79861c0da6bc242921424385802') in 0.018832 seconds
-  Import took 0.022061 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.195601 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/effect.controller
-  artifactKey: Guid(a1753a1558fd9514a9c79f75e176e123) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/effect.controller using Guid(a1753a1558fd9514a9c79f75e176e123) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33d7a478e6a0b9fed1c7919ac268b6eb') in 0.011996 seconds
-  Import took 0.015685 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 28.674378 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/0.png
-  artifactKey: Guid(e7289d304815cdc49a401ac9880134c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/0.png using Guid(e7289d304815cdc49a401ac9880134c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00ad70e0a8eea5029815a03ff8849de2') in 0.014833 seconds
-  Import took 0.018183 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 28.127271 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/90.png
-  artifactKey: Guid(42cc79399c807494cbecba41d6ed9da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/90.png using Guid(42cc79399c807494cbecba41d6ed9da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1267991f074ff9b0a1ed628a4bfb559c') in 0.013106 seconds
-  Import took 0.019488 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.407009 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/150.png
-  artifactKey: Guid(aae1199228e3b0945a676255b64aff2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/150.png using Guid(aae1199228e3b0945a676255b64aff2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3335df36f270dfe8367420c4856802e3') in 0.018260 seconds
-  Import took 0.021126 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.891302 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/210.png
-  artifactKey: Guid(be2f13f6d60972a4b9703d92ed3c5405) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/210.png using Guid(be2f13f6d60972a4b9703d92ed3c5405) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '045d4a43cad9fccd73e89b789f1330f8') in 0.016205 seconds
-  Import took 0.019521 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.802650 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/270.png
-  artifactKey: Guid(f9f636b9016fa2d47bd7ed6677c26386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/270.png using Guid(f9f636b9016fa2d47bd7ed6677c26386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33ed5d41e0e15263fce5070e2dd860c3') in 0.024764 seconds
-  Import took 0.028580 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.904890 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/330.png
-  artifactKey: Guid(ce4e4b82077b7784fb08d7901ca964fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/330.png using Guid(ce4e4b82077b7784fb08d7901ca964fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a39424d3960d2461c1d17e960b8ca21') in 0.016454 seconds
-  Import took 0.020075 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 75.638229 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/390.png
-  artifactKey: Guid(e697b139eab2c6946bc322542d7917ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/390.png using Guid(e697b139eab2c6946bc322542d7917ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee73d22c2f526eddc8ad421a781fc4f6') in 0.023088 seconds
-  Import took 0.027236 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.099850 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/390.png
-  artifactKey: Guid(e697b139eab2c6946bc322542d7917ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/390.png using Guid(e697b139eab2c6946bc322542d7917ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba42d0ce2d681bcf93fa4852d7a1f9e6') in 0.020211 seconds
-  Import took 0.023785 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.707346 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/450.png
-  artifactKey: Guid(bdc6117fe9dbc5947a0bf8e996df7a88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/450.png using Guid(bdc6117fe9dbc5947a0bf8e996df7a88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa938e5cc04a1e8482bbf2c14a65a90e') in 0.021353 seconds
-  Import took 0.026746 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.376506 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/510.png
-  artifactKey: Guid(151094092da5b78408ddbd2f893e708a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/510.png using Guid(151094092da5b78408ddbd2f893e708a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf870352f3850f6b0c511d18090158f2') in 0.017712 seconds
-  Import took 0.021430 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.561616 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/570.png
-  artifactKey: Guid(1c020011859bc714eb23cd3cbb18b00c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/570.png using Guid(1c020011859bc714eb23cd3cbb18b00c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '656cebca6d2af75ef404cdea1eda9977') in 0.017776 seconds
-  Import took 0.025386 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 185.698960 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/630.png
-  artifactKey: Guid(6ef1d19f5a6477d4699757f1a6bf7fa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/630.png using Guid(6ef1d19f5a6477d4699757f1a6bf7fa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d0858d3509409242e7ebf9624150e76') in 0.015754 seconds
-  Import took 0.021616 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.297413 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/570.png
-  artifactKey: Guid(1c020011859bc714eb23cd3cbb18b00c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/570.png using Guid(1c020011859bc714eb23cd3cbb18b00c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ccf3a58bf9d437ee429e826e8d4e162') in 0.022263 seconds
-  Import took 0.025802 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.899745 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/630.png
-  artifactKey: Guid(6ef1d19f5a6477d4699757f1a6bf7fa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/630.png using Guid(6ef1d19f5a6477d4699757f1a6bf7fa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d14391ca052f49df2df489d86ead979') in 0.013206 seconds
-  Import took 0.016162 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.711343 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/510.png
-  artifactKey: Guid(151094092da5b78408ddbd2f893e708a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/510.png using Guid(151094092da5b78408ddbd2f893e708a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cca9928254fa2589eb644df1f842f29') in 0.017579 seconds
-  Import took 0.021255 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.547350 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/450.png
-  artifactKey: Guid(bdc6117fe9dbc5947a0bf8e996df7a88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/450.png using Guid(bdc6117fe9dbc5947a0bf8e996df7a88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f44ded4ff053e670cac5f39d1ec54376') in 0.016387 seconds
-  Import took 0.019666 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.607974 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/390.png
-  artifactKey: Guid(e697b139eab2c6946bc322542d7917ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/390.png using Guid(e697b139eab2c6946bc322542d7917ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf562934c42abbeabc57b16b682d82b9') in 0.018919 seconds
-  Import took 0.024202 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.410636 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/330.png
-  artifactKey: Guid(ce4e4b82077b7784fb08d7901ca964fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/330.png using Guid(ce4e4b82077b7784fb08d7901ca964fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41ebef4a814d4a58aa5e081a2de0ca29') in 0.015334 seconds
-  Import took 0.021682 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.181200 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/270.png
-  artifactKey: Guid(f9f636b9016fa2d47bd7ed6677c26386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/270.png using Guid(f9f636b9016fa2d47bd7ed6677c26386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb30289bbf312a34ce4c4c30dfe73bae') in 0.015836 seconds
-  Import took 0.019060 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.516748 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/210.png
-  artifactKey: Guid(be2f13f6d60972a4b9703d92ed3c5405) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/210.png using Guid(be2f13f6d60972a4b9703d92ed3c5405) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccc4d0db6523b573bfbee92ec40fd1fb') in 0.014451 seconds
-  Import took 0.018272 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.539744 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/150.png
-  artifactKey: Guid(aae1199228e3b0945a676255b64aff2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/150.png using Guid(aae1199228e3b0945a676255b64aff2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03c107ea3906106f27f8a65406b36d0c') in 0.017617 seconds
-  Import took 0.021042 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.870773 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/90.png
-  artifactKey: Guid(42cc79399c807494cbecba41d6ed9da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/90.png using Guid(42cc79399c807494cbecba41d6ed9da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32edd7373e22cf47a9552218d0723ae1') in 0.021580 seconds
-  Import took 0.025791 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.701026 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect0/0.png
-  artifactKey: Guid(e7289d304815cdc49a401ac9880134c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect0/0.png using Guid(e7289d304815cdc49a401ac9880134c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97b58e630d6c0f6cb2e95f7588ac4bc2') in 0.024922 seconds
-  Import took 0.029494 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 295.779026 seconds.
-  path: Assets/Resources/Sprite/Mob/머쉬맘/move.frames/0.png
-  artifactKey: Guid(55620a050fa1c794c802aaa4d3b88faa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Sprite/Mob/머쉬맘/move.frames/0.png using Guid(55620a050fa1c794c802aaa4d3b88faa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56a19a75d55ce747b9f42ede30c01b89') in 0.027470 seconds
-  Import took 0.031240 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000189 seconds.
-  path: Assets/Resources/Sprite/Mob/스톤골렘/move.frames/0.png
-  artifactKey: Guid(1f1368224ac97fe46bad7c1c67d1396b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Sprite/Mob/스톤골렘/move.frames/0.png using Guid(1f1368224ac97fe46bad7c1c67d1396b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10b3f68ae0fbf07fbda57efc97234a00') in 0.021214 seconds
-  Import took 0.024497 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000497 seconds.
-  path: Assets/Resources/Sprite/Mob/머쉬맘/move.frames/0.png
-  artifactKey: Guid(55620a050fa1c794c802aaa4d3b88faa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Sprite/Mob/머쉬맘/move.frames/0.png using Guid(55620a050fa1c794c802aaa4d3b88faa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56a19a75d55ce747b9f42ede30c01b89') in 0.014835 seconds
-  Import took 0.024858 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000285 seconds.
-  path: Assets/Resources/Sprite/Mob/뿔버섯/stand.frames/0.png
-  artifactKey: Guid(263dc3d0d95bab540b04e72124d2a937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Sprite/Mob/뿔버섯/stand.frames/0.png using Guid(263dc3d0d95bab540b04e72124d2a937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52a1979bb9c8575125c7ca5488d0bf21') in 0.020781 seconds
-  Import took 0.024481 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000261 seconds.
-  path: Assets/Resources/Sprite/Mob/뿔버섯/move.frames/0.png
-  artifactKey: Guid(8f24a23022bcfd64f8ea032eccad87ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Sprite/Mob/뿔버섯/move.frames/0.png using Guid(8f24a23022bcfd64f8ea032eccad87ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5f8fd136f9038727f5ea0371a2bb223') in 0.021690 seconds
-  Import took 0.026280 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000201 seconds.
-  path: Assets/Resources/Sprite/Mob/스톤골렘/die1.frames/0.png
-  artifactKey: Guid(f1bd2a562486ca84dac244307fcc6f6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Sprite/Mob/스톤골렘/die1.frames/0.png using Guid(f1bd2a562486ca84dac244307fcc6f6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5538cf83fa2b3bef6fa7fab139916656') in 0.020990 seconds
-  Import took 0.026208 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.298741 seconds.
-  path: Assets/InGame/Skill/썬더볼트/hit1/0.png
-  artifactKey: Guid(19adc687bb1892a44929b23253728935) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/썬더볼트/hit1/0.png using Guid(19adc687bb1892a44929b23253728935) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ea2267db7988fd9a8392d122f8ed441') in 0.019821 seconds
-  Import took 0.023273 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000896 seconds.
-  path: Assets/InGame/Skill/달팽이세마리/1_ball/0.png
-  artifactKey: Guid(412286dc52ebac54db755dc0a0bf5414) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/달팽이세마리/1_ball/0.png using Guid(412286dc52ebac54db755dc0a0bf5414) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39fdd9cc0981ae9a747d902932ab88d5') in 0.020900 seconds
-  Import took 0.024367 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000218 seconds.
-  path: Assets/Resources/Sprite/Mob/뿔버섯/die1.frames/0.png
-  artifactKey: Guid(446cbaeffbdfda64c917f5fcaf1b4b10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Sprite/Mob/뿔버섯/die1.frames/0.png using Guid(446cbaeffbdfda64c917f5fcaf1b4b10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7ec1d63e40613c8798380dfaee821be') in 0.021335 seconds
-  Import took 0.025607 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000265 seconds.
-  path: Assets/InGame/Skill/달팽이세마리/1_hit/0.png
-  artifactKey: Guid(b74c0f194668f8b4fa79438ae6633529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/달팽이세마리/1_hit/0.png using Guid(b74c0f194668f8b4fa79438ae6633529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1142229fd69a493c3d1005d5345d0be9') in 0.020428 seconds
-  Import took 0.024106 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000190 seconds.
-  path: Assets/Main/Shop/button/+_icon.png
-  artifactKey: Guid(817317454cb64e748a7f6932333fe7a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Main/Shop/button/+_icon.png using Guid(817317454cb64e748a7f6932333fe7a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82d9c7cc61d597c11bdf3d72fa392d22') in 0.015775 seconds
-  Import took 0.023056 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004412 seconds.
-  path: Assets/CharacterSelect/Effect/Select/0.png
-  artifactKey: Guid(9ea39078fd708ee4eb73296d6b2a7d82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CharacterSelect/Effect/Select/0.png using Guid(9ea39078fd708ee4eb73296d6b2a7d82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5719a977e6b2c28b5259de197e69f3b7') in 0.015443 seconds
-  Import took 0.019040 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000205 seconds.
-  path: Assets/InGame/Skill/썬더볼트/hit/0.png
-  artifactKey: Guid(1dad790ba4af103408524a641c96bda0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/썬더볼트/hit/0.png using Guid(1dad790ba4af103408524a641c96bda0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cb1bf0bb408f3ec583de2cb188aae61') in 0.030607 seconds
-  Import took 0.033573 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000193 seconds.
-  path: Assets/Resources/Sprite/Mob/빨간달팽이/move.frames/0.png
-  artifactKey: Guid(a78b39cd09c31894c8f210af0dc18636) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Sprite/Mob/빨간달팽이/move.frames/0.png using Guid(a78b39cd09c31894c8f210af0dc18636) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '603270b7049334ccd44a96bf7572cbd2') in 0.019611 seconds
-  Import took 0.024411 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000264 seconds.
-  path: Assets/Character/Archer/0.png
-  artifactKey: Guid(8ea51efb8ca2a514ca8066a371aa9c99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Character/Archer/0.png using Guid(8ea51efb8ca2a514ca8066a371aa9c99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe56b6c540b581bba4632cf1e364161c') in 0.022807 seconds
-  Import took 0.028932 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000209 seconds.
-  path: Assets/Resources/Sprite/Mob/빨간달팽이/die1.frames/0.png
-  artifactKey: Guid(c66040cf845da1844abbdc72920a5b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Sprite/Mob/빨간달팽이/die1.frames/0.png using Guid(c66040cf845da1844abbdc72920a5b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb02b7b7cd053606590e221fdcadb0fc') in 0.019997 seconds
-  Import took 0.026954 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000201 seconds.
-  path: Assets/InGame/Skill/에너지볼트/hit/0.png
-  artifactKey: Guid(01e853cd0efc0f6488523c006ea115e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/에너지볼트/hit/0.png using Guid(01e853cd0efc0f6488523c006ea115e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff59434cfb7e68198756089dd159406b') in 0.019333 seconds
-  Import took 0.022255 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001226 seconds.
-  path: Assets/InGame/Skill/에너지볼트/ball/0.png
-  artifactKey: Guid(84f860c095baa604995770c9f1b246ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/에너지볼트/ball/0.png using Guid(84f860c095baa604995770c9f1b246ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '033497f2b6d4459023b733576c966607') in 0.025561 seconds
-  Import took 0.031276 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 42.034332 seconds.
-  path: Assets/InGame/Skill/콜드 빔/hit/7_hit.anim
-  artifactKey: Guid(3e551a2e842df4549b4e75b6de00e5e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/hit/7_hit.anim using Guid(3e551a2e842df4549b4e75b6de00e5e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1dfb1f0feafe931cfe000b1ae783a0c') in 0.006907 seconds
-  Import took 0.014719 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001520 seconds.
-  path: Assets/InGame/Skill/콜드 빔/hit/7_hit.anim
-  artifactKey: Guid(3e551a2e842df4549b4e75b6de00e5e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/hit/7_hit.anim using Guid(3e551a2e842df4549b4e75b6de00e5e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1dfb1f0feafe931cfe000b1ae783a0c') in 0.002910 seconds
-  Import took 0.005941 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 722.305038 seconds.
   path: Assets/InGame/Skill/콜드 빔/7.prefab
   artifactKey: Guid(dc9a6d7eccafc2e42b91ffcc563028d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/7.prefab using Guid(dc9a6d7eccafc2e42b91ffcc563028d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3ccbfd3177f02fc9b4bc54b566d3c0a') in 0.095296 seconds
-  Import took 0.099200 seconds .
+Start importing Assets/InGame/Skill/콜드 빔/7.prefab using Guid(dc9a6d7eccafc2e42b91ffcc563028d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac56628c9cca933825d96bc583702324') in 0.233216 seconds
+  Import took 0.236619 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.139671 seconds.
+  Time since last request: 0.000194 seconds.
   path: Assets/InGame/Skill/콜드 빔/ball.prefab
   artifactKey: Guid(5cd264729babb6d41a1c4394980f30cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/ball.prefab using Guid(5cd264729babb6d41a1c4394980f30cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4d298d86203dd49e844e3174ae0d551') in 0.021591 seconds
-  Import took 0.029783 seconds .
+Start importing Assets/InGame/Skill/콜드 빔/ball.prefab using Guid(5cd264729babb6d41a1c4394980f30cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7913a6ddb779645df7425d0a9b96aaff') in 0.012630 seconds
+  Import took 0.016001 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.002770 seconds.
-  path: Assets/InGame/Skill/콜드 빔/ball.prefab
-  artifactKey: Guid(5cd264729babb6d41a1c4394980f30cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/ball.prefab using Guid(5cd264729babb6d41a1c4394980f30cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4d298d86203dd49e844e3174ae0d551') in 0.020582 seconds
-  Import took 0.024782 seconds .
+  Time since last request: 0.000188 seconds.
+  path: Assets/InGame/Skill/콜드 빔/hit2.prefab
+  artifactKey: Guid(5f653c8bc8e9a804a910f01f3f366bee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/InGame/Skill/콜드 빔/hit2.prefab using Guid(5f653c8bc8e9a804a910f01f3f366bee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84c8645c89e6b2bca239dc8e656110e8') in 0.027174 seconds
+  Import took 0.030253 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.994448 seconds.
+  Time since last request: 0.000174 seconds.
   path: Assets/InGame/Skill/콜드 빔/effect.prefab
   artifactKey: Guid(0713ee26196184b499292b121e9f1bc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect.prefab using Guid(0713ee26196184b499292b121e9f1bc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (effect) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
-The Animator Controller (effect) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
- -> (artifact id: 'ebd6dd51b24276e2463d43fe83c7542a') in 0.021579 seconds
-  Import took 0.026150 seconds .
+Start importing Assets/InGame/Skill/콜드 빔/effect.prefab using Guid(0713ee26196184b499292b121e9f1bc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f07e4cafd8e5caf0edc4e0bcc92cb75') in 0.015653 seconds
+  Import took 0.018622 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.002102 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect.prefab
-  artifactKey: Guid(0713ee26196184b499292b121e9f1bc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect.prefab using Guid(0713ee26196184b499292b121e9f1bc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (effect) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
-The Animator Controller (effect) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
- -> (artifact id: 'ebd6dd51b24276e2463d43fe83c7542a') in 0.014297 seconds
-  Import took 0.018276 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.249281 seconds.
+  Time since last request: 0.000162 seconds.
   path: Assets/InGame/Skill/콜드 빔/hit.prefab
   artifactKey: Guid(bd63ae72f960b6d4b9676ff6022c24ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/hit.prefab using Guid(bd63ae72f960b6d4b9676ff6022c24ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (hit) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
-The Animator Controller (hit) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
- -> (artifact id: '5edd0f08b6f3f1ec0b2ddb198cf249e1') in 0.015764 seconds
-  Import took 0.019492 seconds .
+Start importing Assets/InGame/Skill/콜드 빔/hit.prefab using Guid(bd63ae72f960b6d4b9676ff6022c24ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56f05b52cd3cbf77cab4dc2ce362476d') in 0.018365 seconds
+  Import took 0.021185 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.016153 seconds.
-  path: Assets/InGame/Skill/콜드 빔/hit.prefab
-  artifactKey: Guid(bd63ae72f960b6d4b9676ff6022c24ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/hit.prefab using Guid(bd63ae72f960b6d4b9676ff6022c24ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (hit) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
-The Animator Controller (hit) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
- -> (artifact id: '5edd0f08b6f3f1ec0b2ddb198cf249e1') in 0.017350 seconds
-  Import took 0.020734 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.099014 seconds.
+  Time since last request: 0.904752 seconds.
   path: Assets/InGame/Skill/콜드 빔/7.prefab
   artifactKey: Guid(dc9a6d7eccafc2e42b91ffcc563028d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/7.prefab using Guid(dc9a6d7eccafc2e42b91ffcc563028d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9020b68ffe70275482d518dc7b42264e') in 0.031555 seconds
-  Import took 0.034916 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.386615 seconds.
-  path: Assets/InGame/Skill/콜드 빔/7.prefab
-  artifactKey: Guid(dc9a6d7eccafc2e42b91ffcc563028d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/7.prefab using Guid(dc9a6d7eccafc2e42b91ffcc563028d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5df253049db0dd52f093df732c29abb6') in 0.022888 seconds
-  Import took 0.032272 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 25.182392 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect.prefab
-  artifactKey: Guid(0713ee26196184b499292b121e9f1bc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect.prefab using Guid(0713ee26196184b499292b121e9f1bc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (effect) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
-The Animator Controller (effect) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
- -> (artifact id: '4aa1aecee02bba7b936cc9a11436d97f') in 0.014996 seconds
-  Import took 0.019547 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.915825 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect.prefab
-  artifactKey: Guid(0713ee26196184b499292b121e9f1bc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect.prefab using Guid(0713ee26196184b499292b121e9f1bc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (effect) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
-The Animator Controller (effect) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
- -> (artifact id: 'f5ed279d83dc146f5bc32a6f0935fb23') in 0.011791 seconds
-  Import took 0.015474 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 23.219483 seconds.
-  path: Assets/InGame/Skill/콜드 빔/hit.prefab
-  artifactKey: Guid(bd63ae72f960b6d4b9676ff6022c24ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/hit.prefab using Guid(bd63ae72f960b6d4b9676ff6022c24ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (hit) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
-The Animator Controller (hit) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
- -> (artifact id: 'faa4c3eed4460a7c091a996aa3d528f4') in 0.013193 seconds
-  Import took 0.017148 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 157.734563 seconds.
-  path: Assets/InGame/Skill/콜드 빔/7.prefab
-  artifactKey: Guid(dc9a6d7eccafc2e42b91ffcc563028d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/7.prefab using Guid(dc9a6d7eccafc2e42b91ffcc563028d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0abe499d8941af8b65ae3ad55e18fa1') in 0.027712 seconds
-  Import took 0.032065 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 21.452396 seconds.
-  path: Assets/InGame/Skill/콜드 빔/7.prefab
-  artifactKey: Guid(dc9a6d7eccafc2e42b91ffcc563028d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/7.prefab using Guid(dc9a6d7eccafc2e42b91ffcc563028d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '553f87cccdf7ed289a8927bf300bbd62') in 0.032308 seconds
-  Import took 0.035839 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.840412 seconds.
-  path: Assets/InGame/Skill/콜드 빔/ball.prefab
-  artifactKey: Guid(5cd264729babb6d41a1c4394980f30cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/ball.prefab using Guid(5cd264729babb6d41a1c4394980f30cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aeb19a3201d78759d03f291f1f705588') in 0.016913 seconds
-  Import took 0.021813 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 24.718759 seconds.
-  path: Assets/InGame/Skill/Skill.cs
-  artifactKey: Guid(efb02af2596b62b45983bc129d4f3982) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/Skill.cs using Guid(efb02af2596b62b45983bc129d4f3982) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a997c12fef100c0bc4458e01669a0611') in 0.026518 seconds
-  Import took 0.029801 seconds .
+Start importing Assets/InGame/Skill/콜드 빔/7.prefab using Guid(dc9a6d7eccafc2e42b91ffcc563028d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac56628c9cca933825d96bc583702324') in 0.020580 seconds
+  Import took 0.025463 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.014963 seconds.
+Registered in 0.002586 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.507 seconds
+- Completed reload, in  1.093 seconds
 Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 80.9 MB.
+System memory in use after: 81.0 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2163.
+Total: 3.361000 ms (FindLiveObjects: 0.370900 ms CreateObjectMapping: 0.886000 ms MarkObjects: 2.083700 ms  DeleteObjects: 0.018900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002544 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.024 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 80.9 MB.
+System memory in use after: 81.0 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2166.
+Total: 1.840300 ms (FindLiveObjects: 0.167400 ms CreateObjectMapping: 0.061100 ms MarkObjects: 1.580400 ms  DeleteObjects: 0.030500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002708 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.888 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 80.9 MB.
+System memory in use after: 81.0 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2169.
+Total: 3.441900 ms (FindLiveObjects: 0.161400 ms CreateObjectMapping: 0.059000 ms MarkObjects: 3.188100 ms  DeleteObjects: 0.031500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002894 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.097 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 80.9 MB.
+System memory in use after: 81.0 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2172.
+Total: 2.878700 ms (FindLiveObjects: 0.357700 ms CreateObjectMapping: 0.204400 ms MarkObjects: 2.296200 ms  DeleteObjects: 0.015800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002459 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.028 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 80.9 MB.
+System memory in use after: 81.0 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2175.
+Total: 2.130300 ms (FindLiveObjects: 0.143400 ms CreateObjectMapping: 0.046000 ms MarkObjects: 1.911200 ms  DeleteObjects: 0.028100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003345 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.031 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 80.9 MB.
+System memory in use after: 81.0 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2178.
+Total: 1.772400 ms (FindLiveObjects: 0.137300 ms CreateObjectMapping: 0.043300 ms MarkObjects: 1.558200 ms  DeleteObjects: 0.032200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002546 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.148 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.74 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 80.9 MB.
+System memory in use after: 81.1 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2181.
+Total: 1.804200 ms (FindLiveObjects: 0.169100 ms CreateObjectMapping: 0.063100 ms MarkObjects: 1.556000 ms  DeleteObjects: 0.015100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002948 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.981 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 81.0 MB.
+System memory in use after: 81.1 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2184.
+Total: 2.087200 ms (FindLiveObjects: 0.141400 ms CreateObjectMapping: 0.044200 ms MarkObjects: 1.885100 ms  DeleteObjects: 0.014800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003111 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.047 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 81.0 MB.
+System memory in use after: 81.1 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2187.
+Total: 3.042700 ms (FindLiveObjects: 0.151000 ms CreateObjectMapping: 0.070500 ms MarkObjects: 2.787700 ms  DeleteObjects: 0.032400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003184 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.047 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 81.0 MB.
+System memory in use after: 81.1 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2190.
+Total: 2.339700 ms (FindLiveObjects: 0.245800 ms CreateObjectMapping: 0.089400 ms MarkObjects: 1.985900 ms  DeleteObjects: 0.017300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002774 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.019 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 81.0 MB.
+System memory in use after: 81.1 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2193.
+Total: 1.795300 ms (FindLiveObjects: 0.155500 ms CreateObjectMapping: 0.053600 ms MarkObjects: 1.556700 ms  DeleteObjects: 0.028100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002522 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.116 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 81.0 MB.
+System memory in use after: 81.1 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2196.
+Total: 3.032500 ms (FindLiveObjects: 0.362600 ms CreateObjectMapping: 0.192600 ms MarkObjects: 2.458400 ms  DeleteObjects: 0.017600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002839 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.036 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 81.0 MB.
+System memory in use after: 81.1 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2199.
+Total: 2.861400 ms (FindLiveObjects: 0.269100 ms CreateObjectMapping: 0.098800 ms MarkObjects: 2.450400 ms  DeleteObjects: 0.041300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 2594.211579 seconds.
+  path: Assets/InGame/Skill/콜드 빔/ball.prefab
+  artifactKey: Guid(5cd264729babb6d41a1c4394980f30cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/InGame/Skill/콜드 빔/ball.prefab using Guid(5cd264729babb6d41a1c4394980f30cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '852efbb0f04f17ffd1d2ca2623ccec59') in 0.040225 seconds
+  Import took 0.044014 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.721899 seconds.
+  path: Assets/InGame/Skill/콜드 빔/effect2.prefab
+  artifactKey: Guid(5f653c8bc8e9a804a910f01f3f366bee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/InGame/Skill/콜드 빔/effect2.prefab using Guid(5f653c8bc8e9a804a910f01f3f366bee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f70119ca5fafafafc917e72de6cb4e88') in 0.056525 seconds
+  Import took 0.059881 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.755718 seconds.
+  path: Assets/InGame/Skill/콜드 빔/ball.prefab
+  artifactKey: Guid(5cd264729babb6d41a1c4394980f30cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/InGame/Skill/콜드 빔/ball.prefab using Guid(5cd264729babb6d41a1c4394980f30cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f50c6101fae22b954962898559b529d') in 0.010623 seconds
+  Import took 0.014288 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002471 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.864 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 81.0 MB.
+System memory in use after: 81.1 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2203.
+Total: 2.037400 ms (FindLiveObjects: 0.146900 ms CreateObjectMapping: 0.074000 ms MarkObjects: 1.798500 ms  DeleteObjects: 0.015300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002552 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.54 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.069 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 81.0 MB.
 System memory in use after: 81.1 MB.
 
 Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2206.
-Total: 2.189600 ms (FindLiveObjects: 0.210100 ms CreateObjectMapping: 0.083500 ms MarkObjects: 1.870300 ms  DeleteObjects: 0.024200 ms)
+Total: 1.881500 ms (FindLiveObjects: 0.141600 ms CreateObjectMapping: 0.045600 ms MarkObjects: 1.662600 ms  DeleteObjects: 0.029800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 2715.657348 seconds.
+  path: Assets/InGame/Skill/콜드 빔/7.prefab
+  artifactKey: Guid(dc9a6d7eccafc2e42b91ffcc563028d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/InGame/Skill/콜드 빔/7.prefab using Guid(dc9a6d7eccafc2e42b91ffcc563028d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bfc489c83995293c9986d4f575034a9') in 0.072701 seconds
+  Import took 0.078988 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/InGame/Skill/콜드 빔/ball.prefab
+  artifactKey: Guid(5cd264729babb6d41a1c4394980f30cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/InGame/Skill/콜드 빔/ball.prefab using Guid(5cd264729babb6d41a1c4394980f30cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eaced236a4bbf9b96e3afd8ef772b6a5') in 0.025348 seconds
+  Import took 0.108166 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.241810 seconds.
+  path: Assets/InGame/Skill/콜드 빔/7.prefab
+  artifactKey: Guid(dc9a6d7eccafc2e42b91ffcc563028d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/InGame/Skill/콜드 빔/7.prefab using Guid(dc9a6d7eccafc2e42b91ffcc563028d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2e26478e8be5ba54e832cc19be4d23a') in 0.017490 seconds
+  Import took 0.021152 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005403 seconds.
+Registered in 0.002722 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.54 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.55 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.294 seconds
+- Completed reload, in  0.993 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 81.0 MB.
 System memory in use after: 81.1 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2209.
-Total: 2.562600 ms (FindLiveObjects: 0.187800 ms CreateObjectMapping: 0.068800 ms MarkObjects: 2.281600 ms  DeleteObjects: 0.022700 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2210.
+Total: 1.991400 ms (FindLiveObjects: 0.167400 ms CreateObjectMapping: 0.056600 ms MarkObjects: 1.750500 ms  DeleteObjects: 0.015600 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.070630 seconds.
+Registered in 0.002564 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.17 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.255 seconds
+- Completed reload, in  1.109 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.71 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 81.1 MB.
-System memory in use after: 81.2 MB.
+System memory in use before: 81.0 MB.
+System memory in use after: 81.1 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2212.
-Total: 2.642200 ms (FindLiveObjects: 0.293400 ms CreateObjectMapping: 0.204500 ms MarkObjects: 2.119500 ms  DeleteObjects: 0.016600 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2213.
+Total: 2.860100 ms (FindLiveObjects: 0.362900 ms CreateObjectMapping: 0.123000 ms MarkObjects: 2.355400 ms  DeleteObjects: 0.017600 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005425 seconds.
+Registered in 0.002563 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.412 seconds
+- Completed reload, in  0.889 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.55 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 81.1 MB.
+System memory in use before: 81.0 MB.
 System memory in use after: 81.2 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2215.
-Total: 3.955700 ms (FindLiveObjects: 0.321000 ms CreateObjectMapping: 1.080700 ms MarkObjects: 2.503600 ms  DeleteObjects: 0.048000 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2216.
+Total: 2.765500 ms (FindLiveObjects: 0.177700 ms CreateObjectMapping: 0.276900 ms MarkObjects: 2.267700 ms  DeleteObjects: 0.041600 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005460 seconds.
+Registered in 0.002488 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.68 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.287 seconds
+- Completed reload, in  1.018 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.55 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 81.0 MB.
+System memory in use after: 81.2 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2219.
+Total: 2.588200 ms (FindLiveObjects: 0.183100 ms CreateObjectMapping: 0.058500 ms MarkObjects: 2.226800 ms  DeleteObjects: 0.118400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 368.096279 seconds.
+  path: Assets/CharacterCreate/201033_201778_2635.jpg
+  artifactKey: Guid(0be8e04f8f8d0b046b02ad9a0ec3a8a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterCreate/201033_201778_2635.jpg using Guid(0be8e04f8f8d0b046b02ad9a0ec3a8a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b71aa9fa140479640dcd7f16a278d2b7') in 0.071069 seconds
+  Import took 0.074935 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/CharacterCreate/charName.png
+  artifactKey: Guid(277d12fc836936c4598854085464c3a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterCreate/charName.png using Guid(277d12fc836936c4598854085464c3a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3da643461a330c7413ba55141e8d727') in 0.019847 seconds
+  Import took 0.114908 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/CharacterCreate/charJob.png
+  artifactKey: Guid(a0085cbde7f9ace4cbdd9024fe988d47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterCreate/charJob.png using Guid(a0085cbde7f9ace4cbdd9024fe988d47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6caf88895db8277c2268c3184efbd742') in 0.031331 seconds
+  Import took 0.034383 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/CharacterCreate/CustomizeChar.canonShooter.0.0.png
+  artifactKey: Guid(33f92d1dfb029c344b3be4a5e4f56af4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterCreate/CustomizeChar.canonShooter.0.0.png using Guid(33f92d1dfb029c344b3be4a5e4f56af4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e87899613fd32cf9f3df49f879eebddf') in 0.027750 seconds
+  Import took 0.030567 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/CharacterCreate/UI_login.img.back.2.png
+  artifactKey: Guid(c1a199951e5fe6747a5ec7e17615bd09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterCreate/UI_login.img.back.2.png using Guid(c1a199951e5fe6747a5ec7e17615bd09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b2b4ba0516563d68b2812b6f193cd1f') in 0.026933 seconds
+  Import took 0.030086 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/CharacterCreate/Back.1.0.png
+  artifactKey: Guid(9f88518dc4c04db4592fe5c6caa45062) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterCreate/Back.1.0.png using Guid(9f88518dc4c04db4592fe5c6caa45062) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bb0bdfb9bfe33059e13ea05f9bb1714') in 0.029415 seconds
+  Import took 0.032537 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/CharacterCreate/monsterDic.potential.back.png
+  artifactKey: Guid(fc40d299c4c30bf4a90e48f656060e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterCreate/monsterDic.potential.back.png using Guid(fc40d299c4c30bf4a90e48f656060e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c55bed2d1e5d57099bd66b050c0cf2d') in 0.030158 seconds
+  Import took 0.032951 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.484798 seconds.
+  path: Assets/CharacterSelect/ButtonSound.prefab
+  artifactKey: Guid(4e353c003abd0c149b5b7fae2d0b4c55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterSelect/ButtonSound.prefab using Guid(4e353c003abd0c149b5b7fae2d0b4c55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30f628ecafc4efb7520a526ace1a1aa1') in 0.015468 seconds
+  Import took 0.019055 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001249 seconds.
+  path: Assets/CharacterSelect/CharSelect.character.1.0.png
+  artifactKey: Guid(64bfb5be534fa4f47b50b0774c8ffa41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterSelect/CharSelect.character.1.0.png using Guid(64bfb5be534fa4f47b50b0774c8ffa41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50bf54cec22c65645d579ec6092aa678') in 0.029029 seconds
+  Import took 0.033051 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/CharacterSelect/UI_login.img.back.1.png
+  artifactKey: Guid(2a9b9d0198970f043b278c87c27e5645) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CharacterSelect/UI_login.img.back.1.png using Guid(2a9b9d0198970f043b278c87c27e5645) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3467cd87507c657730d88cd1d0fb3c8') in 0.015052 seconds
+  Import took 0.106409 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003141 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.040 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 81.1 MB.
 System memory in use after: 81.2 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2218.
-Total: 2.290700 ms (FindLiveObjects: 0.262100 ms CreateObjectMapping: 0.144300 ms MarkObjects: 1.862300 ms  DeleteObjects: 0.020700 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2234.
+Total: 2.618900 ms (FindLiveObjects: 0.155500 ms CreateObjectMapping: 0.052900 ms MarkObjects: 2.395700 ms  DeleteObjects: 0.013900 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 729.845148 seconds.
-  path: Assets/InGame/Skill/콜드 빔/hit 1.prefab
-  artifactKey: Guid(5f653c8bc8e9a804a910f01f3f366bee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/hit 1.prefab using Guid(5f653c8bc8e9a804a910f01f3f366bee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b964ea1161e9ea6aeffa8f3a668f5ca7') in 0.066609 seconds
-  Import took 0.071049 seconds .
+  Time since last request: 23.381664 seconds.
+  path: Assets/InGame/Mob/1.prefab
+  artifactKey: Guid(3cffb03887ec5f34eb4fd56a1ad306d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/InGame/Mob/1.prefab using Guid(3cffb03887ec5f34eb4fd56a1ad306d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0ceec0c0a7e3fbb57f7525b0fbb2273') in 0.054206 seconds
+  Import took 0.057142 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.840388 seconds.
-  path: Assets/InGame/Skill/콜드 빔/hit2.prefab
-  artifactKey: Guid(5f653c8bc8e9a804a910f01f3f366bee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/hit2.prefab using Guid(5f653c8bc8e9a804a910f01f3f366bee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd164ac072cb204ca381b5742df3fa9ed') in 0.050256 seconds
-  Import took 0.053680 seconds .
+  Time since last request: 4.032441 seconds.
+  path: Assets/InGame/Mob/1.prefab
+  artifactKey: Guid(3cffb03887ec5f34eb4fd56a1ad306d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/InGame/Mob/1.prefab using Guid(3cffb03887ec5f34eb4fd56a1ad306d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c490c24e6fd1b7cff451de235f9b129e') in 0.013564 seconds
+  Import took 0.016922 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 27.386516 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect/7_effect2.anim
-  artifactKey: Guid(70fd77b0f9ae64f46850d764fea808ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect/7_effect2.anim using Guid(70fd77b0f9ae64f46850d764fea808ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '252d853c46aff85bfc4b1cd873ac39f9') in 0.009406 seconds
-  Import took 0.015724 seconds .
+  Time since last request: 7.493048 seconds.
+  path: Assets/InGame/Mob/1.prefab
+  artifactKey: Guid(3cffb03887ec5f34eb4fd56a1ad306d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/InGame/Mob/1.prefab using Guid(3cffb03887ec5f34eb4fd56a1ad306d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4872134937fd3f6bdb005ff8644f89e6') in 0.015473 seconds
+  Import took 0.018715 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 269.925745 seconds.
-  path: Assets/InGame/Skill/콜드 빔/hit2.prefab
-  artifactKey: Guid(5f653c8bc8e9a804a910f01f3f366bee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/hit2.prefab using Guid(5f653c8bc8e9a804a910f01f3f366bee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Animator Controller (hit2) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents (UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+  Time since last request: 5.126095 seconds.
+  path: Assets/InGame/Mob/1.prefab
+  artifactKey: Guid(3cffb03887ec5f34eb4fd56a1ad306d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/InGame/Mob/1.prefab using Guid(3cffb03887ec5f34eb4fd56a1ad306d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5223c840140d6f8ba22e6793b2f96bf3') in 0.013488 seconds
+  Import took 0.016792 seconds .
 
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
+========================================================================
+Received Import Request.
+  Time since last request: 2.347113 seconds.
+  path: Assets/InGame/Mob/1.prefab
+  artifactKey: Guid(3cffb03887ec5f34eb4fd56a1ad306d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/InGame/Mob/1.prefab using Guid(3cffb03887ec5f34eb4fd56a1ad306d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c31d37a69b2e736c847b89bb26281bdd') in 0.017080 seconds
+  Import took 0.020852 seconds .
 
-The Animator Controller (hit2) you have used is not valid. Animations will not play
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.EditorUtility:InitInstantiatedPreviewRecursive (UnityEngine.GameObject)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:UpdateGameObject (UnityEngine.Object)
-UnityEditor.GameObjectInspector/PreviewData:.ctor (UnityEngine.Object)
-UnityEditor.GameObjectInspector:GetPreviewData ()
-UnityEditor.GameObjectInspector:RenderStaticPreview (string,UnityEngine.Object[],int,int)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
-
-[C:\buildslave\unity\build\Modules/Animation/Director/AnimatorControllerPlayable.cpp line 333]
-
- -> (artifact id: '4d4461dfe7d6c6e67406240c2be86119') in 0.015168 seconds
-  Import took 0.019538 seconds .
+========================================================================
+Received Import Request.
+  Time since last request: 9.543328 seconds.
+  path: Assets/InGame/Mob/1.prefab
+  artifactKey: Guid(3cffb03887ec5f34eb4fd56a1ad306d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/InGame/Mob/1.prefab using Guid(3cffb03887ec5f34eb4fd56a1ad306d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49d37bde7f648b6cac8d11a9cddaaae1') in 0.015387 seconds
+  Import took 0.018732 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005955 seconds.
+Registered in 0.002707 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.262 seconds
+- Completed reload, in  1.021 seconds
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 81.3 MB.
-System memory in use after: 81.4 MB.
+System memory in use before: 81.1 MB.
+System memory in use after: 81.2 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2222.
-Total: 2.083600 ms (FindLiveObjects: 0.244200 ms CreateObjectMapping: 0.068500 ms MarkObjects: 1.751000 ms  DeleteObjects: 0.018100 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 112.276053 seconds.
-  path: Assets/InGame/Skill/콜드 빔/ball.prefab
-  artifactKey: Guid(5cd264729babb6d41a1c4394980f30cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/ball.prefab using Guid(5cd264729babb6d41a1c4394980f30cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f0d9e3131941c829bab7dab7aa8022a') in 0.129450 seconds
-  Import took 0.133741 seconds .
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2238.
+Total: 1.738400 ms (FindLiveObjects: 0.162200 ms CreateObjectMapping: 0.059000 ms MarkObjects: 1.501800 ms  DeleteObjects: 0.014600 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.006837 seconds.
+Registered in 0.002733 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.48 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.635 seconds
+- Completed reload, in  0.984 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.79 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 81.3 MB.
-System memory in use after: 81.4 MB.
+System memory in use before: 81.1 MB.
+System memory in use after: 81.2 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2225.
-Total: 5.518900 ms (FindLiveObjects: 0.207600 ms CreateObjectMapping: 0.075800 ms MarkObjects: 4.693400 ms  DeleteObjects: 0.540900 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2241.
+Total: 2.181600 ms (FindLiveObjects: 0.186900 ms CreateObjectMapping: 0.089200 ms MarkObjects: 1.887500 ms  DeleteObjects: 0.016800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 94.671759 seconds.
+  path: Assets/InGame/Mob/1.prefab
+  artifactKey: Guid(3cffb03887ec5f34eb4fd56a1ad306d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/InGame/Mob/1.prefab using Guid(3cffb03887ec5f34eb4fd56a1ad306d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ca6d01058d1dd56d1619721042e6517') in 0.050826 seconds
+  Import took 0.053743 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005934 seconds.
+Registered in 0.002559 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.269 seconds
+- Completed reload, in  0.932 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 81.3 MB.
-System memory in use after: 81.4 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2228.
-Total: 2.079200 ms (FindLiveObjects: 0.388000 ms CreateObjectMapping: 0.116400 ms MarkObjects: 1.554800 ms  DeleteObjects: 0.018400 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 111.221194 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect/0.png
-  artifactKey: Guid(dcb376e808eac724e92ec3538522236c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect/0.png using Guid(dcb376e808eac724e92ec3538522236c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddeb0bc6eff664cd7d813e86f5b19c3c') in 0.060325 seconds
-  Import took 0.063333 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.226965 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect/0.png
-  artifactKey: Guid(dcb376e808eac724e92ec3538522236c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect/0.png using Guid(dcb376e808eac724e92ec3538522236c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddeb0bc6eff664cd7d813e86f5b19c3c') in 0.025486 seconds
-  Import took 0.029199 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.187107 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect/90.png
-  artifactKey: Guid(ea8217fc6d9c6964c8daec5e6fdb99b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect/90.png using Guid(ea8217fc6d9c6964c8daec5e6fdb99b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '802b07f6b22911108e00f7ede4e76278') in 0.013614 seconds
-  Import took 0.027602 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.297276 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect/180.png
-  artifactKey: Guid(811a6c601e53256489911c2f7d343a0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect/180.png using Guid(811a6c601e53256489911c2f7d343a0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f06b1fac47c10495ca09eb7e5e5c6beb') in 0.053200 seconds
-  Import took 0.057452 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.751464 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect/270.png
-  artifactKey: Guid(4df58ec26f8ace645a529ff1a3b2308e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect/270.png using Guid(4df58ec26f8ace645a529ff1a3b2308e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8eb5e26e96742a3a917abbbb8fceab0') in 0.024440 seconds
-  Import took 0.039932 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.425572 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect/330.png
-  artifactKey: Guid(7cdf30a8aac156f4ebdf8b94f57bf61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect/330.png using Guid(7cdf30a8aac156f4ebdf8b94f57bf61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35c4dbf42b657fbe4ca7547d0aeb2865') in 0.041272 seconds
-  Import took 0.081103 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.409631 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect/390.png
-  artifactKey: Guid(fae3cc9a4d7ea834e8237cf7b7daed14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect/390.png using Guid(fae3cc9a4d7ea834e8237cf7b7daed14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b68411146348cdf08c4bcf5bf7218d1') in 0.044205 seconds
-  Import took 0.050013 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.918088 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect/450.png
-  artifactKey: Guid(3f1e69b4267e9dc44a4f6d375bd4bb12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect/450.png using Guid(3f1e69b4267e9dc44a4f6d375bd4bb12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fb6a0b6fd2f6a50dfa6d1aa9c0682a3') in 0.036076 seconds
-  Import took 0.084451 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.581142 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect/510.png
-  artifactKey: Guid(c1e52bcc1806c9042bc9cc3bb9b720dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect/510.png using Guid(c1e52bcc1806c9042bc9cc3bb9b720dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebe43d73707a46d439c41c37186ad22a') in 0.023809 seconds
-  Import took 0.033156 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.933336 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect/570.png
-  artifactKey: Guid(f2a87584380f62b439ed724bb86c3329) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect/570.png using Guid(f2a87584380f62b439ed724bb86c3329) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e1d95cfef403f9becd37d0ab87ab8a1') in 0.073503 seconds
-  Import took 0.076867 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.631899 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect/630.png
-  artifactKey: Guid(27cee1b297308d94ba99cc0f3c1a3f52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect/630.png using Guid(27cee1b297308d94ba99cc0f3c1a3f52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c7c1f69cd0389e1d0cc92342c5c738c') in 0.029220 seconds
-  Import took 0.084599 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.316975 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect/690.png
-  artifactKey: Guid(ff258d028c21d754fb134d3b71c5943a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect/690.png using Guid(ff258d028c21d754fb134d3b71c5943a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '259c201c212ce393350f173b39642860') in 0.027236 seconds
-  Import took 0.033431 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.125154 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect/750.png
-  artifactKey: Guid(fc7015f9e545ae9489809eec60bfc5bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect/750.png using Guid(fc7015f9e545ae9489809eec60bfc5bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b21751dcd20ac80dc8bf53c33c150d42') in 0.039884 seconds
-  Import took 0.047117 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.929397 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect/810.png
-  artifactKey: Guid(5c038a2e9fe38344e87d51cecc54a549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect/810.png using Guid(5c038a2e9fe38344e87d51cecc54a549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2db9a51fe5bae05044b9ba1bd368739') in 0.071069 seconds
-  Import took 0.077739 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 29.022136 seconds.
-  path: Assets/Scenes/GameScene.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/GameScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '358ccca93d580a5624cd704a4700af7b') in 0.007672 seconds
-  Import took 0.012147 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.008016 seconds.
-  path: Assets/Scenes/GameScene.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/GameScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '358ccca93d580a5624cd704a4700af7b') in 0.024140 seconds
-  Import took 0.034299 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.022538 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.107 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 81.3 MB.
-System memory in use after: 81.5 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2232.
-Total: 5.077200 ms (FindLiveObjects: 0.491900 ms CreateObjectMapping: 0.352800 ms MarkObjects: 4.209100 ms  DeleteObjects: 0.021100 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 79.956008 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect/0.png
-  artifactKey: Guid(dcb376e808eac724e92ec3538522236c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect/0.png using Guid(dcb376e808eac724e92ec3538522236c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fe6487fc39b931dccabec0437f012c6') in 0.084091 seconds
-  Import took 0.091213 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.818211 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect/90.png
-  artifactKey: Guid(ea8217fc6d9c6964c8daec5e6fdb99b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect/90.png using Guid(ea8217fc6d9c6964c8daec5e6fdb99b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0e19f9432345deab4778830726db2ff') in 0.062343 seconds
-  Import took 0.066427 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.599587 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect/180.png
-  artifactKey: Guid(811a6c601e53256489911c2f7d343a0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect/180.png using Guid(811a6c601e53256489911c2f7d343a0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c1b30829c18c6640b7f3c08f2f42807') in 0.021725 seconds
-  Import took 0.027822 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.782855 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect/270.png
-  artifactKey: Guid(4df58ec26f8ace645a529ff1a3b2308e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect/270.png using Guid(4df58ec26f8ace645a529ff1a3b2308e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f281e7183ac6882f02713e5a324efca9') in 0.048880 seconds
-  Import took 0.053733 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.352214 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect/330.png
-  artifactKey: Guid(7cdf30a8aac156f4ebdf8b94f57bf61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect/330.png using Guid(7cdf30a8aac156f4ebdf8b94f57bf61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79ba5b9452e6d7348b3735cf55bbcd00') in 0.015555 seconds
-  Import took 0.024581 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.530804 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect/390.png
-  artifactKey: Guid(fae3cc9a4d7ea834e8237cf7b7daed14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect/390.png using Guid(fae3cc9a4d7ea834e8237cf7b7daed14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e5731229a19c3d30ac73d6d03380f17') in 0.056249 seconds
-  Import took 0.061153 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.085770 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect/450.png
-  artifactKey: Guid(3f1e69b4267e9dc44a4f6d375bd4bb12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect/450.png using Guid(3f1e69b4267e9dc44a4f6d375bd4bb12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22d3ab2ff9ec5cc7ffb3bd429888060f') in 0.059087 seconds
-  Import took 0.063004 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.042436 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect/510.png
-  artifactKey: Guid(c1e52bcc1806c9042bc9cc3bb9b720dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect/510.png using Guid(c1e52bcc1806c9042bc9cc3bb9b720dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10295c9646b096d62dfea862c9a00037') in 0.055184 seconds
-  Import took 0.059272 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.563694 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect/570.png
-  artifactKey: Guid(f2a87584380f62b439ed724bb86c3329) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect/570.png using Guid(f2a87584380f62b439ed724bb86c3329) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6472cce9e1ae74acac167c1a69ec84ad') in 0.031820 seconds
-  Import took 0.036466 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.318536 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect/630.png
-  artifactKey: Guid(27cee1b297308d94ba99cc0f3c1a3f52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect/630.png using Guid(27cee1b297308d94ba99cc0f3c1a3f52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f2743a23d29aee7beb64f1f4d112d4e') in 0.018882 seconds
-  Import took 0.029656 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.720836 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect/690.png
-  artifactKey: Guid(ff258d028c21d754fb134d3b71c5943a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect/690.png using Guid(ff258d028c21d754fb134d3b71c5943a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3109beed44519962298067745c86829e') in 0.014825 seconds
-  Import took 0.062102 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.984294 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect/750.png
-  artifactKey: Guid(fc7015f9e545ae9489809eec60bfc5bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect/750.png using Guid(fc7015f9e545ae9489809eec60bfc5bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14917f6fe14b543350a1ca53c12b997e') in 0.024019 seconds
-  Import took 0.059351 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.933770 seconds.
-  path: Assets/InGame/Skill/콜드 빔/effect/810.png
-  artifactKey: Guid(5c038a2e9fe38344e87d51cecc54a549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InGame/Skill/콜드 빔/effect/810.png using Guid(5c038a2e9fe38344e87d51cecc54a549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcbf78f827b69855d4432572cc17efb4') in 0.035294 seconds
-  Import took 0.052360 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007746 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 81.1 MB.
+System memory in use after: 81.2 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2245.
+Total: 2.692300 ms (FindLiveObjects: 0.193000 ms CreateObjectMapping: 0.063000 ms MarkObjects: 2.418900 ms  DeleteObjects: 0.016000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 265.366926 seconds.
+  path: Assets/InGame/Skill/콜드 빔
+  artifactKey: Guid(c7754ad35594c644ba466d95662a3e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/InGame/Skill/콜드 빔 using Guid(c7754ad35594c644ba466d95662a3e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41ea74154bc3e94a4dbe9eea608166aa') in 0.048439 seconds
+  Import took 0.051629 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004095 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.681 seconds
+- Completed reload, in  0.980 seconds
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 81.4 MB.
-System memory in use after: 81.5 MB.
+System memory in use before: 81.1 MB.
+System memory in use after: 81.2 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2236.
-Total: 2.173000 ms (FindLiveObjects: 0.176400 ms CreateObjectMapping: 0.074500 ms MarkObjects: 1.900500 ms  DeleteObjects: 0.020300 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2248.
+Total: 1.863700 ms (FindLiveObjects: 0.180100 ms CreateObjectMapping: 0.064300 ms MarkObjects: 1.601900 ms  DeleteObjects: 0.016400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.700237 seconds.
+  path: Assets/InGame/Skill/콜드 빔/7.prefab
+  artifactKey: Guid(dc9a6d7eccafc2e42b91ffcc563028d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/InGame/Skill/콜드 빔/7.prefab using Guid(dc9a6d7eccafc2e42b91ffcc563028d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e24a5cd04fcc345e1a88c250170e4d4') in 0.066969 seconds
+  Import took 0.070315 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.577156 seconds.
+  path: Assets/InGame/Skill/콜드 빔/7.prefab
+  artifactKey: Guid(dc9a6d7eccafc2e42b91ffcc563028d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/InGame/Skill/콜드 빔/7.prefab using Guid(dc9a6d7eccafc2e42b91ffcc563028d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e24a5cd04fcc345e1a88c250170e4d4') in 0.016079 seconds
+  Import took 0.019375 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.007177 seconds.
+Registered in 0.004359 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.08 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.287 seconds
+- Completed reload, in  1.075 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 81.4 MB.
-System memory in use after: 81.5 MB.
+System memory in use before: 81.1 MB.
+System memory in use after: 81.3 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2239.
-Total: 2.429600 ms (FindLiveObjects: 0.256200 ms CreateObjectMapping: 0.090700 ms MarkObjects: 2.063400 ms  DeleteObjects: 0.017500 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2252.
+Total: 3.497100 ms (FindLiveObjects: 0.177500 ms CreateObjectMapping: 0.063100 ms MarkObjects: 3.207900 ms  DeleteObjects: 0.047200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002782 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.981 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 81.2 MB.
+System memory in use after: 81.4 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2255.
+Total: 1.822400 ms (FindLiveObjects: 0.181300 ms CreateObjectMapping: 0.066700 ms MarkObjects: 1.557900 ms  DeleteObjects: 0.015700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 88.930677 seconds.
+  path: Assets/InGame/Skill/콜드 빔/7.prefab
+  artifactKey: Guid(dc9a6d7eccafc2e42b91ffcc563028d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/InGame/Skill/콜드 빔/7.prefab using Guid(dc9a6d7eccafc2e42b91ffcc563028d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb4afbbb8e4b2be2155a9b5c36ec6ca4') in 0.067557 seconds
+  Import took 0.070774 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.486490 seconds.
+  path: Assets/InGame/Skill/콜드 빔/7.prefab
+  artifactKey: Guid(dc9a6d7eccafc2e42b91ffcc563028d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/InGame/Skill/콜드 빔/7.prefab using Guid(dc9a6d7eccafc2e42b91ffcc563028d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb4afbbb8e4b2be2155a9b5c36ec6ca4') in 0.015745 seconds
+  Import took 0.019200 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002627 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.845 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 81.3 MB.
+System memory in use after: 81.4 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2259.
+Total: 3.030300 ms (FindLiveObjects: 0.296700 ms CreateObjectMapping: 0.068700 ms MarkObjects: 2.632800 ms  DeleteObjects: 0.030800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002847 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.200 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 81.3 MB.
+System memory in use after: 81.4 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2262.
+Total: 1.982400 ms (FindLiveObjects: 0.162400 ms CreateObjectMapping: 0.069300 ms MarkObjects: 1.718900 ms  DeleteObjects: 0.030900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002584 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.037 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 81.3 MB.
+System memory in use after: 81.4 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2265.
+Total: 1.903500 ms (FindLiveObjects: 0.150100 ms CreateObjectMapping: 0.047200 ms MarkObjects: 1.675700 ms  DeleteObjects: 0.028900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1286.429677 seconds.
+  path: Assets/InGame/Skill/콜드 빔/7.prefab
+  artifactKey: Guid(dc9a6d7eccafc2e42b91ffcc563028d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/InGame/Skill/콜드 빔/7.prefab using Guid(dc9a6d7eccafc2e42b91ffcc563028d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '598b940b793833b60d832e6fb5712643') in 0.065908 seconds
+  Import took 0.069155 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.286315 seconds.
+  path: Assets/InGame/Skill/콜드 빔/7.prefab
+  artifactKey: Guid(dc9a6d7eccafc2e42b91ffcc563028d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/InGame/Skill/콜드 빔/7.prefab using Guid(dc9a6d7eccafc2e42b91ffcc563028d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd68a269caa1f6d79224fc74146daf4a3') in 0.019104 seconds
+  Import took 0.022686 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002578 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.991 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 81.3 MB.
+System memory in use after: 81.4 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2269.
+Total: 2.372800 ms (FindLiveObjects: 0.184100 ms CreateObjectMapping: 0.090300 ms MarkObjects: 2.079900 ms  DeleteObjects: 0.016900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 44.530262 seconds.
+  path: Assets/InGame/Skill/콜드 빔/7.prefab
+  artifactKey: Guid(dc9a6d7eccafc2e42b91ffcc563028d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/InGame/Skill/콜드 빔/7.prefab using Guid(dc9a6d7eccafc2e42b91ffcc563028d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81266105b2f66caf1546c9756650abda') in 0.066878 seconds
+  Import took 0.070261 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.517422 seconds.
+  path: Assets/InGame/Skill/콜드 빔/7.prefab
+  artifactKey: Guid(dc9a6d7eccafc2e42b91ffcc563028d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/InGame/Skill/콜드 빔/7.prefab using Guid(dc9a6d7eccafc2e42b91ffcc563028d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81266105b2f66caf1546c9756650abda') in 0.016402 seconds
+  Import took 0.019779 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002599 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.970 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 81.3 MB.
+System memory in use after: 81.4 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2273.
+Total: 1.990200 ms (FindLiveObjects: 0.200000 ms CreateObjectMapping: 0.114700 ms MarkObjects: 1.643700 ms  DeleteObjects: 0.030700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 90.575243 seconds.
+  path: Assets/InGame/Skill/콜드 빔/7.prefab
+  artifactKey: Guid(dc9a6d7eccafc2e42b91ffcc563028d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/InGame/Skill/콜드 빔/7.prefab using Guid(dc9a6d7eccafc2e42b91ffcc563028d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c236141f959e9299e5a1b662f2a50953') in 0.065043 seconds
+  Import took 0.068397 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.784501 seconds.
+  path: Assets/InGame/Skill/콜드 빔/7.prefab
+  artifactKey: Guid(dc9a6d7eccafc2e42b91ffcc563028d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/InGame/Skill/콜드 빔/7.prefab using Guid(dc9a6d7eccafc2e42b91ffcc563028d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c236141f959e9299e5a1b662f2a50953') in 0.015773 seconds
+  Import took 0.019069 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002632 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.005 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 81.3 MB.
+System memory in use after: 81.4 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2277.
+Total: 2.051000 ms (FindLiveObjects: 0.178300 ms CreateObjectMapping: 0.053700 ms MarkObjects: 1.800300 ms  DeleteObjects: 0.017800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002561 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.114 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 81.3 MB.
+System memory in use after: 81.4 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2280.
+Total: 3.035500 ms (FindLiveObjects: 0.388100 ms CreateObjectMapping: 0.184100 ms MarkObjects: 2.441800 ms  DeleteObjects: 0.016100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003098 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.000 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1687 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 81.3 MB.
+System memory in use after: 81.4 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2283.
+Total: 2.093700 ms (FindLiveObjects: 0.172900 ms CreateObjectMapping: 0.058800 ms MarkObjects: 1.845400 ms  DeleteObjects: 0.015700 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

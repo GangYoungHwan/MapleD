@@ -5,21 +5,24 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     [SerializeField] private GameObject hitEff;
+    [SerializeField] private GameObject Effect = null;
     [SerializeField] private GameObject dmgHud;
     private int attackNum;
     private int damage;
     private int skillLV;
+    public int skillType;
     private Movement movement;
     private Transform target;
 
 
-    public void Setup(Transform target,int damage,int attackNum, int skillLV)
+    public void Setup(int SkillType,Transform target,int damage,int attackNum, int skillLV)
     {
         movement = GetComponent<Movement>();
         this.target = target;
         this.damage = damage;
         this.attackNum = attackNum;
         this.skillLV = skillLV;
+        this.skillType = SkillType;
     }
     void Update()
     {
@@ -53,9 +56,11 @@ public class Projectile : MonoBehaviour
             Critical = true;
             dmg += CriDmg;
         }
-        GameObject hitEffclone = Instantiate(hitEff, collision.transform.position, Quaternion.identity);
+  
+        GameObject hitEffclone = Instantiate(Effect, collision.transform.position, Quaternion.identity);
+
         Vector3 DmgskinPos = collision.GetComponent<Monster>().dmgPos.transform.position;
-        collision.GetComponent<MonsterHP>().TakeDamage(Critical, attackNum, (int)dmg, dmgHud, DmgskinPos);
+        collision.GetComponent<MonsterHP>().TakeDamage(skillType, Critical, attackNum, (int)dmg, dmgHud, DmgskinPos,hitEff,target);
         Destroy(gameObject);
     }
 }

@@ -111,7 +111,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4e6746d37a803944be6606a0684179f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitEff: {fileID: 1543926212059903017, guid: 5f653c8bc8e9a804a910f01f3f366bee, type: 3}
+  hitEff: {fileID: 1543926212059903017, guid: bd63ae72f960b6d4b9676ff6022c24ed, type: 3}
+  Effect: {fileID: 1543926212059903017, guid: 5f653c8bc8e9a804a910f01f3f366bee, type: 3}
   dmgHud: {fileID: 2792907482444471065, guid: 471c5b21d5ce5f549a8e62022dcce558, type: 3}
 --- !u!58 &4594546784737068044
 CircleCollider2D:

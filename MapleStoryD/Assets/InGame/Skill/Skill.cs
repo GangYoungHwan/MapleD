@@ -16,6 +16,8 @@ public class Skill : MonoBehaviour
     [SerializeField] private float attackRange = 2.0f;
     public int SkillID = 0;
     public int AttackNum = 1;
+    public int SkillType = 0;
+    public int AttackMonsterCount = 1;
     private int attackDamage;
     private int skillLV = 1;
     private State state = State.SearchTarget;
@@ -78,7 +80,10 @@ public class Skill : MonoBehaviour
                 ChangeState(State.SearchTarget);
                 break;
             }
-            SpawnProjectile();
+            if (AttackMonsterCount == 1)
+                SpawnProjectile();
+            else
+                SpawnProjectile2(AttackMonsterCount);
             yield return new WaitForSeconds(attackRate);
 
             
@@ -92,6 +97,45 @@ public class Skill : MonoBehaviour
             Instantiate(effectPrefab, spawnPoint.position, Quaternion.identity);
         }
         GameObject clone = Instantiate(projectilePrefab, spawnPoint.position, Quaternion.identity);
-        clone.GetComponent<Projectile>().Setup(attackTarget, attackDamage, AttackNum, skillLV);
+        clone.GetComponent<Projectile>().Setup(SkillType,attackTarget, attackDamage, AttackNum, skillLV);
     }
+
+    private void SpawnProjectile2(int attackNum)
+    {
+        bool monsterCount = false;
+        int temp = 0;
+        if (attackNum > monsterSpawner.MobList.Count)
+        {
+            attackNum = monsterSpawner.MobList.Count;
+            monsterCount = true;
+        }
+        for (int i=0; i< attackNum; i++)
+        {
+            for(int j = 0; j< monsterSpawner.MobList.Count; j++)
+            {
+                if(!monsterCount)
+                {
+                    int rand;
+                    while (true)
+                    {
+                        rand = Random.Range(0, monsterSpawner.MobList.Count);
+                        if (temp != rand)
+                        {
+                            temp = rand;
+                            break;
+                        }
+                    }
+                    GameObject clones = Instantiate(projectilePrefab, spawnPoint.position, Quaternion.identity);
+                    clones.GetComponent<Projectile>().Setup(SkillType, monsterSpawner.MobList[rand].transform, attackDamage, AttackNum, skillLV);
+                }
+                else
+                {
+                    GameObject clones = Instantiate(projectilePrefab, spawnPoint.position, Quaternion.identity);
+                    clones.GetComponent<Projectile>().Setup(SkillType, monsterSpawner.MobList[j].transform, attackDamage, AttackNum, skillLV);
+                }
+                break;
+            }
+        }
+    }
+
 }
