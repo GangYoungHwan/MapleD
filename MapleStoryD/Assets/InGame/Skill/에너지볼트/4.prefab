@@ -102,8 +102,11 @@ MonoBehaviour:
     type: 3}
   spawnPoint: {fileID: 8721416150822088285}
   attackRate: 1.5
-  attackRange: 3
+  attackRange: 10
   SkillID: 4
+  AttackNum: 2
+  SkillType: 0
+  AttackMonsterCount: 1
 --- !u!1 &8721416150822088290
 GameObject:
   m_ObjectHideFlags: 0

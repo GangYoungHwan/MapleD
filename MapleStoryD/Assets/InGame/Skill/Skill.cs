@@ -11,7 +11,8 @@ public class Skill : MonoBehaviour
 {
     [SerializeField] private GameObject projectilePrefab;
     [SerializeField] private GameObject effectPrefab=null;
-    [SerializeField] private Transform spawnPoint;
+    //[SerializeField] private Transform spawnPoint;
+    private Transform spawnPoint;
     [SerializeField] private float attackRate = 0.5f;
     [SerializeField] private float attackRange = 2.0f;
     public int SkillID = 0;
@@ -19,13 +20,14 @@ public class Skill : MonoBehaviour
     public int SkillType = 0;
     public int AttackMonsterCount = 1;
     private int attackDamage;
-    private int skillLV = 1;
+    public int skillLV = 1;
     private State state = State.SearchTarget;
     private Transform attackTarget = null;
     private MonsterSpawner monsterSpawner;
     private void Awake()
     {
         attackDamage = int.Parse(SkillInfoManager.Instance.SkillList[SkillID].Att)*DataManager.Instance.playerData.Skill_Lv[SkillID];
+        spawnPoint = transform;
     }
     public void Setup(MonsterSpawner monsterSpawner)
     {
@@ -94,14 +96,20 @@ public class Skill : MonoBehaviour
     {
         if(effectPrefab !=null)
         {
-            Instantiate(effectPrefab, spawnPoint.position, Quaternion.identity);
+            GameObject effect = Instantiate(effectPrefab, spawnPoint.position, Quaternion.identity);
+            effect.GetComponent<Hit>().SkillID = -1;
         }
         GameObject clone = Instantiate(projectilePrefab, spawnPoint.position, Quaternion.identity);
-        clone.GetComponent<Projectile>().Setup(SkillType,attackTarget, attackDamage, AttackNum, skillLV);
+        clone.GetComponent<Projectile>().Setup(SkillType,attackTarget, attackDamage, AttackNum, skillLV,SkillID);
     }
 
     private void SpawnProjectile2(int attackNum)
     {
+        if (effectPrefab != null)
+        {
+            GameObject effect = Instantiate(effectPrefab, spawnPoint.position, Quaternion.identity);
+            effect.GetComponent<Hit>().SkillID = -1;
+        }
         bool monsterCount = false;
         int temp = 0;
         if (attackNum > monsterSpawner.MobList.Count)
@@ -126,12 +134,12 @@ public class Skill : MonoBehaviour
                         }
                     }
                     GameObject clones = Instantiate(projectilePrefab, spawnPoint.position, Quaternion.identity);
-                    clones.GetComponent<Projectile>().Setup(SkillType, monsterSpawner.MobList[rand].transform, attackDamage, AttackNum, skillLV);
+                    clones.GetComponent<Projectile>().Setup(SkillType, monsterSpawner.MobList[rand].transform, attackDamage, AttackNum, skillLV, SkillID);
                 }
                 else
                 {
                     GameObject clones = Instantiate(projectilePrefab, spawnPoint.position, Quaternion.identity);
-                    clones.GetComponent<Projectile>().Setup(SkillType, monsterSpawner.MobList[j].transform, attackDamage, AttackNum, skillLV);
+                    clones.GetComponent<Projectile>().Setup(SkillType, monsterSpawner.MobList[j].transform, attackDamage, AttackNum, skillLV, SkillID);
                 }
                 break;
             }

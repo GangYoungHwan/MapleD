@@ -11,6 +11,7 @@ TagManager:
   - WayRight
   - WayLeft
   - Mob
+  - Skill
   layers:
   - Default
   - TransparentFX

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9184,12 +9184,17 @@ MonoBehaviour:
   masterBGM: 0
   TitleBgmAudioClip: {fileID: 8300000, guid: a4e51fb4e7ca0754685bf805f21eb0b8, type: 3}
   mainBgmAudioClip: {fileID: 8300000, guid: 8e08d8fc5a4e82c42b2a59499434686c, type: 3}
-  adventureBgmAudioClip: {fileID: 0}
+  GameSceneClip: {fileID: 8300000, guid: 486e36cee1064884d84257cdc3de40ba, type: 3}
   sfxAudioClips:
   - {fileID: 8300000, guid: 351f9988570740d4b9c777354a744d60, type: 3}
   - {fileID: 8300000, guid: ced77d83cb4dd334e80cc248ce3e6864, type: 3}
   - {fileID: 8300000, guid: 6e75d20e3c44c504c9bfe7f28497f0d7, type: 3}
   - {fileID: 8300000, guid: b3367e5d7ec46a04aa5b49910310dcfc, type: 3}
+  - {fileID: 8300000, guid: 9f549cda42b91d740ae0ee0651fe6c66, type: 3}
+  - {fileID: 8300000, guid: 99459c8f32acfc9419f0f5a8a07294da, type: 3}
+  - {fileID: 8300000, guid: 90516b5950c655e45a50605908cb8b8b, type: 3}
+  - {fileID: 8300000, guid: 13a21c9b73751ca4fb32d0d848894a97, type: 3}
+  - {fileID: 8300000, guid: 5e08b01a08de90143b431cf3c50c7794, type: 3}
   _Sound:
     BGMvolum: 0
     SFXvoium: 0

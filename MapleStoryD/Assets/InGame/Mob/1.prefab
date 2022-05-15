@@ -156,6 +156,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 801605af3e250e844b7152a2e8c73c06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  StunEffect: {fileID: 4509377705436619389, guid: 92b5901d33650c749a8c47fd4b972b0c,
+    type: 3}
   MoveSpeed: 0.4
   nextMove: 1
   dmgPos: {fileID: 5575481263016783309}

@@ -31,8 +31,9 @@ public class InGameManager : MonoBehaviour
     [SerializeField] private MonsterSpawner monsterSpawner;
     private void Start()
     {
+        SoundManager.Instance.PlayBGMSound();
         skillList = new List<SkillManager>();
-        for (int i=0; i< 9; i++)
+        for (int i=0; i< skillslotPos.Length; i++)
         {
             SkillManager skill = new SkillManager();
             skill._slot = false;
@@ -48,7 +49,7 @@ public class InGameManager : MonoBehaviour
             return;
         }
 
-        int _random = Random.Range(0, skillList.Count);
+        int _random = Random.Range(0, skillslotPos.Length);
         int _Skillnum = Random.Range(0, 5);
 
         if (skillList[_random]._slot)
@@ -59,16 +60,12 @@ public class InGameManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("Ä«¿îÆ®");
             cnt++;
         }
         skillList[_random]._slot = true;
-        skillList[_random]._skillNum = DataManager.Instance.playerData.SkillActiveSlotID[_Skillnum];
-        /*
-        GameObject clone = Instantiate(skillPrfab[skillList[_random]._skillNum], skillslotPos[_random].position, Quaternion.identity);
-        clone.GetComponent<Skill1>().Setup(monsterSpawner);
-        */
-        GameObject clone = Instantiate(skillPrfab[3], skillslotPos[0].position, Quaternion.identity);
+        skillList[_random]._skillNum = int.Parse(skillPrfab[_Skillnum].name);
+        //GameObject clone = Instantiate(skillPrfab[_Skillnum], skillslotPos[_random].position, Quaternion.identity);
+        GameObject clone = Instantiate(skillPrfab[0], skillslotPos[_random].position, Quaternion.identity);
         clone.GetComponent<Skill>().Setup(monsterSpawner);
     }
 }

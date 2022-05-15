@@ -99,7 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Cri: {fileID: 703275392018062853, guid: 7ed9a34cdce35f04b8a8d7cba1ce9442, type: 3}
   NoCri: {fileID: 703275392018062853, guid: 69deb73571bfe45459d6c275a032dc61, type: 3}
-  _destoryTime: 0.8
+  _destoryTime: 1.5
 --- !u!1001 &41174005607942070
 PrefabInstance:
   m_ObjectHideFlags: 0

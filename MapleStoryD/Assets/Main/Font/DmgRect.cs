@@ -9,6 +9,7 @@ public class DmgRect : MonoBehaviour
     public float _speed = 0.5f;
     public float _alphaSpeed = 0.8f;
     public Text[] _DmgText = null;
+    public Image _criImage = null;
     Color alpha;
     void Start()
     {
@@ -33,10 +34,14 @@ public class DmgRect : MonoBehaviour
     void Update()
     {
         transform.position += Vector3.up* _speed * Time.deltaTime;
+        if (alpha.a < 100 / 255f)
+            _alphaSpeed = 5f;
         alpha.a = Mathf.Lerp(alpha.a, 0, Time.deltaTime * _alphaSpeed);
         for (int i = 0; i < _DmgText.Length; i++)
         {
             _DmgText[i].color = alpha;
+            if (_criImage != null)
+                _criImage.color = alpha;
         }
     }
 }

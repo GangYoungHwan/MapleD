@@ -9,7 +9,9 @@ public enum MonsterState
 }
 public class Monster : MonoBehaviour
 {
+    [SerializeField] private GameObject StunEffect = null;
     public float MoveSpeed = 0.4f;
+    private float speed;
     Rigidbody2D rigid = null;
     SpriteRenderer Mob = null;
     public int nextMove = 0;
@@ -17,6 +19,7 @@ public class Monster : MonoBehaviour
     public Transform dmgPos = null;
     private MonsterSpawner monsterSpawner;
     private MonsterState state = MonsterState.Normal;
+    private bool stating = false;
     SpriteRenderer spriteRenderer = null;
 
     private void Awake()
@@ -25,6 +28,7 @@ public class Monster : MonoBehaviour
         Mob = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        speed = MoveSpeed;
     }
     public void ChangeState(MonsterState newState)
     {
@@ -41,7 +45,7 @@ public class Monster : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        rigid.velocity = new Vector2(nextMove*MoveSpeed, rigid.velocity.y);
+        rigid.velocity = new Vector2(nextMove* speed, rigid.velocity.y);
         if (nextMove == 1)
         {
             Mob.flipX = true;
@@ -79,7 +83,8 @@ public class Monster : MonoBehaviour
 
     public void monsterState(MonsterState state)
     {
-        ChangeState(state);
+        if (!stating)
+            ChangeState(state);
     }
     private void OnDestroyEvent()
     {
@@ -88,18 +93,21 @@ public class Monster : MonoBehaviour
 
     private IEnumerator Normal()
     {
-        MoveSpeed = 0.4f;
-        Color color = spriteRenderer.color;
-        color.r = 0.5f;
-        color.g = 0.5f;
-        color.b = 0.5f;
-        spriteRenderer.color = color;
-        yield return new WaitForSeconds(0.3f);
-        spriteRenderer.color = Color.white;
+        stating = false;
+        speed = MoveSpeed;
+        yield return null;
+        //Color color = spriteRenderer.color;
+        //color.r = 0.5f;
+        //color.g = 0.5f;
+        //color.b = 0.5f;
+        //spriteRenderer.color = color;
+        //yield return new WaitForSeconds(0.3f);
+        //spriteRenderer.color = Color.white;
     }
     private IEnumerator Slow()
     {
-        MoveSpeed = 0.2f;
+        stating = true;
+        speed = MoveSpeed/2;
         Color col = new Color(100 / 255f, 180 / 255f, 1f);
         spriteRenderer.color = col;
         yield return new WaitForSeconds(2f);
@@ -108,6 +116,8 @@ public class Monster : MonoBehaviour
     }
     private IEnumerator Stun()
     {
+        stating = true;
+        GameObject stunEffect = Instantiate(StunEffect, dmgPos.position, Quaternion.identity);
         int tempMove = nextMove;
         nextMove = 0;
         yield return new WaitForSeconds(1f);

@@ -11,11 +11,12 @@ public class Projectile : MonoBehaviour
     private int damage;
     private int skillLV;
     public int skillType;
+    public int skillID;
     private Movement movement;
     private Transform target;
 
 
-    public void Setup(int SkillType,Transform target,int damage,int attackNum, int skillLV)
+    public void Setup(int SkillType,Transform target,int damage,int attackNum, int skillLV,int skillID)
     {
         movement = GetComponent<Movement>();
         this.target = target;
@@ -23,6 +24,7 @@ public class Projectile : MonoBehaviour
         this.attackNum = attackNum;
         this.skillLV = skillLV;
         this.skillType = SkillType;
+        this.skillID = skillID;
     }
     void Update()
     {
@@ -57,10 +59,14 @@ public class Projectile : MonoBehaviour
             dmg += CriDmg;
         }
   
-        GameObject hitEffclone = Instantiate(Effect, collision.transform.position, Quaternion.identity);
+        if(Effect != null)
+        {
+            GameObject hitEffclone = Instantiate(Effect, collision.transform.position, Quaternion.identity);
+            hitEffclone.GetComponent<Hit>().SkillID = -1;
+        }
 
         Vector3 DmgskinPos = collision.GetComponent<Monster>().dmgPos.transform.position;
-        collision.GetComponent<MonsterHP>().TakeDamage(skillType, Critical, attackNum, (int)dmg, dmgHud, DmgskinPos,hitEff,target);
+        collision.GetComponent<MonsterHP>().TakeDamage(skillType, Critical, attackNum, (int)dmg, dmgHud, DmgskinPos,hitEff,target,skillID);
         Destroy(gameObject);
     }
 }

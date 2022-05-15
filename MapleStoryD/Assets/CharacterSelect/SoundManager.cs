@@ -42,7 +42,7 @@ public class SoundManager : MonoBehaviour
     [SerializeField]
     private AudioClip mainBgmAudioClip; //메인화면에서 사용할 BGM
     [SerializeField]
-    private AudioClip adventureBgmAudioClip; //어드벤쳐씬에서 사용할 BGM
+    private AudioClip GameSceneClip; //어드벤쳐씬에서 사용할 BGM
 
     [SerializeField]
     private AudioClip[] sfxAudioClips; //효과음들 지정
@@ -95,6 +95,11 @@ public class SoundManager : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "MainScene")
         {
             bgmPlayer.clip = mainBgmAudioClip;
+            if (!bgmPlayer.isPlaying) bgmPlayer.Play();
+        }
+        if (SceneManager.GetActiveScene().name == "GameScene")
+        {
+            bgmPlayer.clip = GameSceneClip;
             if (!bgmPlayer.isPlaying) bgmPlayer.Play();
         }
         //현재 씬에 맞는 BGM 재생

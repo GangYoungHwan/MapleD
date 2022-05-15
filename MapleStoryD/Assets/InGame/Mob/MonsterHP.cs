@@ -22,7 +22,7 @@ public class MonsterHP : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    public void TakeDamage(int skillType, bool cri,int AttackNum,int damage,GameObject hud,Vector3 Pos,GameObject hitEft,Transform Target)
+    public void TakeDamage(int skillType, bool cri,int AttackNum,int damage,GameObject hud,Vector3 Pos,GameObject hitEft,Transform Target,int SkillID)
     {
         float _Dmg = 0;
         if (isDie == true) return;
@@ -35,18 +35,18 @@ public class MonsterHP : MonoBehaviour
             
         }
         if(skillType == 0)
-            monster.ChangeState(MonsterState.Normal);
+            monster.monsterState(MonsterState.Normal);
         else if(skillType == 1)
-            monster.ChangeState(MonsterState.Slow);
+            monster.monsterState(MonsterState.Slow);
         else if (skillType == 2)
-            monster.ChangeState(MonsterState.Stun);
+            monster.monsterState(MonsterState.Stun);
 
         GameObject dmgSkinclone = Instantiate(hud, Pos, Quaternion.identity);
         
         if(cri)
-            dmgSkinclone.GetComponent<Hud>().DmgCri(Damage, hitEft, Target);
+            dmgSkinclone.GetComponent<Hud>().DmgCri(Damage, hitEft, Target,SkillID);
         else
-            dmgSkinclone.GetComponent<Hud>().DmgNoCri(Damage, hitEft, Target);
+            dmgSkinclone.GetComponent<Hud>().DmgNoCri(Damage, hitEft, Target,SkillID);
         currentHP -= (int)_Dmg;
         if(currentHP <= 0)
         {
