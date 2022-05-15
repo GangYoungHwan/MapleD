@@ -27,12 +27,16 @@ public class DragAndDrop : MonoBehaviour
     private void OnMouseUp()
     {
         isSelect = false;
-        this.transform.position = LoadedPos;
+        
         if(contactSkill != null)
         {
             Destroy(gameObject);
             Destroy(contactSkill);
             //contactSkill.GetComponent<Skill>().skillLV+=1;
+        }
+        else
+        {
+            this.transform.position = LoadedPos;
         }
     }
 
@@ -57,7 +61,7 @@ public class DragAndDrop : MonoBehaviour
                     contactSkill.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f);
                     contactSkill = null;
                 }
-                LoadedPos = collision.transform.position;
+                //LoadedPos = collision.transform.position;
                 contactSkill = collision.gameObject;
                 contactSkill.GetComponent<SpriteRenderer>().color = new Color(0.7f, 0.7f, 0.7f);
             }

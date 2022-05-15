@@ -62,10 +62,18 @@ public class InGameManager : MonoBehaviour
         {
             cnt++;
         }
-        skillList[_random]._slot = true;
-        skillList[_random]._skillNum = int.Parse(skillPrfab[_Skillnum].name);
+        CereteSkill(0, skillslotPos[_random].position,1, _random);
+        //skillList[_random]._slot = true;
+        //skillList[_random]._skillNum = int.Parse(skillPrfab[_Skillnum].name);
         //GameObject clone = Instantiate(skillPrfab[_Skillnum], skillslotPos[_random].position, Quaternion.identity);
-        GameObject clone = Instantiate(skillPrfab[0], skillslotPos[_random].position, Quaternion.identity);
-        clone.GetComponent<Skill>().Setup(monsterSpawner);
+        //GameObject clone = Instantiate(skillPrfab[0], skillslotPos[_random].position, Quaternion.identity);
+        //clone.GetComponent<Skill>().Setup(monsterSpawner);
+    }
+    public void CereteSkill(int skillnum,Vector3 pos,int Level,int random)
+    {
+        skillList[random]._slot = true;
+        skillList[random]._skillNum = int.Parse(skillPrfab[skillnum].name);
+        GameObject clone = Instantiate(skillPrfab[skillnum], pos, Quaternion.identity);
+        clone.GetComponent<Skill>().Setup(monsterSpawner, Level);
     }
 }
