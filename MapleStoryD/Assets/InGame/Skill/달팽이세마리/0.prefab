@@ -137,7 +137,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 911791866e520c04cb8c242f4a686a3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LoadedPos: {x: 0, y: 0, z: 0}
 --- !u!50 &8372832474983152208
 Rigidbody2D:
   serializedVersion: 4
@@ -183,7 +182,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.25, y: 0.25}
+  m_Size: {x: 0.15, y: 0.15}
   m_EdgeRadius: 0
 --- !u!1 &1588616145788416676
 GameObject:

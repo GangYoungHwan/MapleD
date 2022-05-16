@@ -39,10 +39,12 @@ public class Skill : MonoBehaviour
     //    Gizmos.color = Color.green;
     //    Gizmos.DrawWireSphere(transform.position, attackRange);
     //}
-    public void Setup(MonsterSpawner monsterSpawner,int Level)
+    public void Setup(MonsterSpawner monsterSpawner,int Level,int SlotNum,int SkillNum)
     {
         this.skillLV = Level;
         this.monsterSpawner = monsterSpawner;
+        this.SlotNum = SlotNum;
+        this.SkillNum = SkillNum;
         ChangeState(State.SearchTarget);
     }
     public void LevelUp()

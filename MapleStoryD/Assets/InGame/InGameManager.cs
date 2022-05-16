@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class InGameManager : MonoBehaviour
 {
     private static InGameManager _instance = null;
@@ -24,12 +24,18 @@ public class InGameManager : MonoBehaviour
         }
     }
     public int Skillcnt = 0;
-    public int _SkillPoint;
+    public int _SkillPoint = 100;
+    public int _DiceSP = 10;
+    public int getSkillPoint = 10;
     public List<SkillManager> skillList = null;
     public List<SkillManager> passiveList = null;
     public GameObject[] skillPrfab = null;
     public GameObject[] passivePrfab = null;
     public Transform[] skillslotPos = null;
+    public Button DiceButton = null;
+
+    [SerializeField] private Text _SkillPointText = null;
+    [SerializeField] private Text _DiceSPText = null;
     [SerializeField] private MonsterSpawner monsterSpawner;
     private void Start()
     {
@@ -50,16 +56,24 @@ public class InGameManager : MonoBehaviour
             passive._skillID = DataManager.Instance.playerData.SkillPassiveSlotID[i];
             passiveList.Add(passive);
         }
+        _SkillPointText.text = _SkillPoint.ToString();
+        _DiceSPText.text = _DiceSP.ToString();
         //패시브 넣기
+    }
+    private void Update()
+    {
+        if (Skillcnt >= skillList.Count || _SkillPoint < _DiceSP)
+        {
+            DiceButton.interactable = false;
+            //return;
+        }
+        else
+        {
+            DiceButton.interactable = true;
+        }
     }
     public void OnDice()
     {
-        if (Skillcnt >= skillList.Count)
-        {
-            Debug.Log("버튼 비활성화");
-            return;
-        }
-
         int _random = Random.Range(0, skillslotPos.Length);
         int _Skillnum = Random.Range(0, 5);
 
@@ -71,23 +85,26 @@ public class InGameManager : MonoBehaviour
         }
         else
         {
+            _SkillPoint -= _DiceSP;
+            _DiceSP += 10;
+            _DiceSPText.text = _DiceSP.ToString();
+            _SkillPointText.text = _SkillPoint.ToString();
             Skillcnt++;
         }
         CereteSkill(_Skillnum, skillslotPos[_random].position,0, _random);
-        //skillList[_random]._slot = true;
-        //skillList[_random]._skillNum = int.Parse(skillPrfab[_Skillnum].name);
-        //GameObject clone = Instantiate(skillPrfab[_Skillnum], skillslotPos[_random].position, Quaternion.identity);
-        //GameObject clone = Instantiate(skillPrfab[0], skillslotPos[_random].position, Quaternion.identity);
-        //clone.GetComponent<Skill>().Setup(monsterSpawner);
     }
     public void CereteSkill(int skillnum,Vector3 pos,int Level,int SlotNum)
     {
         skillList[SlotNum]._slot = true;
         skillList[SlotNum]._skillID = int.Parse(skillPrfab[skillnum].name);
         GameObject clone = Instantiate(skillPrfab[skillnum], pos, Quaternion.identity);
-        clone.GetComponent<Skill>().Setup(monsterSpawner, Level);
-        clone.GetComponent<Skill>().SlotNum = SlotNum;
-        clone.GetComponent<Skill>().SkillNum = skillnum;
+        clone.GetComponent<Skill>().Setup(monsterSpawner, Level, SlotNum, skillnum);
         clone.GetComponent<Skill>().LevelUp();
+    }
+
+    public void GetSkillPoint()
+    {
+        _SkillPoint += getSkillPoint;
+        _SkillPointText.text = _SkillPoint.ToString();
     }
 }

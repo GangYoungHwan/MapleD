@@ -4,20 +4,34 @@ using UnityEngine;
 
 public class DragAndDrop : MonoBehaviour
 {
-    SpriteRenderer spriteRenderer;
-    GameObject contactSkill = null;
-    public Vector3 LoadedPos;
-    bool isSelect = false;
+    private GameObject contactSkill = null;
+    private Vector3 LoadedPos;
+    private bool isSelect = false;
     private GameObject[] skill = null;
 
     private void Start()
     {
         LoadedPos = this.transform.position;
-        spriteRenderer = GetComponent<SpriteRenderer>();
     }
     private void OnMouseDown()
     {
         isSelect = true;
+        skill = GameObject.FindGameObjectsWithTag("Skill");
+        for (int i = 0; i < skill.Length; i++)
+        {
+            int currSkillID = GetComponent<Skill>().SkillID;
+            int SkillIDs = skill[i].GetComponent<Skill>().SkillID;
+            int currSkillLv = GetComponent<Skill>().skillLV;
+            int SkillILvs = skill[i].GetComponent<Skill>().skillLV;
+            if (currSkillID == SkillIDs && currSkillLv == SkillILvs)
+            {
+                skill[i].GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f);
+            }
+            else
+            {
+                skill[i].GetComponent<SpriteRenderer>().color = new Color(0.7f, 0.7f, 0.7f);
+            }
+        }
     }
     private void OnMouseDrag()
     {
@@ -25,7 +39,7 @@ public class DragAndDrop : MonoBehaviour
         this.transform.position = Camera.main.ScreenToWorldPoint(mousePosition);
         this.GetComponent<SpriteRenderer>().sortingOrder = 101;
         this.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.7f);
-
+        /*
         skill = GameObject.FindGameObjectsWithTag("Skill");
         for(int i=0; i< skill.Length; i++)
         {
@@ -42,6 +56,7 @@ public class DragAndDrop : MonoBehaviour
                 skill[i].GetComponent<SpriteRenderer>().color = new Color(0.7f, 0.7f, 0.7f);
             }
         }
+        */
     }
     private void OnMouseUp()
     {
@@ -88,10 +103,13 @@ public class DragAndDrop : MonoBehaviour
                 {
                     contactSkill = null;
                 }
-                contactSkill = collision.gameObject;
+                else
+                {
+                    contactSkill = collision.gameObject;
+                    contactSkill.GetComponent<SpriteRenderer>().color = Color.yellow;
+                }
             }
         }
-
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
@@ -107,7 +125,9 @@ public class DragAndDrop : MonoBehaviour
                 {
                     contactSkill = null;
                 }
+                collision.GetComponent<SpriteRenderer>().color = Color.white;
             }
+            
         }
     }
 }
