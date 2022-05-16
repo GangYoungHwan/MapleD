@@ -8,6 +8,7 @@ public class DragAndDrop : MonoBehaviour
     GameObject contactSkill = null;
     public Vector3 LoadedPos;
     bool isSelect = false;
+    private GameObject[] skill = null;
 
     private void Start()
     {
@@ -21,8 +22,26 @@ public class DragAndDrop : MonoBehaviour
     private void OnMouseDrag()
     {
         Vector3 mousePosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 10);
-        //마우스 좌표를 스크린 투 월드로 바꾸고 이 객체의 위치로 설정해 준다.
         this.transform.position = Camera.main.ScreenToWorldPoint(mousePosition);
+        this.GetComponent<SpriteRenderer>().sortingOrder = 101;
+        this.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.7f);
+
+        skill = GameObject.FindGameObjectsWithTag("Skill");
+        for(int i=0; i< skill.Length; i++)
+        {
+            int currSkillID = GetComponent<Skill>().SkillID;
+            int SkillIDs = skill[i].GetComponent<Skill>().SkillID;
+            int currSkillLv = GetComponent<Skill>().skillLV;
+            int SkillILvs = skill[i].GetComponent<Skill>().skillLV;
+            if (currSkillID == SkillIDs && currSkillLv == SkillILvs)
+            {
+                skill[i].GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f);
+            }
+            else
+            {
+                skill[i].GetComponent<SpriteRenderer>().color = new Color(0.7f, 0.7f, 0.7f);
+            }
+        }
     }
     private void OnMouseUp()
     {
@@ -30,13 +49,26 @@ public class DragAndDrop : MonoBehaviour
         
         if(contactSkill != null)
         {
+            int currSlotnum = GetComponent<Skill>().SlotNum;
+            int conSlotnum = contactSkill.GetComponent<Skill>().SlotNum;
+            int currSkillLv = GetComponent<Skill>().skillLV;
+            int currSkillNum = GetComponent<Skill>().SkillNum;
+            InGameManager.Instance.skillList[currSlotnum]._slot = false;
+            InGameManager.Instance.CereteSkill(currSkillNum, contactSkill.transform.position, currSkillLv, conSlotnum);
+            InGameManager.Instance.Skillcnt -= 1;
             Destroy(gameObject);
             Destroy(contactSkill);
-            //contactSkill.GetComponent<Skill>().skillLV+=1;
+            
         }
         else
         {
+            this.GetComponent<SpriteRenderer>().sortingOrder = 100;
             this.transform.position = LoadedPos;
+        }
+
+        for (int i = 0; i < skill.Length; i++)
+        {
+            skill[i].GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f);
         }
     }
 
@@ -50,20 +82,13 @@ public class DragAndDrop : MonoBehaviour
             int currSkillLv = GetComponent<Skill>().skillLV;
             int colSkillILv = collision.GetComponent<Skill>().skillLV;
 
-            //if (other.tag == "Skill")
-            //{
-            //    LoadedPos = other.transform.position;
-            //}
             if (isSelect && currSkillID == colSkillID && currSkillLv == colSkillILv)
             {
                 if (contactSkill != null)
                 {
-                    contactSkill.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f);
                     contactSkill = null;
                 }
-                //LoadedPos = collision.transform.position;
                 contactSkill = collision.gameObject;
-                contactSkill.GetComponent<SpriteRenderer>().color = new Color(0.7f, 0.7f, 0.7f);
             }
         }
 
@@ -80,11 +105,9 @@ public class DragAndDrop : MonoBehaviour
             {
                 if (contactSkill != null)
                 {
-                    contactSkill.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f);
                     contactSkill = null;
                 }
             }
         }
-
     }
 }

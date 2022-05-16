@@ -20,7 +20,7 @@ TagManager:
   - Water
   - UI
   - Monster
-  - 
+  - Skill
   - 
   - 
   - 
@@ -54,4 +54,7 @@ TagManager:
     locked: 0
   - name: Menu
     uniqueID: 2660394149
+    locked: 0
+  - name: Skill
+    uniqueID: 3155478711
     locked: 0

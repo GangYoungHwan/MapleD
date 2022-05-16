@@ -4,7 +4,7 @@
     "Name": "bhj",
     "Job": 2,
     "Level": 1,
-    "Meso": 2200,
+    "Meso": 3100,
     "Dia": 100,
     "Exp": 0,
     "Avata": 1,
@@ -53,7 +53,7 @@
         1,
         1,
         1,
-        1
+        2
     ],
     "AvataSlot": [
         true,

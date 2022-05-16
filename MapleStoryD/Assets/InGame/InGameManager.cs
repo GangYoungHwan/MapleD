@@ -23,10 +23,12 @@ public class InGameManager : MonoBehaviour
             return _instance;
         }
     }
-    public int cnt = 0;
+    public int Skillcnt = 0;
     public int _SkillPoint;
     public List<SkillManager> skillList = null;
+    public List<SkillManager> passiveList = null;
     public GameObject[] skillPrfab = null;
+    public GameObject[] passivePrfab = null;
     public Transform[] skillslotPos = null;
     [SerializeField] private MonsterSpawner monsterSpawner;
     private void Start()
@@ -37,13 +39,22 @@ public class InGameManager : MonoBehaviour
         {
             SkillManager skill = new SkillManager();
             skill._slot = false;
-            skill._skillNum = 0;
+            skill._skillID = 0;
             skillList.Add(skill);
         }
+        passiveList = new List<SkillManager>();
+        for(int i=0; i< DataManager.Instance.playerData.SkillPassiveSlot.Length; i++)
+        {
+            SkillManager passive = new SkillManager();
+            passive._slot = DataManager.Instance.playerData.SkillPassiveSlot[i];
+            passive._skillID = DataManager.Instance.playerData.SkillPassiveSlotID[i];
+            passiveList.Add(passive);
+        }
+        //패시브 넣기
     }
     public void OnDice()
     {
-        if (cnt >= skillList.Count)
+        if (Skillcnt >= skillList.Count)
         {
             Debug.Log("버튼 비활성화");
             return;
@@ -60,20 +71,23 @@ public class InGameManager : MonoBehaviour
         }
         else
         {
-            cnt++;
+            Skillcnt++;
         }
-        CereteSkill(0, skillslotPos[_random].position,1, _random);
+        CereteSkill(_Skillnum, skillslotPos[_random].position,0, _random);
         //skillList[_random]._slot = true;
         //skillList[_random]._skillNum = int.Parse(skillPrfab[_Skillnum].name);
         //GameObject clone = Instantiate(skillPrfab[_Skillnum], skillslotPos[_random].position, Quaternion.identity);
         //GameObject clone = Instantiate(skillPrfab[0], skillslotPos[_random].position, Quaternion.identity);
         //clone.GetComponent<Skill>().Setup(monsterSpawner);
     }
-    public void CereteSkill(int skillnum,Vector3 pos,int Level,int random)
+    public void CereteSkill(int skillnum,Vector3 pos,int Level,int SlotNum)
     {
-        skillList[random]._slot = true;
-        skillList[random]._skillNum = int.Parse(skillPrfab[skillnum].name);
+        skillList[SlotNum]._slot = true;
+        skillList[SlotNum]._skillID = int.Parse(skillPrfab[skillnum].name);
         GameObject clone = Instantiate(skillPrfab[skillnum], pos, Quaternion.identity);
         clone.GetComponent<Skill>().Setup(monsterSpawner, Level);
+        clone.GetComponent<Skill>().SlotNum = SlotNum;
+        clone.GetComponent<Skill>().SkillNum = skillnum;
+        clone.GetComponent<Skill>().LevelUp();
     }
 }

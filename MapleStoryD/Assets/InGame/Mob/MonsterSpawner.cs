@@ -11,7 +11,7 @@ public class MonsterSpawner : MonoBehaviour
     [SerializeField] private int MobCnt;
     [SerializeField] private int cnt;
     [SerializeField] private int mobcntMax = 60;
-    private int sortingOrder = 10;
+    private int sortingOrder = 200;
     private List<Monster> mobList;
     public List<Monster> MobList => mobList;
     void Start()

@@ -5,5 +5,5 @@ using UnityEngine;
 public class SkillManager
 {
     public bool _slot;
-    public int _skillNum;
+    public int _skillID;
 }

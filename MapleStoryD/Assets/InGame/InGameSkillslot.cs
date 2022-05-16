@@ -20,7 +20,7 @@ public class InGameSkillslot : MonoBehaviour
         }
         else
         {
-            string path = "Sprite/SkillIcon/" + InGameManager.Instance.skillList[_slotNumber]._skillNum;
+            string path = "Sprite/SkillIcon/" + InGameManager.Instance.skillList[_slotNumber]._skillID;
             _icon.sprite = Resources.Load<Sprite>(path);
         }
 

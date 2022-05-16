@@ -45,7 +45,11 @@ public class Projectile : MonoBehaviour
             return;
         if (collision.transform != target)
             return;
-        float dmg = damage * skillLV;
+        float dmg;
+        if (skillLV == 0)
+            dmg = damage;
+        else
+            dmg = damage * skillLV;
         float addDmg = dmg * ((float)DataManager.Instance.playerData.Dmg / 100);
         dmg += addDmg;
 

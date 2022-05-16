@@ -74,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 101
   m_Sprite: {fileID: 21300000, guid: 268eb80bfb802e84686cb192f683157f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
@@ -113,7 +113,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitEff: {fileID: 3557515049279074414, guid: 6bb1ada5d7a18844384b2b4b1a594916, type: 3}
+  Effect: {fileID: 0}
   dmgHud: {fileID: 2792907482444471065, guid: 471c5b21d5ce5f549a8e62022dcce558, type: 3}
+  skillType: 0
+  skillID: 0
 --- !u!95 &542803803298244286
 Animator:
   serializedVersion: 3

@@ -17,11 +17,13 @@ public class Skill : MonoBehaviour
     [SerializeField] private float attackRate = 0.5f;
     [SerializeField] private float attackRange = 2.0f;
     public int SkillID = 0;
+    public int SkillNum = 0;
+    public int SlotNum = 0;
     public int AttackNum = 1;
     public int SkillType = 0;
     public int AttackMonsterCount = 1;
     private int attackDamage;
-    public int skillLV = 1;
+    public int skillLV = 0;
     private State state = State.SearchTarget;
     private Transform attackTarget = null;
     private MonsterSpawner monsterSpawner;
@@ -31,20 +33,24 @@ public class Skill : MonoBehaviour
         attackDamage = int.Parse(SkillInfoManager.Instance.SkillList[SkillID].Att)*DataManager.Instance.playerData.Skill_Lv[SkillID];
         //spawnPoint = transform;
         spawnPoint = transform.position;
-        starLv[skillLV-1].SetActive(true);
     }
-    public void LevelUp()
-    {
-        if (skillLV >= 6) return;
-        starLv[skillLV-1].SetActive(false);
-        skillLV += 1;
-        starLv[skillLV-1].SetActive(true);
-    }
+    //private void OnDrawGizmos()
+    //{
+    //    Gizmos.color = Color.green;
+    //    Gizmos.DrawWireSphere(transform.position, attackRange);
+    //}
     public void Setup(MonsterSpawner monsterSpawner,int Level)
     {
         this.skillLV = Level;
         this.monsterSpawner = monsterSpawner;
         ChangeState(State.SearchTarget);
+    }
+    public void LevelUp()
+    {
+        if (skillLV >= 6) return;
+        starLv[skillLV].SetActive(false);
+        skillLV += 1;
+        starLv[skillLV].SetActive(true);
     }
     public void ChangeState(State newState)
     {
