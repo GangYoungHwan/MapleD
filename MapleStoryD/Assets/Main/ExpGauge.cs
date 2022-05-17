@@ -32,7 +32,5 @@ public class ExpGauge : MonoBehaviour
             DataManager.Instance.playerData.Level++;
             DataManager.Instance.playerData.Exp = 0;
         }
-
-        //DataManager.Instance.SavePlayer(DataManager.Instance.SlotNumber);
     }
 }

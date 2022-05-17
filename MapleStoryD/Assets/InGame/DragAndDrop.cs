@@ -25,7 +25,7 @@ public class DragAndDrop : MonoBehaviour
             int SkillILvs = skill[i].GetComponent<Skill>().skillLV;
             if (currSkillID == SkillIDs && currSkillLv == SkillILvs)
             {
-                skill[i].GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f);
+                skill[i].GetComponent<SpriteRenderer>().color = Color.white;
             }
             else
             {
@@ -39,24 +39,6 @@ public class DragAndDrop : MonoBehaviour
         this.transform.position = Camera.main.ScreenToWorldPoint(mousePosition);
         this.GetComponent<SpriteRenderer>().sortingOrder = 101;
         this.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.7f);
-        /*
-        skill = GameObject.FindGameObjectsWithTag("Skill");
-        for(int i=0; i< skill.Length; i++)
-        {
-            int currSkillID = GetComponent<Skill>().SkillID;
-            int SkillIDs = skill[i].GetComponent<Skill>().SkillID;
-            int currSkillLv = GetComponent<Skill>().skillLV;
-            int SkillILvs = skill[i].GetComponent<Skill>().skillLV;
-            if (currSkillID == SkillIDs && currSkillLv == SkillILvs)
-            {
-                skill[i].GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f);
-            }
-            else
-            {
-                skill[i].GetComponent<SpriteRenderer>().color = new Color(0.7f, 0.7f, 0.7f);
-            }
-        }
-        */
     }
     private void OnMouseUp()
     {
@@ -83,7 +65,7 @@ public class DragAndDrop : MonoBehaviour
 
         for (int i = 0; i < skill.Length; i++)
         {
-            skill[i].GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f);
+            skill[i].GetComponent<SpriteRenderer>().color = Color.white;
         }
     }
 

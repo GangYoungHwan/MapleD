@@ -1,15 +1,15 @@
 {
     "SlotNumber": 1,
     "Slot": true,
-    "Name": "bhj",
+    "Name": "강영환",
     "Job": 2,
-    "Level": 1,
-    "Meso": 3100,
-    "Dia": 100,
+    "Level": 10,
+    "Meso": 3480,
+    "Dia": 0,
     "Exp": 0,
     "Avata": 1,
-    "Critical": 32,
-    "CriticalDmg": 60,
+    "Critical": 70,
+    "CriticalDmg": 250,
     "Dmg": 45,
     "Skill": [
         true,
@@ -45,15 +45,15 @@
         0
     ],
     "Skill_Lv": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        2
+        3,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20
     ],
     "AvataSlot": [
         true,
@@ -119,10 +119,10 @@
     ],
     "SkillActiveSlotID": [
         0,
+        4,
         6,
         7,
-        8,
-        4
+        8
     ],
     "SkillPassiveSlot": [
         true,
@@ -138,16 +138,16 @@
         5,
         -1
     ],
-    "NextMap": 0,
+    "NextMap": 8,
     "MapStar": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
         0,
         0,
         0,

@@ -4,12 +4,25 @@ using UnityEngine;
 using UnityEngine.UI;
 public class MonsterSpawner : MonoBehaviour
 {
+    private static MonsterSpawner instance;
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
+    }
+    [SerializeField] private GameObject GameOverUI = null;
     [SerializeField] private GameObject[] MobPrefab=null;
     [SerializeField] private float spawnTime = 1f;
     [SerializeField] private float reSpawnTime = 60f;
-    [SerializeField] private int MobCnt;
+    [SerializeField] private int MobCnt = 0;
     [SerializeField] private int cnt;
-    [SerializeField] private int mobcntMax = 60;
+    public int mobcntMax = 60;
     private int sortingOrder = 200;
     private List<Monster> mobList;
     public List<Monster> MobList => mobList;
@@ -23,8 +36,13 @@ public class MonsterSpawner : MonoBehaviour
 
     public Text minuteText = null;
     public Text secondText = null;
+    public int minute = 0;
+    public float second = 0;
 
+    public int MonsterExp = 0;
     public int dieMonstercnt = 0;
+    public static MonsterSpawner Instance { get { if (null == instance) { return null; } return instance; } }
+
     void Start()
     {
         mobList = new List<Monster>();
@@ -68,41 +86,27 @@ public class MonsterSpawner : MonoBehaviour
     private IEnumerator WaveSystem()
     {
         //웨이브 시스템 리뉴얼
-        StartTime(WaveMax * (mobcntMax+holdTime));
-        while (true)
+        StartTime(600f);
+        while (currWave < WaveMax)
         {
-            if (currWave > WaveMax)
-            {
-                break;
-            }
-            else
-            {
-                StartWave(currWave);
-                yield return new WaitForSeconds(mobcntMax + holdTime);
-            }
+            StartWave(currWave);
+            yield return new WaitForSeconds(65f);
         }
-        //타임오버시 남은 몬스터수에따라 스팟 인포 넘김
-        //dieMonster가 mobcntMax*WaveMax 같으면 스팟 인포 넘기고 게임오버
-        //
-        //게임오버 UI
     }
     public void InGameOver()
     {
         GameOver = true;
         Debug.Log("GameOver");
-        StopCoroutine("WaveSystem");
-        if(dieMonstercnt >= mobcntMax*WaveMax)
+        StopAllCoroutines();
+        //StopCoroutine("WaveSystem");
+        GameOverUI.SetActive(true);
+        if (currMonsterCount >= currMonsterCountMax)
         {
-            Debug.Log("모두 처치");
+            GameOverUI.GetComponent<GameOver>().GameFail();
         }
         else
         {
-            Debug.Log(dieMonstercnt + "마리 처치");
-        }
-
-        if(currMonsterCount == currMonsterCountMax)
-        {
-            Debug.Log("실패");
+            GameOverUI.GetComponent<GameOver>().GameClear();
         }
         
     }
@@ -112,30 +116,35 @@ public class MonsterSpawner : MonoBehaviour
     }
     private IEnumerator LimitTime(float _time)
     {
-        float second = _time;
-        int _min = 0;
+        second = _time;
+        minute = 0;
         if(second >60)
         {
-            _min = (int)second/60;
-            second -= (60 * _min);
+            minute = (int)second/60;
+            second -= (60 * minute);
         }
         while (!GameOver)
         {
-            if (second <= 0 && _min <= 0 )
+            if (dieMonstercnt >= mobcntMax * WaveMax)
             {
                 InGameOver();
                 break;
             }
-            if (second <= 0 && _min > 0)
+            if (second <= 0 && minute <= 0 )
             {
-                _min--;
+                InGameOver();
+                break;
+            }
+            if (second <= 0 && minute > 0)
+            {
+                minute--;
                 second = 60f;
             }
 
             second -= 1;
             yield return new WaitForSeconds(1f);
             secondText.text = string.Format("{0:D2}", (int)second);
-            minuteText.text = string.Format("{0:D2}", _min);
+            minuteText.text = string.Format("{0:D2}", minute);
         }
         secondText.text = "00";
         minuteText.text = "00";
@@ -143,14 +152,15 @@ public class MonsterSpawner : MonoBehaviour
     }
     public void StartWave(int wave)
     {
+        StopCoroutine(SpawnMonster());
         currWave = wave;
         currWave++;
-        MobCnt = 0;
         //텍스트 currWave
         StartCoroutine(SpawnMonster());
     }
     private IEnumerator SpawnMonster()
     {
+        Debug.Log("소환 시작");
         InGameManager.Instance._WaveText.text = currWave.ToString();
         yield return new WaitForSeconds(holdTime);
         while (MobCnt < mobcntMax)
@@ -165,32 +175,35 @@ public class MonsterSpawner : MonoBehaviour
             {
                 break;
             }
-            else
-            {
-                GameObject clone = Instantiate(MobPrefab[MobID - 1], gameObject.transform);
-                Monster mob = clone.GetComponent<Monster>();
-                mob.nextMove = 1;
-                mob.Setup(this);
-                mob.GetComponent<SpriteRenderer>().sortingOrder = sortingOrder;
-                sortingOrder++;
-                mobList.Add(mob);
-                MobCnt++;
-                currMonsterCount++;
-                MonsterLifeText();
-                yield return new WaitForSeconds(spawnTime);
-            }
+            CreateMonster(MobID);
+            yield return new WaitForSeconds(spawnTime);
         }
+        MobCnt = 0;
     }
-
+    public void CreateMonster(int MobID)
+    {
+        GameObject clone = Instantiate(MobPrefab[MobID - 1], gameObject.transform);
+        Monster mob = clone.GetComponent<Monster>();
+        mob.nextMove = 1;
+        mob.Setup(this);
+        mob.GetComponent<SpriteRenderer>().sortingOrder = sortingOrder;
+        sortingOrder++;
+        mobList.Add(mob);
+        MobCnt++;
+        currMonsterCount++;
+        MonsterLifeText();
+    }
     public void DestroyMonster(Monster mob)
     {
         mobList.Remove(mob);
+        int MobId = mob.gameObject.GetComponent<MonsterHP>().MonsterID;
         InGameManager.Instance.GetSkillPoint();
         currMonsterCount--;
         MonsterLifeText();
-        Destroy(mob.gameObject);
+        MonsterExp += int.Parse(MobInfoManager.Instance.MobList[MobId].MobExp);
 
         dieMonstercnt++;
+        Destroy(mob.gameObject);
     }
 
     public void MonsterLifeText()

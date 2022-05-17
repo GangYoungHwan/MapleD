@@ -2,20 +2,18 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <LangVersion>8.0</LangVersion>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <ProjectGuid>{ED5B2EC2-5F72-36C0-1A9A-C729BBB7119A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
   </PropertyGroup>
@@ -143,6 +141,11 @@
     <Compile Include="Assets\Resources\Sprite\Avata\CharacterAvataSlot.cs" />
     <Compile Include="Assets\Main\Font\DmgHud.cs" />
     <Compile Include="Assets\Main\Iventory\SkillAdd.cs" />
+    <Compile Include="Assets\InGame\GameOver.cs" />
+    <Compile Include="Assets\InGame\ClearInfo.cs" />
+    <Compile Include="Assets\InGame\FailInfo.cs" />
+    <Compile Include="Assets\InGame\AnimInfo.cs" />
+    <Compile Include="Assets\Main\Dungeon\MapArrow.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Resources\Skill\달팽이세마리\0001000.level.3.ball.frames\delay.txt" />
@@ -240,6 +243,7 @@
     <None Include="Assets\Resources\Skill\달팽이세마리\0001000.level.2.ball.frames\delay.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Game.shader" />
     <None Include="Assets\Resources\Skill\달팽이세마리\0001000.level.1.ball.frames\delay.txt" />
+    <None Include="Assets\Main\Font\clear.fnt" />
     <None Include="Assets\Resources\Sprite\Mob\머쉬맘\die1.frames\delay.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\Resources\Maps\slRD.frames\delay.txt" />

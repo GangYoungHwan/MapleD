@@ -11,15 +11,8 @@ public class InGameManager : MonoBehaviour
         {
             if (_instance == null)
             {
-
                 _instance = GameObject.FindObjectOfType<InGameManager>();
-
-                if (_instance == null)
-                {
-                    Debug.LogError("There's no active DamageTextController Object");
-                }
             }
-
             return _instance;
         }
     }
@@ -36,7 +29,7 @@ public class InGameManager : MonoBehaviour
 
     [SerializeField] private Text _SkillPointText = null;
     [SerializeField] private Text _DiceSPText = null;
-    [SerializeField] private MonsterSpawner monsterSpawner;
+    [SerializeField] private MonsterSpawner monsterSpawner = null;
     [SerializeField] private Transform _PassiveSkill = null;
     public Text _WaveText = null;
     public Text _WaveMaxText = null;
@@ -70,7 +63,6 @@ public class InGameManager : MonoBehaviour
         }
         _SkillPointText.text = _SkillPoint.ToString();
         _DiceSPText.text = _DiceSP.ToString();
-        //패시브 넣기
     }
     private void Update()
     {

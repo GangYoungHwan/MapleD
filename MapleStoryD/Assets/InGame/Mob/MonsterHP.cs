@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MonsterHP : MonoBehaviour
 {
-    [SerializeField] private int MonsterID = 0;
+    public int MonsterID = 0;
     private int maxHP;
     private int currentHP;
     public bool isDie = false;
