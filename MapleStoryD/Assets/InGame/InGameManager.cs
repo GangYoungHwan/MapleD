@@ -37,6 +37,11 @@ public class InGameManager : MonoBehaviour
     [SerializeField] private Text _SkillPointText = null;
     [SerializeField] private Text _DiceSPText = null;
     [SerializeField] private MonsterSpawner monsterSpawner;
+    [SerializeField] private Transform _PassiveSkill = null;
+    public Text _WaveText = null;
+    public Text _WaveMaxText = null;
+    public Text _MonsterLifeText = null;
+    public Text _MonsterLifeMaxText = null;
     private void Start()
     {
         SoundManager.Instance.PlayBGMSound();
@@ -56,6 +61,13 @@ public class InGameManager : MonoBehaviour
             passive._skillID = DataManager.Instance.playerData.SkillPassiveSlotID[i];
             passiveList.Add(passive);
         }
+        for(int i=0; i< passiveList.Count;i++)
+        {
+            if(passiveList[i]._slot)
+            {
+                Instantiate(passivePrfab[passiveList[i]._skillID], _PassiveSkill);
+            }
+        }
         _SkillPointText.text = _SkillPoint.ToString();
         _DiceSPText.text = _DiceSP.ToString();
         //패시브 넣기
@@ -65,7 +77,6 @@ public class InGameManager : MonoBehaviour
         if (Skillcnt >= skillList.Count || _SkillPoint < _DiceSP)
         {
             DiceButton.interactable = false;
-            //return;
         }
         else
         {
@@ -79,7 +90,6 @@ public class InGameManager : MonoBehaviour
 
         if (skillList[_random]._slot)
         {
-            Debug.Log("중복");
             OnDice();
             return;
         }
