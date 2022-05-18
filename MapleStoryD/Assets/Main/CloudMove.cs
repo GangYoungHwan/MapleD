@@ -12,19 +12,18 @@ public class CloudMove : MonoBehaviour
 
     void Start()
     {
-        float _length = m_Clouds[0].GetComponent<RectTransform>().rect.width;
+        float _length = m_Clouds[0].GetComponent<SpriteRenderer>().bounds.size.x;
         m_leftPosX = _length;
         m_rightPosX = _length * m_Clouds.Length;
     }
 
-    // Update is called once per frame
     void Update()
     {
         for(int i=0; i< m_Clouds.Length; ++i)
         {
             m_Clouds[i].position += new Vector3(-m_speed, 0, 0) * Time.deltaTime;
 
-            if(m_Clouds[i].localPosition.x< -m_leftPosX)
+            if(m_Clouds[i].position.x< -m_leftPosX)
             {
                 Vector3 pos = m_Clouds[i].position;
                 pos.Set(pos.x + m_rightPosX, pos.y, pos.z);

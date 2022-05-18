@@ -11,21 +11,11 @@ public class powerUpSlot : MonoBehaviour
     private int PowerLevel = 1;
     void Start()
     {
-        PowerLevelText.text = PowerLevel.ToString();
+        PowerLevelText.text = "LV." + PowerLevel.ToString();
         SkillpointText.text = SkillPoint.ToString();
     }
-
-    public void SkillLevelUp()
+    private void Update()
     {
-        if(InGameManager.Instance._SkillPoint > SkillPoint)
-        {
-            InGameManager.Instance._SkillPoint -= SkillPoint;
-            PowerLevel++;
-            SkillPoint = 60 * PowerLevel;
-        }
-        PowerLevelText.text = PowerLevel.ToString();
-        SkillpointText.text = SkillPoint.ToString();
-
         GameObject[] _Skill = GameObject.FindGameObjectsWithTag("Skill");
         for (int i = 0; i < _Skill.Length; i++)
         {
@@ -34,5 +24,16 @@ public class powerUpSlot : MonoBehaviour
                 _Skill[i].GetComponent<Skill>().powerLv = PowerLevel;
             }
         }
+    }
+    public void SkillLevelUp()
+    {
+        if(InGameManager.Instance._SkillPoint >= SkillPoint)
+        {
+            InGameManager.Instance.SetSkillPoint(-SkillPoint);
+            PowerLevel++;
+            SkillPoint *= PowerLevel;
+        }
+        PowerLevelText.text = "LV."+PowerLevel.ToString();
+        SkillpointText.text = SkillPoint.ToString();
     }
 }

@@ -16,6 +16,9 @@ public class ClearInfo : MonoBehaviour
     public int Exp;
     public int MobKill;
 
+    public int second= 0;
+    public int minute= 0;
+
     private void Start()
     {
         MobKill = MonsterSpawner.Instance.dieMonstercnt;
@@ -25,8 +28,16 @@ public class ClearInfo : MonoBehaviour
         StageText.text = Stage.ToString();
         MesoText.text = Meso.ToString();
         ExpText.text = Exp.ToString();
-        ClearTimeSecond.text = string.Format("{0:D2}", (int)MonsterSpawner.Instance.second);
-        ClearTimeMinute.text = string.Format("{0:D2}", MonsterSpawner.Instance.minute);
+
+        second = MonsterSpawner.Instance.ClearTime;
+        minute = 0;
+        if (second > 60)
+        {
+            minute = (int)second / 60;
+            second -= (60 * minute);
+        }
+        ClearTimeSecond.text = string.Format("{0:D2}", second);
+        ClearTimeMinute.text = string.Format("{0:D2}", minute);
     }
     public void OKbutton()
     {

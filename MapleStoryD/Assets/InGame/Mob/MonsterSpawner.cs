@@ -22,6 +22,8 @@ public class MonsterSpawner : MonoBehaviour
     [SerializeField] private float reSpawnTime = 60f;
     [SerializeField] private int MobCnt = 0;
     [SerializeField] private int cnt;
+    public float GameTime = 600f;
+    public int ClearTime = 0;
     public int mobcntMax = 60;
     private int sortingOrder = 200;
     private List<Monster> mobList;
@@ -86,11 +88,11 @@ public class MonsterSpawner : MonoBehaviour
     private IEnumerator WaveSystem()
     {
         //웨이브 시스템 리뉴얼
-        StartTime(600f);
+        StartTime(GameTime);
         while (currWave < WaveMax)
         {
             StartWave(currWave);
-            yield return new WaitForSeconds(65f);
+            yield return new WaitForSeconds(holdTime+(spawnTime*mobcntMax));
         }
     }
     public void InGameOver()
@@ -98,7 +100,6 @@ public class MonsterSpawner : MonoBehaviour
         GameOver = true;
         Debug.Log("GameOver");
         StopAllCoroutines();
-        //StopCoroutine("WaveSystem");
         GameOverUI.SetActive(true);
         if (currMonsterCount >= currMonsterCountMax)
         {
@@ -142,6 +143,7 @@ public class MonsterSpawner : MonoBehaviour
             }
 
             second -= 1;
+            ClearTime += 1;
             yield return new WaitForSeconds(1f);
             secondText.text = string.Format("{0:D2}", (int)second);
             minuteText.text = string.Format("{0:D2}", minute);

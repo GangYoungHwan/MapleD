@@ -1,18 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class FailInfo : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] private Text StageText = null;
+    private int Stage = 0;
     void Start()
     {
-        
+        Stage = DataManager.Instance.SpotNumber;
+        StageText.text = Stage.ToString();
+        Time.timeScale = 0;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OKbutton()
     {
-        
+        Time.timeScale = 1;
+        SceneManager.LoadScene("MainScene");
     }
 }

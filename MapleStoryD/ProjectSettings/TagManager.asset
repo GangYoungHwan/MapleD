@@ -12,6 +12,7 @@ TagManager:
   - WayLeft
   - Mob
   - Skill
+  - MobCollider
   layers:
   - Default
   - TransparentFX

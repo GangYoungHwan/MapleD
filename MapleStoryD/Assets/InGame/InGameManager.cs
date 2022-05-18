@@ -22,15 +22,19 @@ public class InGameManager : MonoBehaviour
     public int getSkillPoint = 10;
     public List<SkillManager> skillList = null;
     public List<SkillManager> passiveList = null;
+    public List<SkillManager> activeList = null;
     public GameObject[] skillPrfab = null;
     public GameObject[] passivePrfab = null;
+    public GameObject[] activePrfab = null;
     public Transform[] skillslotPos = null;
     public Button DiceButton = null;
+    public GameObject StonEffect = null;
 
     [SerializeField] private Text _SkillPointText = null;
     [SerializeField] private Text _DiceSPText = null;
     [SerializeField] private MonsterSpawner monsterSpawner = null;
     [SerializeField] private Transform _PassiveSkill = null;
+    [SerializeField] private Transform _ActiveSkill = null;
     public Text _WaveText = null;
     public Text _WaveMaxText = null;
     public Text _MonsterLifeText = null;
@@ -59,6 +63,28 @@ public class InGameManager : MonoBehaviour
             if(passiveList[i]._slot)
             {
                 Instantiate(passivePrfab[passiveList[i]._skillID], _PassiveSkill);
+            }
+        }
+        activeList = new List<SkillManager>();
+        for(int i =0; i<DataManager.Instance.playerData.SkillActiveSlot.Length; i++)
+        {
+            SkillManager active = new SkillManager();
+            active._slot = DataManager.Instance.playerData.SkillActiveSlot[i];
+            active._skillID = DataManager.Instance.playerData.SkillActiveSlotID[i];
+            activeList.Add(active);
+        }
+        for(int i=0; i<activeList.Count; i++)
+        {
+            if(activeList[i]._slot)
+            {
+                for(int j = 0; j< activePrfab.Length; j++)
+                {
+                    if(activeList[i]._skillID == int.Parse(activePrfab[j].name))
+                    {
+                        Instantiate(activePrfab[j], _ActiveSkill);
+                        break;
+                    }
+                }
             }
         }
         _SkillPointText.text = _SkillPoint.ToString();
@@ -92,6 +118,8 @@ public class InGameManager : MonoBehaviour
             _DiceSPText.text = _DiceSP.ToString();
             _SkillPointText.text = _SkillPoint.ToString();
             Skillcnt++;
+            Vector3 pos = new Vector3(0, 2);
+            Instantiate(StonEffect, pos, Quaternion.identity);
         }
         CereteSkill(_Skillnum, skillslotPos[_random].position,0, _random);
     }
@@ -107,6 +135,12 @@ public class InGameManager : MonoBehaviour
     public void GetSkillPoint()
     {
         _SkillPoint += getSkillPoint;
+        _SkillPointText.text = _SkillPoint.ToString();
+    }
+
+    public void SetSkillPoint(int Skillpoint)
+    {
+        _SkillPoint += Skillpoint;
         _SkillPointText.text = _SkillPoint.ToString();
     }
 }
