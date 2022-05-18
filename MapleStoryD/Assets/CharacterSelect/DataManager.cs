@@ -12,6 +12,7 @@ public class DataManager : MonoBehaviour
     public PlayerData playerData_3;
     public PlayerData playerData_4;
 
+    private int Max = 9;
     public Slot slotData;
     public int SlotNumber;
 
@@ -23,7 +24,7 @@ public class DataManager : MonoBehaviour
 
     public int ItemSlotNumber;
     public int AvataSlotNumber;
-    int Max = 9;
+    
 
     public int SpotNumber;
     public int QuestSlotNumber;
@@ -43,11 +44,9 @@ public class DataManager : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
-    private void Start()
-    {
-        //LoadPlayerDataToJson();
-    }
+
     public static DataManager Instance { get { if (null == instance) { return null; } return instance; } }
+
     public void SavePlayer(int Slot)
     {
         PlayerData save = new PlayerData();
@@ -60,74 +59,10 @@ public class DataManager : MonoBehaviour
     public void SavePlayerDataToJson(int Slot,string Name,int Job)
     {
         PlayerData save = new PlayerData();
+        save = PlayerInitialization(Slot,true, Name, Job);
         Slot save_Slot = new Slot();
-        save_Slot._Slot = Slot;
-        save.SlotNumber = Slot;
-        save.Slot = true;
-        save.Name = Name;
-        save.Job = Job;
-        save.Level = 1;
-        save.Meso = 0;
-        save.Dia = 0;
-        save.Exp = 0;
-        save.Avata = 0;
-        save.Critical = 0;
-        save.CriticalDmg = 0;
-        save.Dmg = 0;
-        save.AvataSlot = new bool[Max];
-        save.ItemSlot = new bool[Max];
-        save.Skill = new bool[Max];
-        //save.Skill_name = new string[Max];
-        save.Skill_ID = new int[Max];
-        save.Skill_exp = new int[Max];
-        save.Skill_Lv = new int[Max];
-        save.ItemID = new int[Max];
-        save.ItemNumber = new int[Max];
-        save.AvataID = new int[Max];
-        save.SkillActiveSlot = new bool[5];
-        save.SkillPassiveSlot = new bool[5];
-        save.SkillActiveSlotID = new int[5];
-        save.SkillPassiveSlotID = new int[5];
+        save_Slot = SlotInitialization(Slot);
 
-        save.NextMap = 0;
-        save.MapStar = new int[MapInfoManager.Instance.MapList.Count];
-        save.MapBestStage = new int[MapInfoManager.Instance.MapList.Count];
-        for (int i = 0; i < MapInfoManager.Instance.MapList.Count; i++)
-        {
-            save.MapStar[i] = 0;
-            save.MapBestStage[i] = 0;
-        }
-
-        save.QuestLv = new int[QuestInfoManager.Instance.QuestList.Count];
-        save.QuestKill = new int[QuestInfoManager.Instance.QuestList.Count];
-        for(int i=0; i< QuestInfoManager.Instance.QuestList.Count; i++)
-        {
-            save.QuestLv[i] = 1;
-            save.QuestKill[i] = 0;
-        }
-        for (int i=0; i<5; i++)
-        {
-            save.SkillActiveSlot[i] = false;
-            save.SkillPassiveSlot[i] = false;
-            save.SkillActiveSlotID[i] = -1;
-            save.SkillPassiveSlotID[i] = -1;
-        }
-        for (int i = 0; i < Max; i++)
-        {
-            save.AvataSlot[i] = false;
-            save.AvataID[i] = 0;
-            //save.Skill_name[i] = "";
-            save.Skill[i] = true;
-            save.Skill_ID[i] = 0;
-            save.Skill_exp[i] = 0;
-            save.Skill_Lv[i] = 1;
-
-            save.ItemSlot[i] = false;
-            save.ItemID[i] = 0;
-            save.ItemNumber[i] = 0;
-
-        }
-        save.AvataSlot[0] = true;
         string jsonData = JsonUtility.ToJson(save, true);
         string path = Path.Combine(Application.dataPath, "playerData_"+ Slot+".json");
         File.WriteAllText(path, jsonData);
@@ -155,69 +90,7 @@ public class DataManager : MonoBehaviour
                 save = playerData_4;
             else if (i == 4)
             {
-                save.SlotNumber = 0;
-                save.Slot = false;
-                save.Name = "";
-                save.Job = 0;
-                save.Level = 1;
-                save.Meso = 0;
-                save.Dia = 0;
-                save.Exp = 0;
-                save.Avata = 0;
-                save.Critical = 0;
-                save.CriticalDmg = 0;
-                save.Dmg = 0;
-                save.AvataSlot = new bool[Max];
-                save.ItemSlot = new bool[Max];
-                save.Skill = new bool[Max];
-                //save.Skill_name = new string[Max];
-                save.Skill_ID = new int[Max];
-                save.Skill_exp = new int[Max];
-                save.Skill_Lv = new int[Max];
-                save.ItemID = new int[Max];
-                save.ItemNumber = new int[Max];
-                save.AvataID = new int[Max];
-                save.SkillActiveSlot = new bool[5];
-                save.SkillPassiveSlot = new bool[5];
-                save.SkillActiveSlotID = new int[5];
-                save.SkillPassiveSlotID = new int[5];
-                save.QuestLv = new int[QuestInfoManager.Instance.QuestList.Count];
-                save.QuestKill = new int[QuestInfoManager.Instance.QuestList.Count];
-                for (int a = 0; a < QuestInfoManager.Instance.QuestList.Count; a++)
-                {
-                    save.QuestLv[a] = 1;
-                    save.QuestKill[a] = 0;
-                }
-                save.NextMap = 0;
-                save.MapStar = new int[MapInfoManager.Instance.MapList.Count];
-                save.MapBestStage = new int[MapInfoManager.Instance.MapList.Count];
-                for (int l = 0; l < MapInfoManager.Instance.MapList.Count; l++)
-                {
-                    save.MapStar[l] = 0;
-                    save.MapBestStage[l] = 0;
-                }
-                    
-                for (int k = 0; k < 5; k++)
-                {
-                    save.SkillActiveSlot[k] = false;
-                    save.SkillPassiveSlot[k] = false;
-                    save.SkillActiveSlotID[k] = -1;
-                    save.SkillPassiveSlotID[k] = -1;
-                }
-                for (int j = 0; j<Max; j++)
-                {
-                    save.AvataSlot[j] = false;
-                    save.AvataID[j] = 0;
-                    //save.Skill_name[j] = "";
-                    save.Skill[j] = false;
-                    save.Skill_ID[j] = 0;
-                    save.Skill_exp[j] = 0;
-                    save.Skill_Lv[j] = 1;
-
-                    save.ItemSlot[j] = false;
-                    save.ItemID[j] = 0;
-                    save.ItemNumber[j] = 0;
-                }
+                save = PlayerInitialization(0,false, "", 0);
             }
 
             string jsonData = JsonUtility.ToJson(save, true);
@@ -254,5 +127,82 @@ public class DataManager : MonoBehaviour
         slotData = JsonUtility.FromJson<Slot>(Slot_jsonData);
 
         Debug.Log("플레이어 모든데이터 로드완료");
+    }
+
+    public PlayerData PlayerInitialization(int Slot,bool bSlot,string Name,int Job)
+    {
+        PlayerData init = new PlayerData();
+        init.SlotNumber = Slot;
+        init.Slot = bSlot;
+        init.Name = Name;
+        init.Job = Job;
+        init.Level = 1;
+        init.Meso = 0;
+        init.Dia = 0;
+        init.Exp = 0;
+        init.Avata = 0;
+        init.Critical = 0;
+        init.CriticalDmg = 0;
+        init.Dmg = 0;
+        init.AvataSlot = new bool[Max];
+        init.ItemSlot = new bool[Max];
+        init.Skill = new bool[Max];
+        init.Skill_ID = new int[Max];
+        init.Skill_exp = new int[Max];
+        init.Skill_Lv = new int[Max];
+        init.ItemID = new int[Max];
+        init.ItemNumber = new int[Max];
+        init.AvataID = new int[Max];
+        init.SkillActiveSlot = new bool[5];
+        init.SkillPassiveSlot = new bool[5];
+        init.SkillActiveSlotID = new int[5];
+        init.SkillPassiveSlotID = new int[5];
+
+        init.NextMap = 0;
+        init.MapStar = new int[MapInfoManager.Instance.MapList.Count];
+        init.MapBestStage = new int[MapInfoManager.Instance.MapList.Count];
+        for (int i = 0; i < MapInfoManager.Instance.MapList.Count; i++)
+        {
+            init.MapStar[i] = 0;
+            init.MapBestStage[i] = 0;
+        }
+
+        init.QuestLv = new int[QuestInfoManager.Instance.QuestList.Count];
+        init.QuestKill = new int[QuestInfoManager.Instance.QuestList.Count];
+        for (int i = 0; i < QuestInfoManager.Instance.QuestList.Count; i++)
+        {
+            init.QuestLv[i] = 1;
+            init.QuestKill[i] = 0;
+        }
+        for (int i = 0; i < 5; i++)
+        {
+            init.SkillActiveSlot[i] = false;
+            init.SkillPassiveSlot[i] = false;
+            init.SkillActiveSlotID[i] = -1;
+            init.SkillPassiveSlotID[i] = -1;
+        }
+        for (int i = 0; i < Max; i++)
+        {
+            init.AvataSlot[i] = false;
+            init.AvataID[i] = 0;
+            init.Skill[i] = true;
+            init.Skill_ID[i] = 0;
+            init.Skill_exp[i] = 0;
+            init.Skill_Lv[i] = 1;
+
+            init.ItemSlot[i] = false;
+            init.ItemID[i] = 0;
+            init.ItemNumber[i] = 0;
+
+        }
+        init.AvataSlot[0] = true;
+        return init;
+    }
+    public Slot SlotInitialization(int Slot)
+    {
+        Slot save_Slot = new Slot();
+        save_Slot._Slot = Slot;
+
+        return save_Slot;
     }
 }

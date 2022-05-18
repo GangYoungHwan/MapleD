@@ -47,6 +47,7 @@ public class AvataInfo : MonoBehaviour
     {
         DataManager.Instance.playerData.Avata = DataManager.Instance.playerData.AvataID[DataManager.Instance.AvataSlotNumber];
         DataManager.Instance.SavePlayer(DataManager.Instance.SlotNumber);
+        Player.Instance.ChangeAvata(DataManager.Instance.playerData.AvataID[DataManager.Instance.AvataSlotNumber]);
         Close();
     }
 }

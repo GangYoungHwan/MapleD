@@ -23,6 +23,7 @@ public class Skill : MonoBehaviour
     public int SkillType = 0;
     public int AttackMonsterCount = 1;
     private int attackDamage;
+    public int powerLv = 1;
     public int skillLV = 0;
     private State state = State.SearchTarget;
     private Transform attackTarget = null;
@@ -120,7 +121,7 @@ public class Skill : MonoBehaviour
             effect.GetComponent<Hit>().SkillID = -1;
         }
         GameObject clone = Instantiate(projectilePrefab, spawnPoint, Quaternion.identity);
-        clone.GetComponent<Projectile>().Setup(SkillType,attackTarget, attackDamage, AttackNum, skillLV,SkillID);
+        clone.GetComponent<Projectile>().Setup(SkillType,attackTarget, attackDamage* powerLv, AttackNum, skillLV,SkillID);
     }
 
     private void SpawnProjectile2(int attackNum)
@@ -154,12 +155,12 @@ public class Skill : MonoBehaviour
                         }
                     }
                     GameObject clones = Instantiate(projectilePrefab, spawnPoint, Quaternion.identity);
-                    clones.GetComponent<Projectile>().Setup(SkillType, monsterSpawner.MobList[rand].transform, attackDamage, AttackNum, skillLV, SkillID);
+                    clones.GetComponent<Projectile>().Setup(SkillType, monsterSpawner.MobList[rand].transform, attackDamage* powerLv, AttackNum, skillLV, SkillID);
                 }
                 else
                 {
                     GameObject clones = Instantiate(projectilePrefab, spawnPoint, Quaternion.identity);
-                    clones.GetComponent<Projectile>().Setup(SkillType, monsterSpawner.MobList[j].transform, attackDamage, AttackNum, skillLV, SkillID);
+                    clones.GetComponent<Projectile>().Setup(SkillType, monsterSpawner.MobList[j].transform, attackDamage* powerLv, AttackNum, skillLV, SkillID);
                 }
                 break;
             }

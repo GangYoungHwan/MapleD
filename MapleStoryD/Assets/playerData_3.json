@@ -12,15 +12,15 @@
     "CriticalDmg": 0,
     "Dmg": 0,
     "Skill": [
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false,
-        false
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
     ],
     "Skill_ID": [
         0,
@@ -56,7 +56,7 @@
         1
     ],
     "AvataSlot": [
-        false,
+        true,
         false,
         false,
         false,
