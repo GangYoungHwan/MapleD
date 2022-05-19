@@ -27,7 +27,7 @@ public class Hud : MonoBehaviour
     }
     private IEnumerator Crititcal(float[] dmg, GameObject hitEft, Transform Target,int skillID)
     {
-        Vector3 pos = Target.transform.position;
+        Vector3 pos = Target.GetComponent<Monster>().effectPos.position;
         for (int i = 0; i < dmg.Length; i++)
         {
             GameObject clone = Instantiate(Cri, gameObject.transform);
@@ -40,7 +40,7 @@ public class Hud : MonoBehaviour
 
     private IEnumerator NoCritical(float[] dmg, GameObject hitEft, Transform Target,int skillID)
     {
-        Vector3 pos = Target.transform.position;
+        Vector3 pos = Target.GetComponent<Monster>().effectPos.position;
         for (int i = 0; i < dmg.Length; i++)
         {
             GameObject clone = Instantiate(NoCri, gameObject.transform);

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6781,7 +6781,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 107381536}
-  - component: {fileID: 107381537}
   m_Layer: 5
   m_Name: BigCloud
   m_TagString: Untagged
@@ -6810,22 +6809,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &107381537
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 107381535}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b37e81e9e8fd12e419c8d00b7314acb0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Clouds:
-  - {fileID: 89459233}
-  - {fileID: 1124543829}
-  m_speed: 10
 --- !u!1 &108129246
 GameObject:
   m_ObjectHideFlags: 0
@@ -93053,7 +93036,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1479620992}
-  - component: {fileID: 1479620993}
   m_Layer: 5
   m_Name: MiddleCloud
   m_TagString: Untagged
@@ -93082,22 +93064,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -127}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1479620993
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1479620991}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b37e81e9e8fd12e419c8d00b7314acb0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Clouds:
-  - {fileID: 462162419}
-  - {fileID: 162119886}
-  m_speed: 6
 --- !u!1 &1479821658
 GameObject:
   m_ObjectHideFlags: 0

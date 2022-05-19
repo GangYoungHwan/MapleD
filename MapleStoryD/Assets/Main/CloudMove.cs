@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class CloudMove : MonoBehaviour
 {
-    [SerializeField] Transform[] m_Clouds = null;
-    [SerializeField] float m_speed = 0f;
+    [SerializeField] private Transform[] m_Clouds = null;
+    [SerializeField] private float m_speed = 0f;
 
     float m_leftPosX = 0f;
     float m_rightPosX = 0f;

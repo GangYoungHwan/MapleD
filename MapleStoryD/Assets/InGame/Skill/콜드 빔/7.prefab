@@ -355,14 +355,15 @@ MonoBehaviour:
     type: 3}
   effectPrefab: {fileID: 6758680014037942733, guid: 0713ee26196184b499292b121e9f1bc2,
     type: 3}
-  attackRate: 1.5
-  attackRange: 2
+  attackRate: 2
+  attackRange: 2.5
   SkillID: 7
   SkillNum: 0
   SlotNum: 0
   AttackNum: 4
   SkillType: 1
   AttackMonsterCount: 1
+  powerLv: 1
   skillLV: 0
   starLv:
   - {fileID: 1379245596378625331}

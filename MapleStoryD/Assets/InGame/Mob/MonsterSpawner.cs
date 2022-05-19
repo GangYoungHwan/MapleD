@@ -43,6 +43,8 @@ public class MonsterSpawner : MonoBehaviour
 
     public int MonsterExp = 0;
     public int dieMonstercnt = 0;
+
+    private bool isboss = false;
     public static MonsterSpawner Instance { get { if (null == instance) { return null; } return instance; } }
 
     void Start()
@@ -178,6 +180,8 @@ public class MonsterSpawner : MonoBehaviour
                 break;
             }
             CreateMonster(MobID);
+            if (isboss)
+                break;
             yield return new WaitForSeconds(spawnTime);
         }
         MobCnt = 0;
@@ -185,6 +189,11 @@ public class MonsterSpawner : MonoBehaviour
     public void CreateMonster(int MobID)
     {
         GameObject clone = Instantiate(MobPrefab[MobID - 1], gameObject.transform);
+        MonsterHP boss = clone.GetComponent<MonsterHP>();
+        if(boss.isBoss)
+            isboss = true;
+        else
+            isboss = false;
         Monster mob = clone.GetComponent<Monster>();
         mob.nextMove = 1;
         mob.Setup(this);

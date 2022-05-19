@@ -62,10 +62,10 @@ public class Projectile : MonoBehaviour
             Critical = true;
             dmg += CriDmg;
         }
-  
+        Vector3 pos = collision.GetComponent<Monster>().effectPos.position;
         if(Effect != null)
         {
-            GameObject hitEffclone = Instantiate(Effect, collision.transform.position, Quaternion.identity);
+            GameObject hitEffclone = Instantiate(Effect, pos, Quaternion.identity);
             hitEffclone.GetComponent<Hit>().SkillID = -1;
         }
 

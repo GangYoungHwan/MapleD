@@ -12,6 +12,10 @@ public class MonsterHP : MonoBehaviour
     private Monster monster;
     private SpriteRenderer spriteRenderer;
 
+    public bool isBoss = false;
+    private GameObject BossMonsterHPbar = null;
+    [SerializeField] private GameObject BossHpBarPrefab = null;
+
 
 
     private void Awake()
@@ -20,6 +24,13 @@ public class MonsterHP : MonoBehaviour
         currentHP = maxHP;
         monster = GetComponent<Monster>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        if (isBoss)
+        {
+            GameObject BossHpBarPos = GameObject.Find("BossHpbar");
+            GameObject Boss = Instantiate(BossHpBarPrefab, BossHpBarPos.transform);
+            Boss.GetComponent<BossHp>().SetUp(MonsterID, maxHP);
+            BossMonsterHPbar = Boss;
+        }
     }
 
     public void TakeDamage(int skillType, bool cri,int AttackNum,int damage,GameObject hud,Vector3 Pos,GameObject hitEft,Transform Target,int SkillID)
@@ -48,10 +59,16 @@ public class MonsterHP : MonoBehaviour
         else
             dmgSkinclone.GetComponent<Hud>().DmgNoCri(Damage, hitEft, Target,SkillID);
         currentHP -= (int)_Dmg;
+        if(isBoss)
+        {
+            BossMonsterHPbar.GetComponent<BossHp>().TakeBossAttack(currentHP);
+        }
         if(currentHP <= 0)
         {
             isDie = true;
             monster.OnDie();
+            Destroy(BossMonsterHPbar);
         }
+
     }
 }

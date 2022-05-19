@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &85009339643138547
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7801278435809551404}
+  m_Layer: 3
+  m_Name: EffectPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7801278435809551404
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85009339643138547}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.505, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6770095668216369541}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6770095668216369599
 GameObject:
   m_ObjectHideFlags: 0
@@ -34,6 +64,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2546059221245820022}
+  - {fileID: 7801278435809551404}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -77,7 +108,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 101
-  m_Sprite: {fileID: 21300000, guid: e698580b019ad3c47afb429b4f6281ed, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 770c5f24881256d46acb8d153209375a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -122,8 +153,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.1174562, y: -0.49269414}
-  m_Size: {x: 0.06891632, y: 0.06891632}
+  m_Offset: {x: 0, y: 0.04}
+  m_Size: {x: 0.06, y: 0.06}
   m_Direction: 0
 --- !u!95 &6770095668216369593
 Animator:
@@ -161,6 +192,7 @@ MonoBehaviour:
   MoveSpeed: 0.4
   nextMove: 1
   dmgPos: {fileID: 2546059221245820022}
+  effectPos: {fileID: 7801278435809551404}
 --- !u!114 &364802231013302735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,6 +208,9 @@ MonoBehaviour:
   MonsterID: 12
   isDie: 0
   isHit: 0
+  isBoss: 1
+  BossHpBarPrefab: {fileID: 6067321927863292331, guid: d5e0e1da5857de448b9ebeb03a945935,
+    type: 3}
 --- !u!1 &7229065562012558587
 GameObject:
   m_ObjectHideFlags: 0
@@ -200,7 +235,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7229065562012558587}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.649, z: 0}
+  m_LocalPosition: {x: 0, y: 1.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6770095668216369541}

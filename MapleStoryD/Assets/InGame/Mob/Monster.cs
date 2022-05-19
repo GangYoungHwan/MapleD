@@ -17,6 +17,7 @@ public class Monster : MonoBehaviour
     public int nextMove = 0;
     Animator anim = null;
     public Transform dmgPos = null;
+    public Transform effectPos = null;
     private MonsterSpawner monsterSpawner;
     private MonsterState state = MonsterState.Normal;
     private bool stating = false;
