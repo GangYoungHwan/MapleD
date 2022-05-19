@@ -97,7 +97,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 221}
   m_MaxSize: {x: 4000, y: 4021}
   vertical: 0
-  controlID: 164
+  controlID: 82
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -117,8 +117,8 @@ MonoBehaviour:
     y: 481
     width: 1181
     height: 179
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -145,10 +145,10 @@ MonoBehaviour:
     y: 0
     width: 1181
     height: 660
-  m_MinSize: {x: 201, y: 321}
-  m_MaxSize: {x: 4001, y: 8021}
+  m_MinSize: {x: 201, y: 342}
+  m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 18
+  controlID: 164
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -168,8 +168,8 @@ MonoBehaviour:
     y: 0
     width: 276
     height: 660
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -221,10 +221,10 @@ MonoBehaviour:
     y: 30
     width: 1904
     height: 931
-  m_MinSize: {x: 678, y: 592}
-  m_MaxSize: {x: 12003, y: 18042}
+  m_MinSize: {x: 679, y: 613}
+  m_MaxSize: {x: 12004, y: 18063}
   vertical: 0
-  controlID: 188
+  controlID: 161
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -347,10 +347,10 @@ MonoBehaviour:
     y: 0
     width: 1904
     height: 931
-  m_MinSize: {x: 678, y: 592}
-  m_MaxSize: {x: 12003, y: 18042}
+  m_MinSize: {x: 679, y: 613}
+  m_MaxSize: {x: 12004, y: 18063}
   vertical: 1
-  controlID: 189
+  controlID: 162
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -373,10 +373,10 @@ MonoBehaviour:
     y: 0
     width: 1904
     height: 660
-  m_MinSize: {x: 678, y: 321}
-  m_MaxSize: {x: 12003, y: 8021}
+  m_MinSize: {x: 679, y: 342}
+  m_MaxSize: {x: 12004, y: 8042}
   vertical: 0
-  controlID: 190
+  controlID: 163
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -498,22 +498,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - "Assets/Resources/Sprite/Mob/\uB9C8\uB178/skill1.frames"
+    - Assets/Resources/Sprite/Mob/Boss
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - "Assets/Resources/Sprite/Mob/\uB9C8\uB178/skill1.frames"
+  - Assets/Resources/Sprite/Mob/Boss
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\pc\Documents\GitHub\MapleD\MapleStoryD
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 1050}
-    m_SelectedIDs: fc000500
-    m_LastClickedID: 327932
-    m_ExpandedIDs: 00000000aa4b0000ac4b0000ae4b0000b04b0000b24b0000b44b0000b64b0000e84b0000204c000000aa020002aa02000aaa02000caa020062aa0200f600050000ca9a3b
+    scrollPos: {x: 0, y: 779}
+    m_SelectedIDs: bc510000
+    m_LastClickedID: 20924
+    m_ExpandedIDs: 0000000010510000125100001451000016510000185100001a5100001c5100007c5100008c51000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -541,7 +541,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000aa4b0000ac4b0000ae4b0000b04b0000b24b0000b44b0000b64b0000
+    m_ExpandedIDs: 0000000010510000125100001451000016510000185100001a5100001c510000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -568,7 +568,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000fa7b0000fe130000d013000056720000707200007e880000ee4b000018900000e28f00008e900000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -666,7 +666,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 2eb5e0ffd2c20400
+      m_ExpandedIDs: 48fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -719,15 +719,15 @@ MonoBehaviour:
   m_ShowContextualTools: 0
   m_WindowGUID: 9c000eeac1556f44e84c110434d77fc3
   m_Gizmos: 1
-  m_OverrideSceneCullingMask: 0
-  m_SceneIsLit: 0
+  m_OverrideSceneCullingMask: 6917529027641081856
+  m_SceneIsLit: 1
   m_SceneLighting: 1
   m_2DMode: 0
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 0, z: 0}
+    m_Target: {x: -3.67, y: 3.12, z: 0}
     speed: 2
     m_Value: {x: 0, y: 0, z: 0}
   m_RenderMode: 0
@@ -741,7 +741,7 @@ MonoBehaviour:
   m_SceneViewState:
     m_AlwaysRefresh: 0
     showFog: 1
-    showSkybox: 0
+    showSkybox: 1
     showFlares: 1
     showImageEffects: 1
     showParticleSystems: 1
@@ -776,11 +776,11 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.030304177, y: -0.006899501, z: 0.00020926108, w: -0.9995169}
+    m_Target: {x: -0.013808767, y: -0.0069023166, z: 0.000095336596, w: -0.9998819}
     speed: 2
-    m_Value: {x: -0.030304177, y: -0.006899501, z: 0.00020926108, w: -0.9995169}
+    m_Value: {x: -0.030304175, y: -0.006899501, z: 0.00020926107, w: -0.99951684}
   m_Size:
-    m_Target: 0.7147027
+    m_Target: 0.60739505
     speed: 2
     m_Value: 0.7147027
   m_Ortho:
@@ -864,7 +864,7 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
     m_HSlider: 0
-    m_VSlider: 0
+    m_VSlider: 1
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
@@ -877,7 +877,7 @@ MonoBehaviour:
       y: 21
       width: 582
       height: 854
-    m_Scale: {x: 0.8895833, y: 0.88958335}
+    m_Scale: {x: 0.909375, y: 0.909375}
     m_Translation: {x: 291, y: 427}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -885,12 +885,12 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -327.11945
-      y: -480
-      width: 654.2389
-      height: 960
+      x: -320
+      y: -469.55325
+      width: 640
+      height: 939.1065
     m_MinimalGUI: 1
-  m_defaultScale: 0.88958335
+  m_defaultScale: 0.909375
   m_LastWindowPixelSize: {x: 582, y: 875}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
