@@ -143,7 +143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StunEffect: {fileID: 4509377705436619389, guid: 92b5901d33650c749a8c47fd4b972b0c,
     type: 3}
-  MoveSpeed: 0.4
+  MoveSpeed: 0.6
   nextMove: 1
   dmgPos: {fileID: 5575481263016783309}
   effectPos: {fileID: 4313612018487776893}
@@ -162,6 +162,8 @@ MonoBehaviour:
   MonsterID: 1
   isDie: 0
   isHit: 0
+  isBoss: 0
+  BossHpBarPrefab: {fileID: 0}
 --- !u!70 &6813836149408853933
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

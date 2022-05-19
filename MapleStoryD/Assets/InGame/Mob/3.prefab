@@ -178,6 +178,8 @@ MonoBehaviour:
   MonsterID: 3
   isDie: 0
   isHit: 0
+  isBoss: 0
+  BossHpBarPrefab: {fileID: 0}
 --- !u!1 &4378103395565933508
 GameObject:
   m_ObjectHideFlags: 0
@@ -202,7 +204,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4378103395565933508}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.157, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3306645393612574602}

@@ -25,7 +25,7 @@ public class MonsterSpawner : MonoBehaviour
     public float GameTime = 600f;
     public int ClearTime = 0;
     public int mobcntMax = 60;
-    private int sortingOrder = 200;
+    private int sortingOrder = 10;
     private List<Monster> mobList;
     public List<Monster> MobList => mobList;
 
@@ -209,6 +209,9 @@ public class MonsterSpawner : MonoBehaviour
         mobList.Remove(mob);
         int MobId = mob.gameObject.GetComponent<MonsterHP>().MonsterID;
         InGameManager.Instance.GetSkillPoint();
+        if(mob.gameObject.GetComponent<MonsterHP>().isBoss)
+            dieMonstercnt += 60;
+
         currMonsterCount--;
         MonsterLifeText();
         MonsterExp += int.Parse(MobInfoManager.Instance.MobList[MobId].MobExp);
