@@ -25,7 +25,7 @@ public class MonsterSpawner : MonoBehaviour
     public float GameTime = 600f;
     public int ClearTime = 0;
     public int mobcntMax = 60;
-    private int sortingOrder = 10;
+    private int sortingOrder = 200;
     private List<Monster> mobList;
     public List<Monster> MobList => mobList;
 

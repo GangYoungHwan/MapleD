@@ -52,7 +52,7 @@ public class DataManager : MonoBehaviour
         PlayerData save = new PlayerData();
         save = playerData;
         string jsonData = JsonUtility.ToJson(save, true);
-        string path = Path.Combine(Application.dataPath, "playerData_" + Slot + ".json");
+        string path = Path.Combine(Application.streamingAssetsPath, "playerData_" + Slot + ".json");
         File.WriteAllText(path, jsonData);
         Debug.Log(Slot + "번슬롯 데이터저장 완료");
     }
@@ -64,11 +64,11 @@ public class DataManager : MonoBehaviour
         save_Slot = SlotInitialization(Slot);
 
         string jsonData = JsonUtility.ToJson(save, true);
-        string path = Path.Combine(Application.dataPath, "playerData_"+ Slot+".json");
+        string path = Path.Combine(Application.streamingAssetsPath, "playerData_"+ Slot+".json");
         File.WriteAllText(path, jsonData);
 
         string jsonData2 = JsonUtility.ToJson(save_Slot, true);
-        string path2 = Path.Combine(Application.dataPath, "Slot.json");
+        string path2 = Path.Combine(Application.streamingAssetsPath, "Slot.json");
         File.WriteAllText(path2, jsonData2);
         Debug.Log("플레이어 "+ Slot + "  데이터 세이브완료");
         LoadPlayerDataToJson();
@@ -94,13 +94,13 @@ public class DataManager : MonoBehaviour
             }
 
             string jsonData = JsonUtility.ToJson(save, true);
-            string path = Path.Combine(Application.dataPath, "playerData_" + i + ".json");
+            string path = Path.Combine(Application.streamingAssetsPath, "playerData_" + i + ".json");
             File.WriteAllText(path, jsonData);
         }
         Slot save_Slot = slotData;
         save_Slot._Slot -= 1;
         string jsonData2 = JsonUtility.ToJson(save_Slot, true);
-        string path2 = Path.Combine(Application.dataPath, "Slot.json");
+        string path2 = Path.Combine(Application.streamingAssetsPath, "Slot.json");
         File.WriteAllText(path2, jsonData2);
         Debug.Log(Slot + "번 데이터 삭제완료");
         LoadPlayerDataToJson();
@@ -110,7 +110,7 @@ public class DataManager : MonoBehaviour
     {
         for(int i=1; i<=4; i++)
         {
-            string path = Path.Combine(Application.dataPath, "playerData_"+i+".json");
+            string path = Path.Combine(Application.streamingAssetsPath, "playerData_"+i+".json");
             string jsonData = File.ReadAllText(path);
             if(i==1)
                 playerData_1 = JsonUtility.FromJson<PlayerData>(jsonData);
@@ -122,7 +122,7 @@ public class DataManager : MonoBehaviour
                 playerData_4 = JsonUtility.FromJson<PlayerData>(jsonData);
         }
         
-        string Slot_path = Path.Combine(Application.dataPath, "Slot.json");
+        string Slot_path = Path.Combine(Application.streamingAssetsPath, "Slot.json");
         string Slot_jsonData = File.ReadAllText(Slot_path);
         slotData = JsonUtility.FromJson<Slot>(Slot_jsonData);
 

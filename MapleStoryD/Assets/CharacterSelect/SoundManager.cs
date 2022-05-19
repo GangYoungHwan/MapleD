@@ -121,14 +121,14 @@ public class SoundManager : MonoBehaviour
         save.BGM = masterBGM;
         save.SFX = masterSFX;
         string jsonData = JsonUtility.ToJson(save, true);
-        string path = Path.Combine(Application.dataPath, "volum.json");
+        string path = Path.Combine(Application.streamingAssetsPath, "volum.json");
         File.WriteAllText(path, jsonData);
         Debug.Log("사운드 데이터 저장 완료");
     }
 
     public void LoadSoundDataToJson()
     {
-        string path = Path.Combine(Application.dataPath, "volum.json");
+        string path = Path.Combine(Application.streamingAssetsPath, "volum.json");
         string jsonData = File.ReadAllText(path);
         _Sound = JsonUtility.FromJson<Sound>(jsonData);
         masterVolumeBGM = _Sound.BGMvolum;
