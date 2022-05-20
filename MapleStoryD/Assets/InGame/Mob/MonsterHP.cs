@@ -30,6 +30,7 @@ public class MonsterHP : MonoBehaviour
             GameObject Boss = Instantiate(BossHpBarPrefab, BossHpBarPos.transform);
             Boss.GetComponent<BossHp>().SetUp(MonsterID, maxHP);
             BossMonsterHPbar = Boss;
+            StartCoroutine(BossAttacking());
         }
     }
 
@@ -69,6 +70,15 @@ public class MonsterHP : MonoBehaviour
             monster.OnDie();
             Destroy(BossMonsterHPbar);
         }
+    }
 
+    private IEnumerator BossAttacking()
+    {
+        while(true)
+        {
+            float rand = Random.Range(10, 30);
+            yield return new WaitForSeconds(rand);
+            monster.monsterState(MonsterState.BossAttack);
+        }
     }
 }

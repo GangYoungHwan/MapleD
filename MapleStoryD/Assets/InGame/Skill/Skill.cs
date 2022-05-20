@@ -29,11 +29,15 @@ public class Skill : MonoBehaviour
     private Transform attackTarget = null;
     private MonsterSpawner monsterSpawner;
     [SerializeField] private GameObject[] starLv = null;
+    [SerializeField] private GameObject StunEffect = null;
+    private GameObject _stunEff = null;
+    public float tempRange = 0;
     private void Awake()
     {
         attackDamage = int.Parse(SkillInfoManager.Instance.SkillList[SkillID].Att)*DataManager.Instance.playerData.Skill_Lv[SkillID];
         //spawnPoint = transform;
         spawnPoint = transform.position;
+        tempRange = attackRange;
     }
     //private void OnDrawGizmos()
     //{
@@ -167,4 +171,17 @@ public class Skill : MonoBehaviour
         }
     }
 
+    public void SkillStop(float time)
+    {
+        StartCoroutine(skillstopAttack(time));
+    }
+
+    private IEnumerator skillstopAttack(float time)
+    {
+        _stunEff = Instantiate(StunEffect, gameObject.transform.position, Quaternion.identity);
+        attackRange = 0f;
+        yield return new WaitForSeconds(time);
+        Destroy(_stunEff);
+        attackRange = tempRange;
+    }
 }

@@ -5,7 +5,8 @@ public enum MonsterState
 {
     Normal = 0,
     Slow,
-    Stun
+    Stun,
+    BossAttack
 }
 public class Monster : MonoBehaviour
 {
@@ -94,6 +95,7 @@ public class Monster : MonoBehaviour
 
     private IEnumerator Normal()
     {
+        anim.ResetTrigger("isAttack");
         stating = false;
         speed = MoveSpeed;
         yield return null;
@@ -122,6 +124,22 @@ public class Monster : MonoBehaviour
         int tempMove = nextMove;
         nextMove = 0;
         yield return new WaitForSeconds(1f);
+        nextMove = tempMove;
+        ChangeState(MonsterState.Normal);
+    }
+
+    private IEnumerator BossAttack()
+    {
+        stating = true;
+        int tempMove = nextMove;
+        nextMove = 0;
+        anim.SetTrigger("isAttack");
+        GameObject[] Skills = GameObject.FindGameObjectsWithTag("Skill");
+        for (int i =0; i< Skills.Length; i++)
+        {
+            Skills[i].GetComponent<Skill>().SkillStop(5f);
+        }
+        yield return new WaitForSeconds(1.5f);
         nextMove = tempMove;
         ChangeState(MonsterState.Normal);
     }

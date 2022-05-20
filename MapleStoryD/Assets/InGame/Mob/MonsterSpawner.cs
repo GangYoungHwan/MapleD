@@ -47,6 +47,8 @@ public class MonsterSpawner : MonoBehaviour
     private bool isboss = false;
     public static MonsterSpawner Instance { get { if (null == instance) { return null; } return instance; } }
 
+    private IEnumerator Systemcoroutine;
+    private IEnumerator Spwancoroutine;
     void Start()
     {
         mobList = new List<Monster>();
@@ -85,7 +87,27 @@ public class MonsterSpawner : MonoBehaviour
         InGameManager.Instance._WaveMaxText.text = WaveMax.ToString();
         InGameManager.Instance._MonsterLifeMaxText.text = currMonsterCountMax.ToString();
 
-        StartCoroutine("WaveSystem");
+        //StartCoroutine(WaveSystem());
+        Systemcoroutine = WaveSystem();
+        Spwancoroutine = SpawnMonster();
+        StartCoroutine(Systemcoroutine);
+    }
+    public void Update()
+    {
+        if (Input.GetKey(KeyCode.F4))
+        {
+            currMonsterCount = 100;
+            InGameOver();
+        }
+        if (Input.GetKey(KeyCode.F5))
+        {
+            InGameOver();
+        }
+        if (Input.GetKeyUp(KeyCode.F6))
+        {
+            StopCoroutine(Systemcoroutine);
+            StartWave(currWave);
+        }
     }
     private IEnumerator WaveSystem()
     {
@@ -156,16 +178,16 @@ public class MonsterSpawner : MonoBehaviour
     }
     public void StartWave(int wave)
     {
-        StopCoroutine(SpawnMonster());
+        StopCoroutine(Spwancoroutine);
         currWave = wave;
         currWave++;
+        InGameManager.Instance._WaveText.text = currWave.ToString();
         //텍스트 currWave
-        StartCoroutine(SpawnMonster());
+        StartCoroutine(Spwancoroutine);
     }
     private IEnumerator SpawnMonster()
     {
         Debug.Log("소환 시작");
-        InGameManager.Instance._WaveText.text = currWave.ToString();
         yield return new WaitForSeconds(holdTime);
         while (MobCnt < mobcntMax)
         {
@@ -177,6 +199,7 @@ public class MonsterSpawner : MonoBehaviour
             }
             if (currWave > WaveMax || MobID == 0)
             {
+                InGameOver();
                 break;
             }
             CreateMonster(MobID);
