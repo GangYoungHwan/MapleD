@@ -21,10 +21,6 @@ public class Hud : MonoBehaviour
     {
         StartCoroutine(NoCritical(dmg, hitEft, Target, skillID));
     }
-    private void DestoryEvent()
-    {
-        Destroy(gameObject);
-    }
     private IEnumerator Crititcal(float[] dmg, GameObject hitEft, Transform Target,int skillID)
     {
         Vector3 pos = Target.GetComponent<Monster>().effectPos.position;
@@ -49,5 +45,9 @@ public class Hud : MonoBehaviour
             hitEffclone.GetComponent<Hit>().SkillID = skillID;
             yield return new WaitForSeconds(EffectDestoryTime);
         }
+    }
+    private void DestoryEvent()
+    {
+        Destroy(gameObject);
     }
 }

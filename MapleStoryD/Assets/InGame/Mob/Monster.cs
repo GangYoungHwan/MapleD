@@ -30,6 +30,8 @@ public class Monster : MonoBehaviour
         Mob = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        int MobID = GetComponent<MonsterHP>().MonsterID;
+        MoveSpeed = float.Parse(MobInfoManager.Instance.MobList[MobID].MobSpeed);
         speed = MoveSpeed;
     }
     public void ChangeState(MonsterState newState)

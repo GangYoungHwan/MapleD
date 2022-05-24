@@ -45,6 +45,7 @@ public class MonsterSpawner : MonoBehaviour
     public int dieMonstercnt = 0;
 
     private bool isboss = false;
+    private bool reset = false;
     public static MonsterSpawner Instance { get { if (null == instance) { return null; } return instance; } }
 
     private IEnumerator Systemcoroutine;
@@ -182,7 +183,9 @@ public class MonsterSpawner : MonoBehaviour
         currWave = wave;
         currWave++;
         InGameManager.Instance._WaveText.text = currWave.ToString();
+        MobCnt = 0;
         //ÅØ½ºÆ® currWave
+        Spwancoroutine = SpawnMonster();
         StartCoroutine(Spwancoroutine);
     }
     private IEnumerator SpawnMonster()
@@ -197,13 +200,8 @@ public class MonsterSpawner : MonoBehaviour
                 InGameOver();
                 break;
             }
-            if (currWave > WaveMax || MobID == 0)
-            {
-                InGameOver();
-                break;
-            }
             CreateMonster(MobID);
-            if (isboss)
+            if (isboss|| reset)
                 break;
             yield return new WaitForSeconds(spawnTime);
         }

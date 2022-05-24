@@ -22,7 +22,8 @@ public class confirn : MonoBehaviour
             }
             else
             {
-                DataManager.Instance.playerData.Meso -= int.Parse(GoogleSheetManager.Instance.MyItems[Shop].Price);
+                Player.Instance.GetMeso(-int.Parse(GoogleSheetManager.Instance.MyItems[Shop].Price));
+                //DataManager.Instance.playerData.Meso -= int.Parse(GoogleSheetManager.Instance.MyItems[Shop].Price);
                 confimAcquired.SetActive(true);
                 if (!DataManager.Instance.playerData.Skill[Data])
                     DataManager.Instance.playerData.Skill[Data] = true;
@@ -40,7 +41,8 @@ public class confirn : MonoBehaviour
             }
             else
             {
-                DataManager.Instance.playerData.Meso -= int.Parse(GoogleSheetManager.Instance.MyItems[Shop].Price);
+                Player.Instance.GetMeso(-int.Parse(GoogleSheetManager.Instance.MyItems[Shop].Price));
+                //DataManager.Instance.playerData.Meso -= int.Parse(GoogleSheetManager.Instance.MyItems[Shop].Price);
                 confimAcquired.SetActive(true);
                 DataManager.Instance.playerData.ItemSlot[Data] = true;
                 DataManager.Instance.playerData.ItemID[Data] = Data;
@@ -57,7 +59,8 @@ public class confirn : MonoBehaviour
             }
             else
             {
-                DataManager.Instance.playerData.Dia -= int.Parse(GoogleSheetManager.Instance.MyItems[Shop].Price);
+                Player.Instance.GetDia(-int.Parse(GoogleSheetManager.Instance.MyItems[Shop].Price));
+                //DataManager.Instance.playerData.Dia -= int.Parse(GoogleSheetManager.Instance.MyItems[Shop].Price);
                 confimAcquired.SetActive(true);
                 if (!DataManager.Instance.playerData.AvataSlot[Data])
                 {

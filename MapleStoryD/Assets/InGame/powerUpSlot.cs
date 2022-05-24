@@ -24,6 +24,15 @@ public class powerUpSlot : MonoBehaviour
                 _Skill[i].GetComponent<Skill>().powerLv = PowerLevel;
             }
         }
+
+        if(InGameManager.Instance._SkillPoint >= SkillPoint)
+        {
+            GetComponent<Button>().interactable = true;
+        }
+        else
+        {
+            GetComponent<Button>().interactable = false;
+        }
     }
     public void SkillLevelUp()
     {

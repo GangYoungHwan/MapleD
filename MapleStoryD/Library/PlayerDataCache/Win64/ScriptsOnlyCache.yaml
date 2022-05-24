@@ -99,6 +99,14 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -611,7 +619,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4798}
     - Class: 114
-      Script: {instanceID: 35708}
+      Script: {instanceID: 36658}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1636,7 +1644,7 @@ ScriptsOnlyBuild:
     className: FailInfo
   - hash:
       serializedVersion: 2
-      Hash: 91220f5fdb82f73e14db7d0bac1c5d18
+      Hash: 7a2bde9cce6173237f4efbade8bae065
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Skill
